@@ -2,7 +2,9 @@
   <div>
     <TheHeader />
     <div class="body-content">
-      <nuxt />
+      <vue-page-transition :name="$store.state.animation">
+        <nuxt />
+      </vue-page-transition>
     </div>
 
     <TheFooter />

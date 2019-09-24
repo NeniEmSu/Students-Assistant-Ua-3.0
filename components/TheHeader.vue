@@ -1,12 +1,17 @@
 <template>
-  <header class="main_menu home_menu">
-    <div class="container">
+  <header
+    id="nav"
+    v-click-outside="closeMobileNavbar"
+    v-handle-scroll="closeMobileNavbar"
+    class="main_menu home_menu menu_fixed animated fadeInDown"
+  >
+    <div class=" container">
       <div class="row align-items-center">
         <div class="col-lg-12">
-          <nav class="navbar navbar-expand-lg navbar-light">
+          <nav class="navbar navbar-expand-lg navbar-light ">
             <nuxt-link
               class="navbar-brand"
-              to="index.html"
+              to="/"
             >
               <img
                 src="~/assets/img/SAUA.svg"
@@ -19,8 +24,10 @@
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+              :aria-expanded="[mobileNavOpen ? true : false]"
               aria-label="Toggle navigation"
+              :class="{collapsed : mobileNavOpen}"
+              @click="mobileNavOpen = !mobileNavOpen"
             >
               <span class="navbar-toggler-icon" />
             </button>
@@ -28,6 +35,7 @@
             <div
               id="navbarSupportedContent"
               class="collapse navbar-collapse main-menu-item justify-content-end"
+              :class="{show : mobileNavOpen}"
             >
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item active">
@@ -63,17 +71,16 @@
                   </nuxt-link>
                 </li>
                 <li class="nav-item dropdown">
-                  <nuxt-link
+                  <button
                     id="navbarDropdown"
                     class="nav-link dropdown-toggle"
-                    to="blog.html"
                     role="button"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
                     Services
-                  </nuxt-link>
+                  </button>
                   <div
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdown"
@@ -129,73 +136,88 @@
   </header>
 </template>
 
-<style>
-.VueToNuxtLogo {
-  display: inline-block;
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-  width: 245px;
-}
+<script>
+import clickOutside from '@/directives/click-outside'
+import handleScroll from '@/directives/handle-scroll'
+export default {
+  components: {},
+  directives: {
+    clickOutside,
+    handleScroll
+  },
+  data () {
+    return {
+      mobileNavOpen: false,
+      lastScrollPosition: 0
+    }
+  },
+  watch: {
+    $route () {
+      this.mobileNavOpen = false
+    }
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  mounted () {
+    window.addEventListener('scroll', this.onScroll)
+    this.$nextTick(function () {
+      window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('nav')
+        const navClasses = navbar.classList
+        if (document.documentElement.scrollTop >= 100) {
+          if (navClasses.contains('menu_fixed') === false) {
+            navClasses.toggle('menu_fixed')
+          }
+        } else if (navClasses.contains('menu_fixed') === true) {
+          navClasses.toggle('menu_fixed')
+        }
+      })
+    })
+  },
 
-.Triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-}
+  methods: {
+    closeUserDropdown () {
+      this.userDropdownOpen = false
+    },
+    closeMobileNavbar () {
+      this.mobileNavOpen = false
+    },
+    hide () {
+      this.mobileNavOpen = false
+    },
 
-.Triangle--one {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41b883;
-}
-
-.Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3b8070;
-}
-
-.Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495e;
-}
-
-.Triangle--four {
-  top: 120px;
-  left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateX(0deg);
+    onScroll () {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop
+      if (currentScrollPosition < 0) {
+        return
+      }
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) {
+        return
+      }
+      this.showHeader = currentScrollPosition < this.lastScrollPosition
+      this.lastScrollPosition = currentScrollPosition
+    }
   }
 }
+</script>
 
-@keyframes godown {
-  100% {
-    top: 180px;
-  }
+<style lang="scss" scoped>
+a.nav-link.nuxt-link-exact-active.nuxt-link-active {
+  color: #ee390f !important;
 }
 
-@keyframes goright {
-  100% {
-    left: 70px;
-  }
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: grey;
+}
+
+button.dropdown-toggle {
+  border: none;
+  background: none;
+  outline: none;
 }
 </style>

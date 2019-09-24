@@ -182,6 +182,13 @@ export default {
     }
   },
 
+  router: {
+    middleware: [
+      'animation',
+      'i18n'
+    ]
+  },
+
   proxy: {
     '/.netlify/functions/': {
       target: 'http://localhost:8000'

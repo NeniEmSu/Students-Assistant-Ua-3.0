@@ -13,7 +13,7 @@
       <p class="description">
         <nuxt-link
           to="/"
-          class="error-link nuxt-link-active"
+          class="error-link btn_1 "
         >
           Try here!
         </nuxt-link>
@@ -94,18 +94,5 @@ export default {
   line-height: 21px;
   margin-bottom: 10px;
   margin-top: 40px;
-}
-.__nuxt-error-page a {
-  font-style: normal;
-  font-size: 20px;
-  line-height: 23px;
-  align-items: center;
-  text-align: center;
-  padding: 10px 18px;
-  color: #ffffff;
-  text-decoration: none;
-  background: orange;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-  border-radius: 50px;
 }
 </style>

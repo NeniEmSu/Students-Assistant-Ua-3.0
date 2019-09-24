@@ -37,6 +37,9 @@ export default {
     TheAdvancedFeatures,
     TheTestimonials,
     TheBlogSection
+  },
+  meta: {
+    animation: 'fade-in-down'
   }
 }
 </script>

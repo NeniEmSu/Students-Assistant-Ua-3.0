@@ -40,6 +40,9 @@ export default {
     TheMemberCount,
     TheTestimonials
 
+  },
+  meta: {
+    animation: 'fade-in-down'
   }
 }
 </script>

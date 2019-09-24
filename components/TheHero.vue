@@ -12,13 +12,13 @@
                 Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.
               </p>
               <nuxt-link
-                to="#"
+                to="/practice"
                 class="btn_1"
               >
-                View Course
+                Test Practice
               </nuxt-link>
               <nuxt-link
-                to="#"
+                to="/sign-up"
                 class="btn_2"
               >
                 Get Started

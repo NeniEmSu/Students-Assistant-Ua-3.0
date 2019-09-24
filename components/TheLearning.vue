@@ -16,18 +16,15 @@
             <h5>About us</h5>
             <h2>Learning with Reason not for a Season</h2>
             <p>
-              Fifth saying upon divide divide rule for deep their female all
-              hath brind Days and beast greater grass signs abundantly have
-              greater also days years under brought moveth.
+              Most students pull out the books only when it's time for an examination that is challenging, we intend to make these study sessions as efficient as possible by given reasons to specific information.
+              Don't just be informed on a topic but have a reason to understand better.
             </p>
             <ul>
               <li>
-                <span class="ti-pencil-alt" />Him lights given i heaven
-                second yielding seas gathered wear
+                <span class="ti-pencil-alt" />Contribte to the the ecosystem and be a part of the change.
               </li>
               <li>
-                <span class="ti-ruler-pencil" />Fly female them whales
-                fly them day deep given night.
+                <span class="ti-ruler-pencil" />Evaluate your growth in real time with a plethora of resources.
               </li>
             </ul>
             <nuxt-link
