@@ -1,0 +1,114 @@
+<template>
+  <!--::blog_part start::-->
+  <section class="blog_part section_padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-5">
+          <div class="section_tittle text-center">
+            <p>Our Blog</p>
+            <h2>Students Blog</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+          <div class="single-home-blog">
+            <div class="card">
+              <img
+                src="~/assets/img/blog/blog_1.png"
+                class="card-img-top"
+                alt="blog"
+              >
+              <div class="card-body">
+                <nuxt-link
+                  to="#"
+                  class="btn_4"
+                >
+                  Design
+                </nuxt-link>
+                <nuxt-link to="blog.html">
+                  <h5 class="card-title">
+                    Dry beginning sea over tree
+                  </h5>
+                </nuxt-link>
+                <p>
+                  Which whose darkness saying were life unto fish wherein all
+                  fish of together called
+                </p>
+                <ul>
+                  <li><span class="ti-comments" />2 Comments</li>
+                  <li><span class="ti-heart" />2k Like</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+          <div class="single-home-blog">
+            <div class="card">
+              <img
+                src="~/assets/img/blog/blog_2.png"
+                class="card-img-top"
+                alt="blog"
+              >
+              <div class="card-body">
+                <nuxt-link
+                  to="#"
+                  class="btn_4"
+                >
+                  Developing
+                </nuxt-link>
+                <nuxt-link to="blog.html">
+                  <h5 class="card-title">
+                    All beginning air two likeness
+                  </h5>
+                </nuxt-link>
+                <p>
+                  Which whose darkness saying were life unto fish wherein all
+                  fish of together called
+                </p>
+                <ul>
+                  <li><span class="ti-comments" />2 Comments</li>
+                  <li><span class="ti-heart" />2k Like</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+          <div class="single-home-blog">
+            <div class="card">
+              <img
+                src="~/assets/img/blog/blog_3.png"
+                class="card-img-top"
+                alt="blog"
+              >
+              <div class="card-body">
+                <nuxt-link
+                  to="#"
+                  class="btn_4"
+                >
+                  Design
+                </nuxt-link>
+                <nuxt-link to="blog.html">
+                  <h5 class="card-title">
+                    Form day seasons sea hand
+                  </h5>
+                </nuxt-link>
+                <p>
+                  Which whose darkness saying were life unto fish wherein all
+                  fish of together called
+                </p>
+                <ul>
+                  <li><span class="ti-comments" />2 Comments</li>
+                  <li><span class="ti-heart" />2k Like</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--::blog_part end::-->
+</template>
