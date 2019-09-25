@@ -34,6 +34,7 @@ import TheMemberCount from '~/components/TheMemberCount'
 import TheTestimonials from '~/components/TheTestimonials'
 
 export default {
+  scrollToTop: true,
   components: {
     TheFeatures,
     TheLearning,

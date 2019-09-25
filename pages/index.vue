@@ -28,6 +28,7 @@ import TheAdvancedFeatures from '~/components/TheAdvancedFeatures'
 import TheTestimonials from '~/components/TheTestimonials'
 import TheBlogSection from '~/components/TheBlogSection'
 export default {
+  scrollToTop: true,
   components: {
     TheHero,
     TheFeatures,
