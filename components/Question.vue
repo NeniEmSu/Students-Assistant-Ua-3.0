@@ -43,6 +43,15 @@
               {{ btnData[3].answer }}
             </button>
           </div>
+          <div class="col-sm">
+            <button
+              class="btn btn_1"
+              style="margin: 10px"
+              @click="onAnswer(btnData[4].correct)"
+            >
+              {{ btnData[4].answer }}
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -58,6 +67,7 @@ export default {
       question: 'Oops, an error occured :/',
       btnData: [
         { correct: true, answer: 0 },
+        { correct: false, answer: 0 },
         { correct: false, answer: 0 },
         { correct: false, answer: 0 },
         { correct: false, answer: 0 }
@@ -94,7 +104,9 @@ export default {
       this.btnData[2].correct = false
       this.btnData[3].answer = this.generateRandomNumber(correctAnswer - 10, correctAnswer + 10, correctAnswer)
       this.btnData[3].correct = false
-      const correctButton = this.generateRandomNumber(0, 3)
+      this.btnData[4].answer = this.generateRandomNumber(correctAnswer - 10, correctAnswer + 10, correctAnswer)
+      this.btnData[4].correct = false
+      const correctButton = this.generateRandomNumber(0, 4)
       this.btnData[correctButton].correct = true
       this.btnData[correctButton].answer = correctAnswer
     },
@@ -105,6 +117,7 @@ export default {
       }
       return rndNumber
     },
+
     onAnswer (isCorrect) {
       this.$emit('answered', isCorrect)
     }
