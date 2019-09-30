@@ -1,5 +1,6 @@
 <template>
   <section class="container practice-page">
+    <!--questionBox-->
     <div
       id="app"
       class="questionBox mx-auto"
@@ -13,43 +14,43 @@
       >
         <!--qusetionContainer-->
         <div
-          v-if="questionIndex<questions.length"
+          v-if="questionIndex<quiz.questions.length"
           :key="questionIndex"
           class="questionContainer"
         >
           <header>
             <h1 class="title is-6">
-              Hygiene Practice
+              PreKrok practice
             </h1>
             <!--progress-->
             <div class="progressContainer">
               <progress
-                class="progress is-info is-small mx-auto"
-                :value="(questionIndex/questions.length)*100"
+                class="progress is-info is-small"
+                :value="(questionIndex/quiz.questions.length)*100"
                 max="100"
               >
-                {{ (questionIndex/questions.length)*100 }}%
+                {{ (questionIndex/quiz.questions.length)*100 }}%
               </progress>
-              <p>{{ (questionIndex/questions.length)*100 }}% complete</p>
+              <p>{{ (questionIndex/quiz.questions.length)*100 }}% complete</p>
             </div>
             <!--/progress-->
           </header>
 
           <!-- questionTitle -->
-          <h3 class="titleContainer title">
-            {{ questions[questionIndex].question_number }}. {{ questions[questionIndex].question_text }}
-          </h3>
+          <h2 class="titleContainer title">
+            {{ quiz.questions[questionIndex].text }}
+          </h2>
 
           <!-- quizOptions -->
           <div class="optionContainer">
             <div
-              v-for="(response, index) in questions[questionIndex].question_possibilities"
+              v-for="(response, index) in quiz.questions[questionIndex].responses"
               :key="index"
               class="option"
               :class="{ 'is-selected': userResponses[questionIndex] == index}"
               @click="selectOption(index)"
             >
-              {{ index | charIndex }}. {{ response.answer }}
+              {{ index | charIndex }}. {{ response.text }}
             </div>
           </div>
 
@@ -74,7 +75,7 @@
               <a
                 class="button"
                 :class="(userResponses[questionIndex]==null)?'':'is-active'"
-                :disabled="questionIndex>=questions.length"
+                :disabled="questionIndex>=quiz.questions.length"
                 @click="next();"
               >
                 {{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
@@ -88,7 +89,7 @@
 
         <!--quizCompletedResult-->
         <div
-          v-if="questionIndex >= questions.length"
+          v-if="questionIndex >= quiz.questions.length"
           :key="questionIndex"
           class="quizCompleted has-text-centered"
         >
@@ -123,7 +124,7 @@
           </h2>
 
           <p class="subtitle">
-            Total score: {{ score() }} / {{ questions.length }}
+            Total score: {{ score() }} / {{ quiz.questions.length }}
           </p>
           <br>
           <a
@@ -135,71 +136,164 @@
         <!--/quizCompetedResult-->
       </transition>
     </div>
+    <!--/questionBox-->
   </section>
 </template>
 
 <script>
-const API_URL = 'https://students-assistant-us-back-end.herokuapp.com/api/questions'
+const quiz = {
+  user: 'Dave',
+  questions: [
+    {
+      text: 'What is the full form of HTTP?',
+      responses: [
+        { text: 'Hyper text transfer package' },
+        { text: 'Hyper text transfer protocol', correct: true },
+        { text: 'Hyphenation text test program' },
+        { text: 'None of the above' },
+        { text: 'None of the above' }
+      ]
+    },
+    {
+      text: 'HTML document start and end with which tag pairs?',
+      responses: [
+        { text: 'HTML', correct: true },
+        { text: 'WEB' },
+        { text: 'HEAD' },
+        { text: 'BODY' }
+      ]
+    },
+    {
+      text: 'Which tag is used to create body text in HTML?',
+      responses: [
+        { text: 'HEAD' },
+        { text: 'BODY', correct: true },
+        { text: 'TITLE' },
+        { text: 'TEXT' }
+      ]
+    },
+    {
+      text: 'Outlook Express is _________',
+      responses: [
+        { text: 'E-Mail Client', correct: true },
+        { text: 'Browser' },
+        {
+          text: 'Search Engine'
+        },
+        { text: 'None of the above' }
+      ]
+    },
+    {
+      text: 'What is a search engine?',
+      responses: [
+        { text: 'A hardware component ' },
+        {
+          text: 'A machinery engine that search data'
+        },
+        { text: 'A web site that searches anything', correct: true },
+        { text: 'A program that searches engines' }
+      ]
+    },
+    {
+      text:
+        'What does the .com domain represents?',
+      responses: [
+        { text: 'Network' },
+        { text: 'Education' },
+        { text: 'Commercial', correct: true },
+        { text: 'None of the above' }
+      ]
+    },
+    {
+      text: 'In Satellite based communication, VSAT stands for? ',
+      responses: [
+        { text: ' Very Small Aperture Terminal', correct: true },
+        { text: 'Varying Size Aperture Terminal ' },
+        {
+          text: 'Very Small Analog Terminal'
+        },
+        { text: 'None of the above' }
+      ]
+    },
+    {
+      text: 'What is the full form of TCP/IP? ',
+      responses: [
+        { text: 'Telephone call protocol / international protocol' },
+        { text: 'Transmission control protocol / internet protocol', correct: true },
+        { text: 'Transport control protocol / internet protocol ' },
+        { text: 'None of the above' }
+      ]
+    },
+    {
+      text:
+        'What is the full form of HTML?',
+      responses: [
+        {
+          text: 'Hyper text marking language'
+        },
+        { text: 'Hyphenation text markup language ' },
+        { text: 'Hyper text markup language', correct: true },
+        { text: 'Hyphenation test marking language' }
+      ]
+    },
+    {
+      text: '"Yahoo", "Infoseek" and "Lycos" are _________?',
+      responses: [
+        { text: 'Browsers ' },
+        { text: 'Search Engines', correct: true },
+        { text: 'News Group' },
+        { text: 'None of the above' }
+      ]
+    }
+  ]
+}
+const userResponseSkelaton = Array(quiz.questions.length).fill(null)
 export default {
+
+  components: {
+
+  },
   filters: {
     charIndex (i) {
       return String.fromCharCode(97 + i)
     }
   },
-
   data () {
     return {
-      questions: [],
+      quiz,
       questionIndex: 0,
-      userResponses: this.userResponseSkelaton,
-      isActive: false,
-      loading: false
+      userResponses: userResponseSkelaton,
+      isActive: false
     }
   },
-  mounted () {
-    fetch(API_URL)
-      .then(response => response.json())
-      .then((result) => {
-        this.loading = true
-        this.questions = result
-        this.loading = false
-      })
-  },
-
   methods: {
-    userResponseSkelaton () {
-      this.userResponses = Array(this.questions.length).fill(null)
-    },
-
     restart () {
       this.questionIndex = 0
+      this.userResponses = Array(this.quiz.questions.length).fill(null)
     },
-
     selectOption (index) {
       this.$set(this.userResponses, this.questionIndex, index)
     },
-
     next () {
-      if (this.questionIndex < this.questions.length) { this.questionIndex++ }
+      if (this.questionIndex < this.quiz.questions.length) { this.questionIndex++ }
     },
 
     prev () {
-      if (this.questions.length > 0) { this.questionIndex-- }
+      if (this.quiz.questions.length > 0) { this.questionIndex-- }
     },
-
+    // Return "true" count in userResponses
     score () {
       let score = 0
       for (let i = 0; i < this.userResponses.length; i++) {
         if (
-          typeof this.questions[i].responses[this.userResponses[i]] !== 'undefined' &&
-          this.questions[i].responses[this.userResponses[i]].correct
+          typeof this.quiz.questions[i].responses[this.userResponses[i]] !== 'undefined' &&
+          this.quiz.questions[i].responses[this.userResponses[i]].correct
         ) {
           score = score + 1
         }
       }
       return score
     }
-
   }
 
 }
@@ -292,7 +386,7 @@ body {
     }
   }
   .titleContainer {
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     padding: 1.5rem;
   }
