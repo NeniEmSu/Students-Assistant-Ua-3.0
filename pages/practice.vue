@@ -25,7 +25,7 @@
       >
         <div
           id="hud"
-          class=""
+          class="mt-5"
         >
           <div
             id="hud-item"
