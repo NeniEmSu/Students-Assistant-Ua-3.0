@@ -53,12 +53,12 @@
             <p class="hud-prefix">
               Score
             </p>
-            <h1
+            <h3
               id="score"
               class="hud-main-text"
             >
               {{ score() }}
-            </h1>
+            </h3>
           </div>
         </div>
         <h3
@@ -349,13 +349,13 @@ input::placeholder {
 }
 
 .choice-prefix {
-  padding: 1rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   background-color: #56a5eb;
   color: white;
 }
 
 .choice-text {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
 }
 
@@ -376,7 +376,7 @@ input::placeholder {
 
 .hud-prefix {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .hud-main-text {
@@ -385,9 +385,8 @@ input::placeholder {
 
 #progressBar {
   width: 20rem;
-  height: 4rem;
+  height: 2rem;
   border: 0.3rem solid #56a5eb;
-  margin-top: 1.5rem;
 }
 
 #progressBarFull {
@@ -397,7 +396,7 @@ input::placeholder {
 }
 
 $trans_duration: 0.3s;
-$primary_color: #657cff;
+$primary_color: #56a5eb;
 
 progress {
   margin: 0;
@@ -410,6 +409,10 @@ progress {
   &::-webkit-progress-value {
     background: $primary_color;
   }
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ffffff;
 }
 
 /* LOADER */
@@ -428,6 +431,17 @@ progress {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #progressBar {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 }
 </style>
