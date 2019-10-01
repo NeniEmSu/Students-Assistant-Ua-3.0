@@ -111,12 +111,18 @@
         </nav>
         <!--/pagination-->
       </div>
-
       <div
         v-else
-        id="loader"
-      />
+        class="container"
+        style="height: 100vh;"
+      >
+        <div
+          id="loader"
+          class=""
+        />
+      </div>
     </div>
+
     <div class="container hidden">
       <div
         id="end"
