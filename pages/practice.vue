@@ -1,141 +1,171 @@
 <template>
-  <section class="container practice-page">
-    <div
-      id="app"
-      class="questionBox mx-auto"
-    >
-      <!-- transition -->
-      <transition
-        :duration="{ enter: 500, leave: 300 }"
-        enter-active-class="animated zoomIn"
-        leave-active-class="animated zoomOut"
-        mode="out-in"
+  <div id="testPractice3">
+    <div class="container hidden">
+      <div
+        id="home"
+        class="flex-center flex-column"
       >
-        <!--qusetionContainer-->
+        <h1>Quick Quiz</h1>
+        <a
+          class="btn"
+          href="/game.html"
+        >Play</a>
+        <a
+          class="btn"
+          href="/highscores.html"
+        >High Scores</a>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div
+        v-if="questionIndex<questions.length"
+        id="game"
+        :key="questionIndex"
+        class="justify-center flex-column "
+      >
         <div
-          v-if="questionIndex<questions.length"
-          :key="questionIndex"
-          class="questionContainer"
+          id="hud"
+          class=""
         >
-          <header>
-            <h1 class="title is-6">
-              Hygiene Practice
-            </h1>
-            <!--progress-->
-            <div class="progressContainer">
-              <progress
-                class="progress is-info is-small mx-auto"
-                :value="(questionIndex/questions.length)*100"
-                max="100"
-              >
-                {{ (questionIndex/questions.length)*100 }}%
-              </progress>
-              <p>{{ (questionIndex/questions.length)*100 }}% complete</p>
-            </div>
-            <!--/progress-->
-          </header>
-
-          <!-- questionTitle -->
-          <h3 class="titleContainer title">
-            {{ questions[questionIndex].question_number }}. {{ questions[questionIndex].question_text }}
-          </h3>
-
-          <!-- quizOptions -->
-          <div class="optionContainer">
-            <div
-              v-for="(response, index) in questions[questionIndex].question_possibilities"
-              :key="index"
-              class="option"
-              :class="{ 'is-selected': userResponses[questionIndex] == index}"
-              @click="selectOption(index)"
+          <div
+            id="hud-item"
+            class=""
+          >
+            <p
+              id="progressText"
+              class="hud-prefix"
             >
-              {{ index | charIndex }}. {{ response.answer }}
-            </div>
+              Question {{ `${questionIndex+1}/${questions.length}` }}
+            </p>
+            <progress
+              id="progressBar"
+              class="mx-auto"
+              :value="(questionIndex/questions.length)*100"
+              max="100"
+            >
+              {{ (questionIndex/questions.length)*100 }}%
+            </progress>
           </div>
-
-          <!--quizFooter: navigation and progress-->
-          <footer class="questionFooter">
-            <!--pagination-->
-            <nav
-              class="pagination"
-              role="navigation"
-              aria-label="pagination"
+          <div
+            id="hud-item"
+            class=""
+          >
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1
+              id="score"
+              class="hud-main-text"
             >
-              <!-- back button -->
-              <a
-                class="button"
-                :disabled="questionIndex < 1"
-                @click="prev();"
-              >
-                Back
-              </a>
-
-              <!-- next button -->
-              <a
-                class="button"
-                :class="(userResponses[questionIndex]==null)?'':'is-active'"
-                :disabled="questionIndex>=questions.length"
-                @click="next();"
-              >
-                {{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
-              </a>
-            </nav>
-            <!--/pagination-->
-          </footer>
-          <!--/quizFooter-->
+              {{ score() }}
+            </h1>
+          </div>
         </div>
-        <!--/questionContainer-->
-
-        <!--quizCompletedResult-->
-        <div
-          v-if="questionIndex >= questions.length"
-          :key="questionIndex"
-          class="quizCompleted has-text-centered"
+        <h3
+          id="question"
+          class="my-2"
         >
-          <!-- quizCompletedIcon: Achievement Icon -->
-          <span class="icon">
-            <i
-              class="fa"
-              :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"
-            />
-          </span>
-
-          <!--resultTitleBlock-->
-          <h2
-            v-if="score()>=7"
-            class="title"
-          >
-            You did an amazing job!
-          </h2>
-
-          <h2
-            v-if="score()>=5"
-            class="title"
-          >
-            You did a good job!
-          </h2>
-
-          <h2
-            v-if="score()<=4"
-            class="title"
-          >
-            You did a poor job!
-          </h2>
-
-          <p class="subtitle">
-            Total score: {{ score() }} / {{ questions.length }}
+          {{ questions[questionIndex].question_number }}. {{ questions[questionIndex].question_text }}
+        </h3>
+        <div
+          v-for="(response, index) in questions[questionIndex].question_possibilities"
+          :key="index"
+          :class="{ 'is-selected': userResponses[questionIndex] == index}"
+          class="choice-container"
+          @click="selectOption(index)"
+        >
+          <p class="choice-prefix">
+            {{ index | charIndex }}
           </p>
-          <br>
+          <p
+            class="choice-text"
+            data-number="1"
+          >
+            {{ response.answer }}
+          </p>
+        </div>
+        <!--pagination-->
+        <nav
+          class="pagination"
+          role="navigation"
+          aria-label="pagination"
+        >
+          <!-- back button -->
           <a
             class="button"
-            @click="restart()"
-          >restart <i class="fa fa-refresh" /></a>
-          <!--/resultTitleBlock-->
-        </div>
-        <!--/quizCompetedResult-->
-      </transition>
+            :disabled="questionIndex < 1"
+            @click="prev();"
+          >
+            Back
+          </a>
+
+          <!-- next button -->
+          <a
+            class="button"
+            :class="(userResponses[questionIndex]==null)?'':'is-active'"
+            :disabled="questionIndex>=questions.length"
+            @click="next();"
+          >
+            {{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
+          </a>
+        </nav>
+        <!--/pagination-->
+      </div>
+
+      <div
+        v-else
+        id="loader"
+      />
     </div>
-  </section>
+    <div class="container hidden">
+      <div
+        id="end"
+        class="flex-center flex-column"
+      >
+        <h1 id="finalScore" />
+        <form>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="username"
+          >
+          <button
+            id="saveScoreBtn"
+            type="submit"
+            class="btn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a
+          class="btn"
+          href="/game.html"
+        >Play Again</a>
+        <a
+          class="btn"
+          href="/"
+        >Go Home</a>
+      </div>
+    </div>
+    <div class="container hidden">
+      <div
+        id="highScores"
+        class="flex-center flex-column"
+      >
+        <h1 id="finalScore">
+          High Scores
+        </h1>
+        <ul id="highScoresList" />
+        <a
+          class="btn"
+          href="/"
+        >Go Home</a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -205,219 +235,193 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
-$trans_duration: 0.3s;
-$primary_color: #657cff;
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-
-.practice-page {
-  margin: 10vw auto 0;
+<style lang="scss" scoped>
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+/* UTILITIES */
 
-  height: 100vh;
-
-  background: #cfd8dc;
-
-  /* mocking native UI */
-  cursor: default !important; /* remove text selection cursor */
-  user-select: none; /* remove text selection */
-
+.container {
+  // width: 100vw;
+  // height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
   justify-content: center;
 }
 
-.button {
-  transition: $trans_duration;
-}
-.title,
-.subtitle {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
-}
-.animated {
-  transition-duration: $trans_duration/2;
+.text-center {
+  text-align: center;
 }
 
-.questionBox {
-  max-width: 50rem;
-  width: 50rem;
-  min-height: 30rem;
+.hidden {
+  display: none;
+}
 
-  background: #fafafa;
-  position: relative;
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FORMS */
+form {
+  width: 100%;
   display: flex;
-
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
-  header {
-    background: rgba(0, 0, 0, 0.025);
-    padding: 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    h1 {
-      font-weight: bold;
-      margin-bottom: 1rem !important;
-    }
-    .progressContainer {
-      width: 60%;
-      margin: 0 auto;
-      > progress {
-        margin: 0;
-        border-radius: 5rem;
-        overflow: hidden;
-        border: none;
-
-        color: $primary_color;
-        &::-moz-progress-bar {
-          background: $primary_color;
-        }
-        &::-webkit-progress-value {
-          background: $primary_color;
-        }
-      }
-      > p {
-        margin: 0;
-        margin-top: 0.5rem;
-      }
-    }
-  }
-  .titleContainer {
-    text-align: left;
-    margin: 0 auto;
-    padding: 1.5rem;
-  }
-
-  .quizForm {
-    display: block;
-    white-space: normal;
-
-    height: 100%;
-    width: 100%;
-
-    .quizFormContainer {
-      height: 100%;
-      margin: 15px 18px;
-
-      .field-label {
-        text-align: left;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-  .quizCompleted {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-
-    > .icon {
-      color: #ff5252;
-      font-size: 5rem;
-
-      .is-active {
-        color: #00e676;
-      }
-    }
-  }
-  .questionContainer {
-    white-space: normal;
-
-    height: 100%;
-    width: 100%;
-
-    .optionContainer {
-      margin-top: 12px;
-      flex-grow: 1;
-      .option {
-        border-radius: 290486px;
-        padding: 9px 18px;
-        margin: 0 18px;
-        margin-bottom: 12px;
-        transition: $trans_duration;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.05);
-        color: rgba(0, 0, 0, 0.85);
-        border: transparent 1px solid;
-
-        &.is-selected {
-          border-color: rgba(black, 0.25);
-          background-color: white;
-        }
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.1);
-        }
-        &:active {
-          transform: scaleX(0.9);
-        }
-      }
-    }
-
-    .questionFooter {
-      background: rgba(0, 0, 0, 0.025);
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      width: 100%;
-      align-self: flex-end;
-
-      .pagination {
-        //padding: 10px 15px;
-        margin: 15px 25px;
-      }
-    }
-  }
+  flex-direction: column;
+  align-items: center;
 }
-.pagination {
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(5, 13, 20, 0.25);
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 1rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
   display: flex;
   justify-content: space-between;
 }
-.button {
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 5rem;
-  margin: 0 0.25rem;
 
-  transition: 0.3s;
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
 
-  &:hover {
-    cursor: pointer;
-    background: #eceff1;
-    border-color: rgba(0, 0, 0, 0.25);
-  }
-  &.is-active {
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+$trans_duration: 0.3s;
+$primary_color: #657cff;
+
+progress {
+  margin: 0;
+  overflow: hidden;
+  border: none;
+
+  &::-moz-progress-bar {
     background: $primary_color;
-    color: white;
-    border-color: transparent;
-
-    &:hover {
-      background: darken($primary_color, 10%);
-    }
+  }
+  &::-webkit-progress-value {
+    background: $primary_color;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .questionBox {
-    align-items: center;
-    justify-content: center;
-
-    .questionContainer {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
 }
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    height: auto !important;
-    border-radius: 6px 6px 0px 0px;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 </style>
