@@ -1,3 +1,5 @@
+const builtAt = new Date().toISOString()
+
 export default {
   mode: 'universal',
   /*
@@ -5,35 +7,79 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
-    meta: [{
-      charset: 'utf-8'
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1'
-    },
-    {
-      hid: 'description',
-      name: 'description',
-      content: process.env.npm_package_description || ''
-    }
+    meta: [
+      {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      },
+      {
+        name: 'robots',
+        content: 'index, follow'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        name: 'twitter:site',
+        content: '@NeniEmmanuel'
+      },
+      {
+        property: 'og:type',
+        content: 'profile'
+      },
+      {
+        property: 'og:updated_time',
+        content: builtAt
+      }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }],
-    script: [{
-      src: 'https://kit.fontawesome.com/41fc25a21c.js'
-    }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/icon.png'
+      }
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/41fc25a21c.js'
+      }
+    ]
   },
 
   loading: {
     color: '#fff'
   },
-  /*
-   ** Global CSS
-   */
+
+  manifest: {
+    name: 'Students Assistant',
+    short_name: 'St-A',
+    description:
+      'Blog and Portfolio, Making the web awesome one pixel at a time.',
+    theme_color: '#000000',
+    background_color: '#0A0A0A',
+    display: 'standalone',
+    start_url: '/',
+    dir: 'auto',
+    lang: 'en',
+    icons: [
+      {
+        src: '/icon.png',
+        sizes: '512x512',
+        type: 'image/png'
+      }
+    ],
+    categories: ['productivity', 'education', 'portfolio']
+  },
+
   css: [
     'normalize.css/normalize.css',
     'aos/dist/aos.css',
@@ -44,24 +90,25 @@ export default {
     }
   ],
 
-  plugins: [{
-    src: '~/plugins/aos.js',
-    mode: 'client'
-  },
-  {
-    src: '~/plugins/v-owl-carousel',
-    ssr: false
-  },
-  '~/plugins/vuelidate.js',
-  '~/plugins/vue-scrollto.js',
-  {
-    src: '~/plugins/vue-page-transition',
-    ssr: true
-  },
-  {
-    src: '~/plugins/vuex-persist',
-    mode: 'client'
-  }
+  plugins: [
+    {
+      src: '~/plugins/aos.js',
+      mode: 'client'
+    },
+    {
+      src: '~/plugins/v-owl-carousel',
+      ssr: false
+    },
+    '~/plugins/vuelidate.js',
+    '~/plugins/vue-scrollto.js',
+    {
+      src: '~/plugins/vue-page-transition',
+      ssr: true
+    },
+    {
+      src: '~/plugins/vuex-persist',
+      mode: 'client'
+    }
   ],
 
   buildModules: ['@nuxtjs/eslint-module'],
@@ -69,6 +116,7 @@ export default {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    'nuxt-rfg-icon',
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
@@ -77,21 +125,22 @@ export default {
       {
         seo: true,
         baseUrl: 'https://barbaresco.netlify.com',
-        locales: [{
-          iso: 'uk-Uk',
-          code: 'uk',
-          name: 'Українська'
-        },
-        {
-          iso: 'en-US',
-          code: 'en',
-          name: 'English'
-        },
-        {
-          iso: 'ru-RU',
-          code: 'ru',
-          name: 'Русский'
-        }
+        locales: [
+          {
+            iso: 'uk-Uk',
+            code: 'uk',
+            name: 'Українська'
+          },
+          {
+            iso: 'en-US',
+            code: 'en',
+            name: 'English'
+          },
+          {
+            iso: 'ru-RU',
+            code: 'ru',
+            name: 'Русский'
+          }
         ]
       }
     ],
@@ -183,10 +232,7 @@ export default {
   },
 
   router: {
-    middleware: [
-      'animation',
-      'i18n'
-    ]
+    middleware: ['animation', 'i18n']
   },
 
   proxy: {

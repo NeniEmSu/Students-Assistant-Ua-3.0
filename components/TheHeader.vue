@@ -15,7 +15,8 @@
             >
               <img
                 src="~/assets/img/sta-logo.svg"
-                alt="logo"
+                alt="Students assistant logo"
+                class="img-fluid"
               >
             </nuxt-link>
             <button
@@ -219,5 +220,19 @@ button.dropdown-toggle {
   border: none;
   background: none;
   outline: none;
+}
+
+@media screen and (max-width: 770px) {
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  img {
+    width: 150px;
+    height: auto;
+  }
 }
 </style>
