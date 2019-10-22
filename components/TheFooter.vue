@@ -6,7 +6,7 @@
           <div class="single-footer-widget footer_1">
             <a href="index.html">
               <img
-                src="~/assets/img/SAUA.svg"
+                src="~/assets/img/sta-logo.svg"
                 alt=""
               >
             </a>
@@ -14,7 +14,7 @@
               Your one stop for all things education and personal improvement.
             </p>
             <p>
-              Students Assistant UA
+              Students Assistant
             </p>
           </div>
         </div>

@@ -23,7 +23,7 @@
 
     <TheMemberCount />
 
-    <TheTestimonials />
+    <TheTestimonials class="pt-5 mt-5" />
   </div>
 </template>
 

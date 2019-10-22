@@ -14,7 +14,7 @@
               to="/"
             >
               <img
-                src="~/assets/img/SAUA.svg"
+                src="~/assets/img/sta-logo.svg"
                 alt="logo"
               >
             </nuxt-link>

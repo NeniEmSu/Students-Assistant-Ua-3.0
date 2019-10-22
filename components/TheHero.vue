@@ -7,7 +7,7 @@
           <div class="banner_text">
             <div class="banner_text_iner">
               <h5>Educational Content Anywhere and Anytime.</h5>
-              <h1>Students Assistant UA</h1>
+              <h1>Students Assistant</h1>
               <p>
                 Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.
               </p>

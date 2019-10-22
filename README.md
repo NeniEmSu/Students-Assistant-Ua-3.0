@@ -1,4 +1,4 @@
-# Students-Assistant-UA
+# Students-Assistant
 
 > Students assistant to help students study better.
 
