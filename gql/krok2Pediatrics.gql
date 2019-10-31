@@ -1,11 +1,12 @@
 {
-  krok2Collection {
-    _id
+  krok2PediatricsCollection {
     number
     question
+    q_Highlighted
+    subject
+    department
     correctAnswer
     reason
-    years
     options {
       value
     }

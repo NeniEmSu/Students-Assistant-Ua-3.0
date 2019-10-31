@@ -1,0 +1,12 @@
+{
+  plabCollection {
+    _id
+    number
+    question
+    correctAnaseer
+    reason
+    options {
+      value
+    }
+  }
+}

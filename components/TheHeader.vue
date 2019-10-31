@@ -55,13 +55,52 @@
                     About
                   </nuxt-link>
                 </li>
-                <li class="nav-item">
-                  <nuxt-link
-                    class="nav-link"
-                    to="/practice"
+                <li class="nav-item dropdown">
+                  <button
+                    id="navbarDropdown"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
-                    Practice
-                  </nuxt-link>
+                    Exam Center
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <nuxt-link
+                      class="dropdown-item"
+                      to="/krok1"
+                    >
+                      Krok 1 general practice
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
+                      to="/krok2"
+                    >
+                      Krok 2 general practice
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
+                      to="/krok2Pediatrics"
+                    >
+                      krok 2 Pediatrics
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
+                      to="/semesterExam"
+                    >
+                      Semester Exam
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
+                      to="/plab"
+                    >
+                      Plab
+                    </nuxt-link>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <nuxt-link
