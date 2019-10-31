@@ -1,0 +1,13 @@
+{
+  krok2Collection {
+    _id
+    number
+    question
+    correctAnswer
+    reason
+    years
+    options {
+      value
+    }
+  }
+}

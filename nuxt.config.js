@@ -114,6 +114,7 @@ export default {
   buildModules: ['@nuxtjs/eslint-module'],
 
   modules: [
+    '@nuxtjs/apollo',
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     'nuxt-rfg-icon',
@@ -157,6 +158,21 @@ export default {
       }
     ]
   ],
+
+  // Give apollo module options
+  apollo: {
+    includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
+    authenticationType: 'Basic', // optional, default: 'Bearer'
+    clientConfigs: {
+      default: '~/apollo/clientConfig.js',
+      otherClient: {
+        httpEndpoint: 'https://students-assistant-gql.herokuapp.com/v1/graphql',
+        httpLinkOptions: {
+          credentials: 'same-origin'
+        }
+      }
+    }
+  },
 
   i18n: {
     defaultLocale: 'en',
