@@ -91,6 +91,7 @@ export default {
   ],
 
   plugins: [
+    '~/plugins/pagination',
     {
       src: '~/plugins/aos.js',
       mode: 'client'

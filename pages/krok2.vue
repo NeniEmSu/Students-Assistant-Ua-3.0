@@ -5,7 +5,7 @@
     </h3>
     <ul>
       <li
-        v-for="(question) in krok2Collection"
+        v-for="(question) in pageOfItems"
         :key="question._id"
         class="my-5"
       >
@@ -25,7 +25,7 @@
           :key="index"
           class="choice-container"
         >
-          <p class="choice-prefix">
+          <p class="choice-prefix text-uppercase">
             {{ index | charIndex }}
           </p>
           <p class="choice-text">
@@ -71,11 +71,25 @@
         </p> -->
       </li>
     </ul>
+    <jw-pagination
+      :items="krok2Collection"
+      :page-size="1"
+      :labels="customLabels"
+      @changePage="onChangePage"
+    />
   </div>
 </template>
 
 <script>
 import krok2Collection from '~/gql/krok2'
+
+const customLabels = {
+  first: 'First',
+  last: 'Last',
+  previous: '<',
+  next: '>'
+}
+
 export default {
   apollo: {
     krok2Collection: {
@@ -93,7 +107,8 @@ export default {
   },
   data () {
     return {
-      toggle: false
+      pageOfItems: [],
+      customLabels
     }
   },
 
@@ -104,6 +119,11 @@ export default {
         [a[i], a[j]] = [a[j], a[i]]
       }
       return a
+    },
+
+    onChangePage (pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems
     }
   }
 }
