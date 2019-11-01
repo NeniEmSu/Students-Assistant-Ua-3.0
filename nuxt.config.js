@@ -20,7 +20,7 @@ export default {
         name: 'description',
         content:
           process.env.npm_package_description ||
-          'Students assistant to help students study better.'
+          'Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.'
       },
       {
         name: 'robots',
@@ -64,7 +64,8 @@ export default {
   manifest: {
     name: 'Students Assistant',
     short_name: 'St-A',
-    description: 'Students assistant to help students study better.',
+    description:
+      'Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.',
     theme_color: '#000000',
     background_color: '#0A0A0A',
     display: 'standalone',
