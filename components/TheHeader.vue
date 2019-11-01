@@ -3,7 +3,7 @@
     id="nav"
     v-click-outside="closeMobileNavbar"
     v-handle-scroll="closeMobileNavbar"
-    class="main_menu home_menu menu_fixed animated fadeInDown"
+    class="main_menu home_menu "
   >
     <div class=" container">
       <div class="row align-items-center">
@@ -208,9 +208,13 @@ export default {
         if (document.documentElement.scrollTop >= 100) {
           if (navClasses.contains('menu_fixed') === false) {
             navClasses.toggle('menu_fixed')
+            navClasses.toggle('animated')
+            navClasses.toggle('fadeInDown')
           }
         } else if (navClasses.contains('menu_fixed') === true) {
           navClasses.toggle('menu_fixed')
+          navClasses.toggle('animated')
+          navClasses.toggle('fadeInDown')
         }
       })
     })
@@ -244,6 +248,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
 a.nav-link.nuxt-link-exact-active.nuxt-link-active {
   color: #ee390f !important;
 }
@@ -261,16 +276,21 @@ button.dropdown-toggle {
   outline: none;
 }
 
+img {
+  width: 180px;
+  height: auto;
+}
+
 @media screen and (max-width: 770px) {
   img {
-    width: 200px;
+    width: 160px;
     height: auto;
   }
 }
 
 @media screen and (max-width: 425px) {
   img {
-    width: 150px;
+    width: 140px;
     height: auto;
   }
 }
