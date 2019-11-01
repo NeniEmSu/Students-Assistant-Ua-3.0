@@ -18,7 +18,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          process.env.npm_package_description ||
+          'Students assistant to help students study better.'
       },
       {
         name: 'robots',
@@ -62,8 +64,7 @@ export default {
   manifest: {
     name: 'Students Assistant',
     short_name: 'St-A',
-    description:
-      'Blog and Portfolio, Making the web awesome one pixel at a time.',
+    description: 'Students assistant to help students study better.',
     theme_color: '#000000',
     background_color: '#0A0A0A',
     display: 'standalone',
