@@ -10,15 +10,35 @@
         class="my-5"
       >
         <div class="mb-3">
-          {{ question.number }}. {{ question.question }}
-          <b-badge
+          <b-tabs content-class="mt-3">
+            <b-tab
+              :title="question.number"
+              active
+            >
+              <p>{{ question.question }}</p>
+            </b-tab>
+
+            <b-tab title="Highlight Keys">
+              <!--eslint-disable-next-line vue/no-v-html -->
+              <div v-html="`${question.q_Highlighted}`" />
+            </b-tab>
+            <b-badge
+              v-for="(year, i) in question.years"
+              :key="i"
+              pill
+              variant="info"
+            >
+              {{ year }}
+            </b-badge>
+          </b-tabs>
+          <!-- <b-badge
             v-for="(year, i) in question.years"
             :key="i"
             pill
             variant="info"
           >
             {{ year }}
-          </b-badge>
+          </b-badge> -->
         </div>
         <div
           v-for="(option, index) in shuffle(question.options)"
@@ -66,14 +86,11 @@
             </b-card>
           </b-collapse>
         </div>
-        <!-- <p v-if="toggle">
-          Correct Answer: {{ question.correctAnswer }}
-        </p> -->
       </li>
     </ul>
     <jw-pagination
       :items="krok2Collection"
-      :page-size="1"
+      :page-size="parseInt(pageCount)"
       :labels="customLabels"
       @changePage="onChangePage"
     />
@@ -108,7 +125,8 @@ export default {
   data () {
     return {
       pageOfItems: [],
-      customLabels
+      customLabels,
+      pageCount: '1'
     }
   },
 

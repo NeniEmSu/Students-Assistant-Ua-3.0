@@ -47,7 +47,7 @@
           >
             <b-card>
               <div class="mb-2">
-                Correct Answer: <span class="text-success">{{ question.correctAnaseer }}</span>
+                Correct Answer: <span class="text-success">{{ question.correctAnswer }}</span>
               </div>
 
               <b-button

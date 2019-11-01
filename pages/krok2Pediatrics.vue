@@ -5,20 +5,24 @@
     </h3>
     <ul>
       <li
-        v-for="(question) in krok2PediatricsCollection"
+        v-for="(question) in pageOfItems"
         :key="question._id"
         class="my-5"
       >
         <div class="mb-3">
-          {{ question.number }}. {{ question.question }}
-          <!-- <b-badge
-            v-for="(year, i) in question.years"
-            :key="i"
-            pill
-            variant="info"
-          >
-            {{ year }}
-          </b-badge> -->
+          <b-tabs content-class="mt-3">
+            <b-tab
+              :title="question.number"
+              active
+            >
+              <p>{{ question.question }}</p>
+            </b-tab>
+
+            <b-tab title="Highlight Keys">
+              <!--eslint-disable-next-line vue/no-v-html -->
+              <div v-html="`${question.q_Highlighted}`" />
+            </b-tab>
+          </b-tabs>
         </div>
         <div
           v-for="(option, index) in shuffle(question.options)"
@@ -47,7 +51,7 @@
           >
             <b-card>
               <div class="mb-2">
-                Correct Answer: <span class="text-success">{{ question.correctAnaseer }}</span>
+                Correct Answer: <span class="text-success">{{ question.correctAnswer }}</span>
               </div>
 
               <b-button
@@ -71,11 +75,25 @@
         </p> -->
       </li>
     </ul>
+    <jw-pagination
+      :items="krok2PediatricsCollection"
+      :page-size="parseInt(pageCount)"
+      :labels="customLabels"
+      @changePage="onChangePage"
+    />
   </div>
 </template>
 
 <script>
 import krok2PediatricsCollection from '~/gql/krok2Pediatrics'
+
+const customLabels = {
+  first: 'First',
+  last: 'Last',
+  previous: '<',
+  next: '>'
+}
+
 export default {
   apollo: {
     krok2PediatricsCollection: {
@@ -93,7 +111,9 @@ export default {
   },
   data () {
     return {
-      toggle: false
+      pageOfItems: [],
+      customLabels,
+      pageCount: '1'
     }
   },
 
@@ -104,6 +124,10 @@ export default {
         [a[i], a[j]] = [a[j], a[i]]
       }
       return a
+    },
+    onChangePage (pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems
     }
   }
 }

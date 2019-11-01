@@ -164,7 +164,7 @@
                     class="btn_1"
                     to="/sign-up"
                   >
-                    Sing Up
+                    Sign Up/in
                   </nuxt-link>
                 </li>
               </ul>
@@ -277,20 +277,20 @@ button.dropdown-toggle {
 }
 
 img {
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
 @media screen and (max-width: 770px) {
   img {
-    width: 160px;
+    width: 125px;
     height: auto;
   }
 }
 
 @media screen and (max-width: 425px) {
   img {
-    width: 140px;
+    width: 100px;
     height: auto;
   }
 }

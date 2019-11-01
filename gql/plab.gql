@@ -3,7 +3,7 @@
     _id
     number
     question
-    correctAnaseer
+    correctAnswer
     reason
     options {
       value

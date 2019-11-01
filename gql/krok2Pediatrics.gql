@@ -1,5 +1,6 @@
 {
   krok2PediatricsCollection {
+    _id
     number
     question
     q_Highlighted
