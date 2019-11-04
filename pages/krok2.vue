@@ -142,6 +142,10 @@ export default {
     onChangePage (pageOfItems) {
       // update page of items
       this.pageOfItems = pageOfItems
+      // if (process.client) {
+      //   require('document')
+      // }
+      // document.body.scrollTop = document.documentElement.scrollTop = 0
     }
   }
 }
