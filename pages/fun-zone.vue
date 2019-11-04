@@ -85,7 +85,7 @@
                     </h5>
                   </nuxt-link>
                   <p>
-                    Learn about the heart, it's pericardium and practice surgery all at the same time.
+                    Learn about the Shoulder and practice surgery all at the same time.
                   </p>
                   <!-- <ul>
                     <li><span class="ti-comments" />2 Comments</li>
