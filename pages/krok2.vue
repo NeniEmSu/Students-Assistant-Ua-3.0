@@ -116,7 +116,7 @@ const customLabels = {
 export default {
   apollo: {
     krok2Collection: {
-      // prefetch: true,
+      prefetch: true,
       query: krok2Collection
     }
   },

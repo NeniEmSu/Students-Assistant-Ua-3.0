@@ -168,15 +168,16 @@ export default {
     authenticationType: 'Basic', // optional, default: 'Bearer'
     errorHandler: '~/apollo/customErrorHandler',
     clientConfigs: {
-      default: {
-        httpEndpoint:
-          'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
-        // 'https://students-assistant-gql.herokuapp.com/v1/graphql',
-        httpLinkOptions: {
-          credentials: 'same-origin'
-        }
-      },
-      // '~/apollo/clientConfig.js',
+      default:
+        // {
+        //   httpEndpoint:
+        //     'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
+        //   // 'https://students-assistant-gql.herokuapp.com/v1/graphql',
+        //   httpLinkOptions: {
+        //     credentials: 'same-origin'
+        //   }
+        // },
+        '~/apollo/clientConfig.js',
       otherClient: {
         httpEndpoint:
           // 'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
