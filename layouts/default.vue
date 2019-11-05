@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 .body-content {
   min-height: 100vh;
 }

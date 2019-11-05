@@ -565,7 +565,9 @@
 
 <script>
 export default {
-
+  meta: {
+    animation: 'fade-in-down'
+  }
 }
 </script>
 
