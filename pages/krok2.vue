@@ -3,7 +3,10 @@
     <h3 class="mt-5">
       Krok 2 Questions
     </h3>
-    <ul>
+    <div v-if="$apolloData.loading">
+      Loading...
+    </div>
+    <ul v-else>
       <li
         v-for="(question) in pageOfItems"
         :key="question._id"
@@ -113,7 +116,7 @@ const customLabels = {
 export default {
   apollo: {
     krok2Collection: {
-      prefetch: true,
+      // prefetch: true,
       query: krok2Collection
     }
   },

@@ -5,6 +5,7 @@ export default function (context) {
     httpLinkOptions: {
       uri:
         'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
+      // 'https://students-assistant-gql.herokuapp.com/v1/graphql',
       credentials: 'same-origin'
     },
     cache: new InMemoryCache(),

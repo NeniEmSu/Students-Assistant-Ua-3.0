@@ -1,0 +1,7 @@
+{
+  users {
+    id
+    name
+    auth0_id
+  }
+}
