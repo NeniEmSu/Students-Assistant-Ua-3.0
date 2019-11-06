@@ -37,4 +37,8 @@ mark {
   background-color: rgba(255, 255, 0, 0.4);
   font-weight: 500;
 }
+
+em {
+  color: #ff663b;
+}
 </style>
