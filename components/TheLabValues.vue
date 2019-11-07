@@ -25,8 +25,9 @@
             Erythrocyte count
           </div>
           <div class="visit">
-            Male: 4.3 − 5.9 · 1012/L<br>
-            Female: 3.5 − 5.5 · 1012/L
+            Male: 4.3 − 5.9 · 10<sup>12</sup>/L
+
+            Female: 3.5 − 5.5 · 10<sup>12</sup>/L
           </div>
         </div>
         <div class="table-row">
@@ -71,7 +72,7 @@
             Platelet count
           </div>
           <div class="visit">
-            150 − 400 · 109/L
+            150 − 400 · 10<sup>9</sup>/L
           </div>
         </div>
         <div class="table-row">
@@ -82,7 +83,7 @@
             Leukocyte count
           </div>
           <div class="visit">
-            4.0 − 9.0 · 109/L
+            4.0 − 9.0 · 10<sup>9</sup>/L
           </div>
         </div>
         <div class="table-row">
@@ -104,7 +105,7 @@
             Eosinophils
           </div>
           <div class="visit">
-            0.02 − 0.30 · 109/L (0.5 - 5.0%)
+            0.02 − 0.30 · 10<sup>9</sup>/L (0.5 - 5.0%)
           </div>
         </div>
         <div class="table-row">
@@ -115,7 +116,7 @@
             Band neutrophils
           </div>
           <div class="visit">
-            0.04 − 0.30 · 109/L (1 - 6%)
+            0.04 − 0.30 · 10<sup>9</sup>/L (1 - 6%)
           </div>
         </div>
         <div class="table-row">
@@ -126,7 +127,7 @@
             Segmented neutrophils
           </div>
           <div class="visit">
-            2.0 − 5.50 · 109/L (47 - 72%)
+            2.0 − 5.50 · 10<sup>9</sup>/L (47 - 72%)
           </div>
         </div>
         <div class="table-row">
@@ -137,7 +138,7 @@
             Monocytes
           </div>
           <div class="visit">
-            0.09 − 0.60 · 109/L (3 - 11%)
+            0.09 − 0.60 · 10<sup>9</sup>/L (3 - 11%)
           </div>
         </div>
         <div class="table-row">
@@ -148,7 +149,7 @@
             Lymphocytes
           </div>
           <div class="visit">
-            1.2 − 3.0 · 109/L (19 - 37%)
+            1.2 − 3.0 · 10<sup>9</sup>/L (19 - 37%)
           </div>
         </div>
         <div class="table-row">
