@@ -1,5 +1,6 @@
 <template>
   <div class="container mt-5 pt-5">
+    <adsbygoogle />
     <h3 class="mt-5">
       Krok 2 Questions
     </h3>

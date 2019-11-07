@@ -125,6 +125,12 @@ export default {
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
     [
+      '@nuxtjs/google-adsense',
+      {
+        id: 'ca-pub-1797281199494379'
+      }
+    ],
+    [
       'nuxt-i18n',
       {
         seo: true,
