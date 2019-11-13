@@ -19,6 +19,40 @@
           Sign Up
         </button>
       </div>
+      <div class="social-icons">
+        <img
+          src="~/assets/img/login/fb.png"
+          alt="facebook Icon"
+        >
+        <img
+          src="~/assets/img/login/tw.png"
+          alt="Twitter Icon"
+        >
+        <img
+          src="~/assets/img/login/gp.png"
+          alt="Google Icon"
+        >
+      </div>
+
+      <form class="input-group">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="User Name"
+          required
+        >
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Password"
+          required
+        >
+        <input
+          id="remember"
+          type="checkbox"
+          name="remember"
+        ><span>Remember Password</span>
+      </form>
     </div>
   </div>
 </template>
@@ -76,5 +110,33 @@ export default {
   border-radius: 30px;
   background: linear-gradient(to right, #ff105f, #ffad06);
   transition: 0.5s;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+
+  img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0px #7f7f7f3d;
+    border-radius: 50%;
+  }
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
 }
 </style>
