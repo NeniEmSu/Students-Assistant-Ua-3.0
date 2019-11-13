@@ -1,6 +1,6 @@
 <template>
+  <!-- eslint-disable vue/no-v-html  -->
   <div class="container mt-5 pt-5">
-    <adsbygoogle />
     <h3 class="mt-5">
       Krok 2 Questions
     </h3>
@@ -19,12 +19,39 @@
               :title="question.number"
               active
             >
-              <p>{{ question.question }}</p>
+              <style>
+                .detailed {
+                font-family: "Roboto", sans-serif;
+                line-height: 1.929;
+                }
+
+                .normal,
+                .normal mark,
+                .normal em,
+                .normal bold,
+                .normal p {
+                font-family: "Roboto", sans-serif;
+                line-height: 1.929;
+                font-size: 14px;
+                font-style: normal;
+                margin-bottom: 0px;
+                color: #888888;
+                background-color: transparent;
+                font-weight: 400;
+                }
+              </style>
+              <!-- <p>{{ question.question }}</p> -->
+              <div
+                class="normal"
+                v-html="`${question.q_Highlighted}`"
+              />
             </b-tab>
 
             <b-tab title="Highlight Keys">
-              <!--eslint-disable-next-line vue/no-v-html -->
-              <div v-html="`${question.q_Highlighted}`" />
+              <div
+                class="detailed"
+                v-html="`${question.q_Highlighted}`"
+              />
             </b-tab>
             <b-badge
               v-for="(year, i) in question.years"

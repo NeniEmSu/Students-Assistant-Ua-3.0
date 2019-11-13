@@ -162,7 +162,7 @@
                 <li class="d-none d-lg-block">
                   <nuxt-link
                     class="btn_1"
-                    to="/sign-up"
+                    to="/authentication"
                   >
                     Sign Up/in
                   </nuxt-link>

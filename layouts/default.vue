@@ -6,7 +6,7 @@
         <nuxt />
       </vue-page-transition>
     </div>
-
+    <adsbygoogle />
     <TheFooter />
   </div>
 </template>
@@ -30,6 +30,28 @@ html {
 }
 .body-content {
   min-height: 100vh;
+}
+
+// Questions section global
+
+.normal,
+.normal mark,
+.normal em,
+.normal bold,
+.normal p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.929;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 0px;
+  color: #888888;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+.detailed {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.929;
 }
 
 mark {
