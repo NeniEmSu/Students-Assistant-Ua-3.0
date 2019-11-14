@@ -159,6 +159,14 @@
                     Contact
                   </nuxt-link>
                 </li>
+                <li class="nav-item d-block d-lg-none">
+                  <nuxt-link
+                    class="nav-link"
+                    to="/authentication"
+                  >
+                    <strong>Sign Up/in</strong>
+                  </nuxt-link>
+                </li>
                 <li class="d-none d-lg-block">
                   <nuxt-link
                     class="btn_1"
@@ -205,7 +213,7 @@ export default {
       window.addEventListener('scroll', function () {
         const navbar = document.getElementById('nav')
         const navClasses = navbar.classList
-        if (document.documentElement.scrollTop >= 100) {
+        if (document.documentElement.scrollTop >= 160) {
           if (navClasses.contains('menu_fixed') === false) {
             navClasses.toggle('menu_fixed')
             navClasses.toggle('animated')
