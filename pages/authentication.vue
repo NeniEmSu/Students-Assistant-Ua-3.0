@@ -264,6 +264,14 @@ color: $heading_color2;
   position: absolute;
   width: 280px;
   transition: 0.5s;
+
+  @media screen and (max-width: 380px) {
+    width: 240px;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 200px;
+  }
 }
 
 .input-field {
