@@ -6,7 +6,9 @@
         <nuxt />
       </vue-page-transition>
     </div>
-    <adsbygoogle />
+    <div class="container">
+      <adsbygoogle />
+    </div>
     <TheFooter />
   </div>
 </template>

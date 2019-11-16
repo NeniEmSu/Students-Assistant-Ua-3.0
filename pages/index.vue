@@ -8,7 +8,7 @@
 
     <TheMemberCount />
 
-    <TheTopPractices />
+    <ThePackages />
 
     <TheAdvancedFeatures />
 
@@ -23,7 +23,7 @@ import TheHero from '~/components/TheHero'
 import TheFeatures from '~/components/TheFeatures'
 import TheLearning from '~/components/TheLearning'
 import TheMemberCount from '~/components/TheMemberCount'
-import TheTopPractices from '~/components/TheTopPractices'
+import ThePackages from '~/components/ThePackages'
 import TheAdvancedFeatures from '~/components/TheAdvancedFeatures'
 import TheTestimonials from '~/components/TheTestimonials'
 import TheBlogSection from '~/components/TheBlogSection'
@@ -34,7 +34,7 @@ export default {
     TheFeatures,
     TheLearning,
     TheMemberCount,
-    TheTopPractices,
+    ThePackages,
     TheAdvancedFeatures,
     TheTestimonials,
     TheBlogSection

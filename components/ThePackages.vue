@@ -6,7 +6,7 @@
         <div class="col-xl-5">
           <div class="section_tittle text-center">
             <p>Pricing</p>
-            <h2>Packge Levels</h2>
+            <h2>Package Levels</h2>
           </div>
         </div>
       </div>
