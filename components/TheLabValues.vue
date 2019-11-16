@@ -586,10 +586,10 @@
             36
           </div>
           <div class="country">
-            Aspartate aminotransferase
+            Aspartate aminotransferase (AST)
           </div>
           <div class="visit">
-            (AST) 15-40 U/L
+            15-40 U/L
           </div>
         </div>
         <div class="table-row">
@@ -597,10 +597,10 @@
             37
           </div>
           <div class="country">
-            Alanine aminotransferase
+            Alanine aminotransferase (ALT)
           </div>
           <div class="visit">
-            (ALT) 10-40 U/L
+            10-40 U/L
           </div>
         </div>
         <div class="table-row">
@@ -850,7 +850,7 @@
             Thymol turbidity test
           </div>
           <div class="visit">
-            &lt;5U
+            &lt;5 U
           </div>
         </div>
         <div class="table-row">
