@@ -17,7 +17,7 @@
                 Test Practice
               </nuxt-link>
               <nuxt-link
-                to="/authentication"
+                to="/login"
                 class="btn_2"
               >
                 Get Started

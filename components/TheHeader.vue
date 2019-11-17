@@ -162,7 +162,7 @@
                 <li class="nav-item d-block d-lg-none">
                   <nuxt-link
                     class="nav-link"
-                    to="/authentication"
+                    to="/login"
                   >
                     <strong>Sign Up/in</strong>
                   </nuxt-link>
@@ -170,7 +170,7 @@
                 <li class="d-none d-lg-block">
                   <nuxt-link
                     class="btn_1"
-                    to="/authentication"
+                    to="/login"
                   >
                     Sign Up/in
                   </nuxt-link>

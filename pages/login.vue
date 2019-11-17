@@ -2,6 +2,12 @@
   <div>
     <section class="banner_part">
       <div class="container">
+        <b-alert v-if="error" show variant="danger">
+          {{ error + '' }}
+        </b-alert>
+        <b-alert v-if="$auth.$state.redirect" show>
+          You have to login before accessing to <strong>{{ $auth.$state.redirect }}</strong>
+        </b-alert>
         <div class="row align-items-center">
           <div class="col-lg-6 col-xl-6">
             <div class="banner_text">
@@ -14,14 +20,14 @@
                     <button
                       type="button"
                       class="toggle-button"
-                      @click="login"
+                      @click="toggleLogin"
                     >
                       Sign In
                     </button>
                     <button
                       type="button"
                       class="toggle-button"
-                      @click="register"
+                      @click="toggleRegister"
                     >
                       Sign Up
                     </button>
@@ -30,18 +36,23 @@
                     Social Auth
                   </h3>
                   <div class="social-icons">
-                    <a href="#"><img
+                    <img
                       src="~/assets/img/login/fb.png"
                       alt="facebook Icon"
-                    ></a>
-                    <a href="#"><img
+                      style="cursor: pointer;"
+                      @click="$auth.loginWith('facebook')"
+                    >
+                    <img
                       src="~/assets/img/login/tw.png"
                       alt="Twitter Icon"
-                    ></a>
-                    <a href="#"><img
+                      style="cursor: not-allowed;"
+                    >
+                    <img
                       src="~/assets/img/login/gp.png"
                       alt="Google Icon"
-                    ></a>
+                      style="cursor: pointer;"
+                      @click="$auth.loginWith('google')"
+                    >
                   </div>
 
                   <div class="or-hr">
@@ -130,9 +141,35 @@ export default {
   components: {
     ThePackages
   },
+  middleware: ['auth'],
+  data () {
+    return {
+      username: '',
+      password: '123',
+      error: null
+    }
+  },
+  computed: {
+    strategies: () => ([
+      { key: 'auth0', name: 'Auth0', color: '#ec5425' },
+      { key: 'google', name: 'Google', color: '#4284f4' },
+      { key: 'facebook', name: 'Facebook', color: '#3c65c4' },
+      { key: 'github', name: 'GitHub', color: '#202326' }
+    ]),
+    redirect () {
+      return (
+        this.$route.query.redirect &&
+        decodeURIComponent(this.$route.query.redirect)
+      )
+    },
+    isCallback () {
+      return Boolean(this.$route.query.callback)
+    }
+  },
+
   methods: {
 
-    register () {
+    toggleRegister () {
       if (process.client) {
         const x = document.getElementById('signin')
         const y = document.getElementById('signup')
@@ -144,7 +181,7 @@ export default {
       }
     },
 
-    login () {
+    toggleLogin () {
       if (process.client) {
         const x = document.getElementById('signin')
         const y = document.getElementById('signup')
