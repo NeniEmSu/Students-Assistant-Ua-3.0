@@ -45,7 +45,8 @@
                     <img
                       src="~/assets/img/login/tw.png"
                       alt="Twitter Icon"
-                      style="cursor: not-allowed;"
+                      style="cursor: pointer;"
+                      @click="$auth.loginWith('twitter')"
                     >
                     <img
                       src="~/assets/img/login/gp.png"

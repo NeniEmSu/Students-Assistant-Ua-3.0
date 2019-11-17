@@ -10,7 +10,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light ">
             <nuxt-link
-              class="navbar-brand"
+              class=""
               to="/"
             >
               <img
@@ -159,22 +159,41 @@
                     Contact
                   </nuxt-link>
                 </li>
-                <li class="nav-item d-block d-lg-none">
-                  <nuxt-link
-                    class="nav-link"
-                    to="/login"
-                  >
-                    <strong>Sign Up/in</strong>
-                  </nuxt-link>
-                </li>
-                <li class="d-none d-lg-block">
-                  <nuxt-link
-                    class="btn_1"
-                    to="/login"
-                  >
-                    Sign Up/in
-                  </nuxt-link>
-                </li>
+                <template v-if="$auth.$state.loggedIn">
+                  <b-nav-item-dropdown class=" d-block d-lg-none" :text="$auth.user.name" right>
+                    <b-dropdown-item @click="$auth.logout()">
+                      Logout
+                    </b-dropdown-item>
+                  </b-nav-item-dropdown>
+                </template>
+                <template v-else>
+                  <li class="nav-item d-block d-lg-none">
+                    <nuxt-link
+                      class="nav-link"
+                      to="/login"
+                    >
+                      <strong>Sign Up/in</strong>
+                    </nuxt-link>
+                  </li>
+                </template>
+                <template v-if="$auth.$state.loggedIn">
+                  <b-nav-item-dropdown class="d-none d-lg-block" :text="$auth.user.name" right>
+                    <b-dropdown-item @click="$auth.logout()">
+                      Logout
+                    </b-dropdown-item>
+                  </b-nav-item-dropdown>
+                  <b-img :src="picture" class="d-none d-lg-block" rounded="circle" width="30px" height="30px" />
+                </template>
+                <template v-else>
+                  <li class="d-none d-lg-block">
+                    <nuxt-link
+                      class="btn_1"
+                      to="/login"
+                    >
+                      Sign Up/in
+                    </nuxt-link>
+                  </li>
+                </template>
               </ul>
             </div>
           </nav>
@@ -185,6 +204,7 @@
 </template>
 
 <script>
+import dotProp from 'dotprop'
 import clickOutside from '@/directives/click-outside'
 import handleScroll from '@/directives/handle-scroll'
 export default {
@@ -197,6 +217,14 @@ export default {
     return {
       mobileNavOpen: false,
       lastScrollPosition: 0
+    }
+  },
+
+  computed: {
+    picture () {
+      return dotProp(this.$auth.user, 'picture') || // OpenID
+              dotProp(this.$auth.user, 'picture.data.url') || // Facebook graph API
+              dotProp(this.$auth.user, 'avatar_url') // GitHub
     }
   },
   watch: {
@@ -284,20 +312,20 @@ button.dropdown-toggle {
   outline: none;
 }
 
-img {
+.navbar-brand img {
   width: 150px;
   height: auto;
 }
 
 @media screen and (max-width: 770px) {
-  img {
+  .navbar-brand img {
     width: 125px;
     height: auto;
   }
 }
 
 @media screen and (max-width: 425px) {
-  img {
+  .navbar-brand img {
     width: 100px;
     height: auto;
   }

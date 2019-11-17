@@ -295,23 +295,20 @@ export default {
           login: { propertyName: 'token.accessToken' }
         }
       },
-      auth0: {
-        domain: 'nuxt-auth.auth0.com',
-        client_id: 'q8lDHfBLJ-Fsziu7bf351OcYQAIe3UJv'
-      },
       facebook: {
-        client_id: '471862463456237',
+        // client_id: '471862463456237',
+        client_id: '1671464192946675',
         userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
         scope: ['public_profile', 'email', 'user_birthday']
       },
       google: {
         client_id:
-        'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
-        // '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
+        // 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
+        '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
+      },
+      twitter: {
+        client_id: 'FAJNuxjMTicff6ciDKLiZ4t0D'
       }
-      // twitter: {
-      //   client_id: 'FAJNuxjMTicff6ciDKLiZ4t0D'
-      // }
     }
   },
 
