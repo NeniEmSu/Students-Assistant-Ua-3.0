@@ -2,17 +2,13 @@
   <div>
     <section class="banner_part">
       <div class="container">
-        <b-alert v-if="error" show variant="danger">
-          {{ error + '' }}
-        </b-alert>
-        <b-alert v-if="$auth.$state.redirect" show>
-          You have to login before accessing to <strong>{{ $auth.$state.redirect }}</strong>
-        </b-alert>
         <div class="row align-items-center">
           <div class="col-lg-6 col-xl-6">
             <div class="banner_text">
               <div class="banner_text_iner">
-                <h5>Sign in/up manually or with your top social accounts.</h5>
+                <h5>
+                  Sign in/up manually or with your top social accounts.
+                </h5>
                 <h1>Aunthentication</h1>
                 <div class="form-box">
                   <div class="button-box">
@@ -35,7 +31,7 @@
                   <h3 class="text-center">
                     Social Auth
                   </h3>
-                  <div class="social-icons">
+                  <!-- <div class="social-icons">
                     <img
                       src="~/assets/img/login/fb.png"
                       alt="facebook Icon"
@@ -54,14 +50,19 @@
                       style="cursor: pointer;"
                       @click="$auth.loginWith('google')"
                     >
+                  </div> -->
+
+                  <div v-for="s in strategies" :key="s.key" class="mb-2">
+                    <b-btn block :style="{background: s.color}" class="login-button" @click="$auth.loginWith(s.key)">
+                      Login with {{ s.name }}
+                    </b-btn>
                   </div>
 
                   <div class="or-hr">
                     <span>
                       or
                     </span>
-                  </div>
-                  <form
+                  </div>  <form
                     id="signin"
                     class="input-group"
                   >
@@ -152,10 +153,10 @@ export default {
   },
   computed: {
     strategies: () => ([
-      { key: 'auth0', name: 'Auth0', color: '#ec5425' },
+      // { key: 'auth0', name: 'Auth0', color: '#ec5425' },
       { key: 'google', name: 'Google', color: '#4284f4' },
-      { key: 'facebook', name: 'Facebook', color: '#3c65c4' },
-      { key: 'github', name: 'GitHub', color: '#202326' }
+      { key: 'facebook', name: 'Facebook', color: '#3c65c4' }
+      // { key: 'github', name: 'GitHub', color: '#202326' }
     ]),
     redirect () {
       return (

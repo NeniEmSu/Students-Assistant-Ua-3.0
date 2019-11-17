@@ -10,7 +10,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light ">
             <nuxt-link
-              class=""
+              class="navbar-brand"
               to="/"
             >
               <img
@@ -19,6 +19,15 @@
                 class="img-fluid"
               >
             </nuxt-link>
+            <template v-if="$auth.$state.loggedIn">
+              <b-img
+                :src="picture"
+                class="d-block d-lg-none ml-auto mr-2"
+                rounded="circle"
+                width="40px"
+                height="40px"
+              />
+            </template>
             <button
               class="navbar-toggler"
               type="button"
