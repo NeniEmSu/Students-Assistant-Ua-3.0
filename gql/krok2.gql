@@ -2,7 +2,6 @@
   krok2Collection {
     _id
     number
-    question
     q_Highlighted
     correctAnswer
     reason

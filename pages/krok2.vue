@@ -28,7 +28,8 @@
                 .normal,
                 .normal mark,
                 .normal em,
-                .normal bold,
+                .normal b,
+                .normal strong,
                 .normal p {
                 font-family: "Roboto", sans-serif;
                 line-height: 1.929;
@@ -142,7 +143,7 @@ const customLabels = {
 }
 
 export default {
-  middleware: ['auth'],
+  // middleware: ['auth'],
   apollo: {
     krok2Collection: {
       prefetch: true,

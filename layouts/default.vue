@@ -39,7 +39,8 @@ html {
 .normal,
 .normal mark,
 .normal em,
-.normal bold,
+.normal b,
+.normal strong,
 .normal p {
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
