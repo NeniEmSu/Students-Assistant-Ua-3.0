@@ -277,13 +277,13 @@ export default {
     scss: ['~/assets/scss/_variables.scss', '~/assets/scss/_mixins.scss']
   },
 
-  axios: {
-    proxy: true
-  },
+  // axios: {
+  //   proxy: true
+  // },
 
-  proxy: {
-    '/api': 'https://students-assistant.com'
-  },
+  // proxy: {
+  //   '/api': 'https://students-assistant.com'
+  // },
 
   auth: {
     redirect: {
@@ -292,7 +292,8 @@ export default {
     strategies: {
       local: {
         endpoints: {
-          login: { propertyName: 'token.accessToken' }
+          login: false
+          // { propertyName: 'token.accessToken' }
         }
       },
       facebook: {
