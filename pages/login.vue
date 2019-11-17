@@ -52,8 +52,8 @@
                     >
                   </div> -->
 
-                  <div v-for="s in strategies" :key="s.key" class="mb-2">
-                    <b-btn block :style="{background: s.color}" class="login-button" @click="$auth.loginWith(s.key)">
+                  <div v-for="s in strategies" :key="s.key" class="mb-2 mx-auto">
+                    <b-btn block :style="{background: s.color}" class="login-button w-75 mx-auto" @click="$auth.loginWith(s.key)">
                       Login with {{ s.name }}
                     </b-btn>
                   </div>

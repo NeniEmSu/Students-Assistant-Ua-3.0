@@ -282,7 +282,7 @@ export default {
   },
 
   proxy: {
-    '/api': 'http://localhost:5000'
+    '/api': 'https://students-assistant.com'
   },
 
   auth: {
