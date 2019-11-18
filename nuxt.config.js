@@ -311,7 +311,8 @@ export default {
       },
       google: {
         client_id:
-          '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
+           '282562353167-dg9hfr4e8m264k83cum7v6qdkd63nt85.apps.googleusercontent.com'
+          // '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
       },
       twitter: {
         client_id: 'FAJNuxjMTicff6ciDKLiZ4t0D'
