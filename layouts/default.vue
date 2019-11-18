@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import dotProp from 'dotprop'
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
 
@@ -22,6 +23,13 @@ export default {
   components: {
     TheHeader,
     TheFooter
+  },
+  computed: {
+    picture () {
+      return dotProp(this.$auth.user, 'picture') || // OpenID
+              dotProp(this.$auth.user, 'picture.data.url') || // Facebook graph API
+              dotProp(this.$auth.user, 'avatar_url') // GitHub
+    }
   }
 }
 </script>

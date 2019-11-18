@@ -143,7 +143,7 @@ const customLabels = {
 }
 
 export default {
-  // middleware: ['auth'],
+  middleware: ['auth'],
   apollo: {
     krok2Collection: {
       prefetch: true,

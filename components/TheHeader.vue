@@ -179,7 +179,7 @@
                   <li class="nav-item d-block d-lg-none">
                     <nuxt-link
                       class="nav-link"
-                      to="/login"
+                      to="/authentication"
                     >
                       <strong>Sign Up/in</strong>
                     </nuxt-link>
@@ -187,7 +187,7 @@
                 </template>
                 <template v-if="$auth.$state.loggedIn">
                   <b-nav-item-dropdown class="d-none d-lg-block" :text="$auth.user.name" right>
-                    <b-dropdown-item @click="$auth.logout()">
+                    <b-dropdown-item @click="logout">
                       Logout
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
@@ -197,7 +197,7 @@
                   <li class="d-none d-lg-block">
                     <nuxt-link
                       class="btn_1"
-                      to="/login"
+                      to="/authentication"
                     >
                       Sign Up/in
                     </nuxt-link>
@@ -274,6 +274,10 @@ export default {
     },
     hide () {
       this.mobileNavOpen = false
+    },
+
+    async logout () {
+      await this.$auth.logout()
     },
 
     onScroll () {
