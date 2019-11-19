@@ -175,7 +175,7 @@
             <p>Under Construction! <i class="fas fa-tools" /> </p>
             <p>Done! <i class="fas fa-check-circle" /></p>
             <ul class="unordered-list">
-              <li><a href="#">General Practice (Family medicine)</a><i class="fas fa-tools" /></li>
+              <!-- <li><a href="#">General Practice (Family medicine)</a><i class="fas fa-tools" /></li> -->
 
               <li><a href="https://drive.google.com/drive/folders/11NYAzeSgjlyaUBzg854OzfqxGv0Pv7Df?usp=sharing" target="_blank"> Download Hygiene and ecology Practice App</a><i class="fas fa-check-circle" /></li>
               <li>
@@ -214,7 +214,7 @@
         </p>
         <a href="https://drive.google.com/open?id=1S3NXh80JszhTZVN9i3-9K8_yacCdJN2t" target="_blank">
           Download Practice App</a><i class="fas fa-check-circle" />
-        <h3>BSN 2nd Course 2st semester</h3>
+        <h3>BSN 2nd Course 2nd semester</h3>
         <p>
           <strong>After Clicking On Link, Download and Extract Folder onto Device </strong> <br>
           This folder contains practice for Biochemistry, Leadership in nursing, Microbiology, Nutrition
