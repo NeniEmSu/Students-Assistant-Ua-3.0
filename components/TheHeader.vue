@@ -97,7 +97,13 @@
                     >
                       krok 2 Pediatrics
                     </nuxt-link>
+
                     <nuxt-link
+                      class="dropdown-item"
+                      to="/krok-2-hyhiene"
+                    >
+                      krok 2 Hygine
+                    </nuxt-link>                    <nuxt-link
                       class="dropdown-item"
                       to="/semesterExam"
                     >

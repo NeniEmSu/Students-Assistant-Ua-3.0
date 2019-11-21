@@ -2,7 +2,7 @@
   <!-- eslint-disable vue/no-v-html  -->
   <div class="container mt-5 pt-5">
     <h3 class="mt-5">
-      Krok 2 Questions
+      Krok 2 Hygiene Questions Questions
     </h3>
     <div v-if="$apolloData.loading">
       Loading...
@@ -54,21 +54,23 @@
                 v-html="`${question.q_Highlighted}`"
               />
             </b-tab>
-            <b-badge
-              pill
-              variant="success"
-            >
-              {{ question.subject }}
-            </b-badge>
-            <b-badge
+            <!-- <b-badge
               v-for="(year, i) in question.years"
               :key="i"
               pill
               variant="info"
             >
               {{ year }}
-            </b-badge>
+            </b-badge> -->
           </b-tabs>
+          <!-- <b-badge
+            v-for="(year, i) in question.years"
+            :key="i"
+            pill
+            variant="info"
+          >
+            {{ year }}
+          </b-badge> -->
         </div>
         <div
           v-for="(option, index) in shuffle(question.options)"
@@ -119,14 +121,14 @@
       </li>
     </ul>
     <jw-pagination
-      :items="krok2Collection"
+      :items="Krok2HygieneCollection"
       :page-size="parseInt(pageCount)"
       :labels="customLabels"
       @changePage="onChangePage"
     />
 
     <div class="comments">
-      <vue-disqus shortname="students-assistant" :identifier="disqusIdentifier" url="https://students-assistant.com/krok2" />
+      <vue-disqus shortname="students-assistant" :identifier="disqusIdentifier" url="https://students-assistant.com/krok-2-hygiene" />
     </div>
 
     <TheLabValues />
@@ -135,7 +137,7 @@
 
 <script>
 import TheLabValues from '~/components/TheLabValues'
-import krok2Collection from '~/gql/krok2'
+import Krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
 
 const customLabels = {
   first: 'First',
@@ -147,18 +149,15 @@ const customLabels = {
 export default {
   // middleware: ['auth'],
   apollo: {
-    krok2Collection: {
+    Krok2HygieneCollection: {
       prefetch: true,
-      query: krok2Collection
+      query: Krok2HygieneCollection
     }
   },
   filters: {
     charIndex (i) {
       return String.fromCharCode(97 + i)
     }
-  },
-  head: {
-    title: 'Krok 2 questions'
   },
 
   components: {
@@ -170,7 +169,7 @@ export default {
       pageOfItems: [],
       customLabels,
       pageCount: '1',
-      disqusIdentifier: 'Krok2'
+      disqusIdentifier: 'Krok2Hygiene'
     }
   },
 
@@ -190,6 +189,9 @@ export default {
         document.body.scrollTop = document.documentElement.scrollTop = 0
       }
     }
+  },
+  head: {
+    title: 'Krok 2 questions'
   }
 }
 </script>

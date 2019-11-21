@@ -1,14 +1,10 @@
-{
-  krok2Collection {
-    _id
+{Krok2HygieneCollection {
+   _id
     number
     q_Highlighted
     correctAnswer
     reason
-    subject
-    years
     options {
       value
     }
-  }
-}
+}}
