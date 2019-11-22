@@ -5,7 +5,7 @@
       Krok 2 Hygiene Questions Questions
     </h3>
     <div v-if="$apolloData.loading">
-      Loading...
+      <TheLoading />
     </div>
     <ul v-else>
       <li
@@ -138,6 +138,7 @@
 <script>
 import TheLabValues from '~/components/TheLabValues'
 import Krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
+import TheLoading from '~/components/TheLoading'
 
 const customLabels = {
   first: 'First',
@@ -161,7 +162,8 @@ export default {
   },
 
   components: {
-    TheLabValues
+    TheLabValues,
+    TheLoading
   },
 
   data () {

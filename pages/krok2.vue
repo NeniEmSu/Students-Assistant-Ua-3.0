@@ -5,7 +5,7 @@
       Krok 2 Questions
     </h3>
     <div v-if="$apolloData.loading">
-      Loading...
+      <TheLoading />
     </div>
     <ul v-else>
       <li
@@ -135,6 +135,7 @@
 
 <script>
 import TheLabValues from '~/components/TheLabValues'
+import TheLoading from '~/components/TheLoading'
 import krok2Collection from '~/gql/krok2'
 
 const customLabels = {
@@ -162,7 +163,8 @@ export default {
   },
 
   components: {
-    TheLabValues
+    TheLabValues,
+    TheLoading
   },
 
   data () {
