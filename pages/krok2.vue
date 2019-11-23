@@ -56,7 +56,7 @@
             </b-tab>
             <b-badge
               pill
-              variant="success"
+              variant="dark"
             >
               {{ question.subject }}
             </b-badge>
