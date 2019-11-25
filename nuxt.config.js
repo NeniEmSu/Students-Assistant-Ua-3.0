@@ -115,7 +115,11 @@ export default {
     }
   ],
 
-  buildModules: ['@nuxtjs/eslint-module'],
+  buildModules: ['@nuxtjs/eslint-module',
+  ['@nuxtjs/google-analytics', {
+    id: 'UA-153274070-1'
+  }]
+],
 
   modules: [
     '@nuxtjs/apollo',
@@ -126,6 +130,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-W3F2H8Q' }],
     [
       '@nuxtjs/google-adsense',
       {
