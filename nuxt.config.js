@@ -6,7 +6,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || 'Students Assistant',
     meta: [
       {
         charset: 'utf-8'
@@ -23,6 +23,21 @@ export default {
           'Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.'
       },
       {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'students assistant, exam preparations, examinations, medical university, students assistant app, student assistant app, student assistant application, a student research assistant, student assistant benefits, student assistant exam, student assistant evaluation, student assistant high school, student assistant library, student assistant research, student assistant training, student assistant teacher, practice test for postal exams 473 free, practice test for nursing exams, medical assistant practice test for written exams, ukrainian medical schools ranking, best ukrainian medical school,  ukraine, education, learn, classes, exam preparation, students, assistant, studentsassistant, ternopil, kiev, test-practice, international students, medical university, study in ukraine, study smart, mcq practice, directions to school buildings, study notes, study tips, educational, tdmu, tdmuexams, tdmu exam practice'
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'Students Assistant'
+      },
+      {
+        hid: 'application-name',
+        name: 'application-name',
+        content: 'Students Assistant'
+      },
+      {
         name: 'robots',
         content: 'index, follow'
       },
@@ -35,8 +50,48 @@ export default {
         content: '@NeniEmmanuel'
       },
       {
+        hid: 'og:title',
+        name: 'og:title',
+        property: 'og:title',
+        content: 'Students Assistant'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Students Assistant'
+      },
+      {
+        hid: 'og:url',
+        name: 'og:url',
+        property: 'og:url',
+        content: 'https://students-assistant.com/'
+      },
+      {
+        hid: 'og:type',
+        name: 'og:type',
         property: 'og:type',
-        content: 'profile'
+        content: 'website'
+      },
+      {
+        hid: 'og:locale',
+        name: 'og:locale',
+        property: 'og:locale',
+        content: 'us_EN'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        property: 'og:description',
+        content:
+          process.env.npm_package_description ||
+          'Students Assistant is your one stop to the In and outs of studying as a medical student here in Ukraine, we aim to get you the best for your money.'
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        property: 'og:image',
+        content: '/icon.png'
       },
       {
         property: 'og:updated_time',
