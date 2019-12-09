@@ -2,11 +2,12 @@
   <!-- eslint-disable vue/no-v-html  -->
   <div class="container mt-5 pt-5">
     <h3 class="mt-5">
-      Krok 2 Hygiene Questions Questions
+      Krok 2 Hygiene Questions
     </h3>
     <div v-if="$apolloData.loading">
       <TheLoading />
     </div>
+    
     <ul v-else>
       <li
         v-for="(question) in pageOfItems"
@@ -121,14 +122,14 @@
       </li>
     </ul>
     <jw-pagination
-      :items="Krok2HygieneCollection"
-      :page-size="parseInt(pageCount)"
+      :items="krok2HygieneCollection"
+      :page-size="1"
       :labels="customLabels"
       @changePage="onChangePage"
     />
 
     <div class="comments">
-      <vue-disqus shortname="students-assistant" :identifier="disqusIdentifier" url="https://students-assistant.com/krok-2-hygiene" />
+      <vue-disqus shortname="students-assistant" identifier="krok2HygieneCollection" url="https://students-assistant.com/krok-2-hygiene" />
     </div>
 
     <TheLabValues />
@@ -137,7 +138,7 @@
 
 <script>
 import TheLabValues from '~/components/TheLabValues'
-import Krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
+import krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
 import TheLoading from '~/components/TheLoading'
 
 const customLabels = {
@@ -150,9 +151,9 @@ const customLabels = {
 export default {
   // middleware: ['auth'],
   apollo: {
-    Krok2HygieneCollection: {
+    krok2HygieneCollection: {
       prefetch: true,
-      query: Krok2HygieneCollection
+      query: krok2HygieneCollection
     }
   },
   filters: {

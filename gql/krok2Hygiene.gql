@@ -1,10 +1,13 @@
-{Krok2HygieneCollection {
-   _id
+{
+  krok2HygieneCollection {
+    _id
     number
+    question
     q_Highlighted
     correctAnswer
     reason
     options {
       value
     }
-}}
+  }
+}

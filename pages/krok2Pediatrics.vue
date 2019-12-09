@@ -77,10 +77,14 @@
     </ul>
     <jw-pagination
       :items="krok2PediatricsCollection"
-      :page-size="parseInt(pageCount)"
+      :page-size="1"
       :labels="customLabels"
       @changePage="onChangePage"
     />
+
+    <div class="comments">
+      <vue-disqus shortname="students-assistant" identifier="krok2PediatricsCollection" url="https://students-assistant.com/krok-2-hygiene" />
+    </div>
   </div>
 </template>
 

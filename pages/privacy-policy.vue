@@ -32,15 +32,22 @@
       </h3>
 
       <p class="sample-text">
-        Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>
+        Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a>
       </p>
 
+      <h3 id="comments" class="text-heading">
+        Comments Privacy Policy
+      </h3>
+
+      <p class="sample-text">
+        Students Assistant uses Disqus for comment collection and for displaying on the site and abides by there previously stipulated terms of servic. For futher clarification visit the Disques Privacy Policy at the following URL – <a target="_blank" href="https://help.disqus.com/en/articles/1717103-disqus-privacy-policy">Disqus Privacy Policy </a>
+      </p>
       <h3 class="text-heading">
         Privacy Policies
       </h3>
 
       <p class="sample-text">
-        You may consult this list to find the Privacy Policy for each of the advertising partners of Students Assistant. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.generateprivacypolicy.com">Generate Privacy Policy Generator</a>.
+        You may consult this list to find the Privacy Policy for each of the advertising partners of Students Assistant. Our Privacy Policy was created with the help of the <a target="_blank" href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a target="_blank" href="https://www.generateprivacypolicy.com">Generate Privacy Policy Generator</a>.
       </p>
 
       <p class="sample-text">

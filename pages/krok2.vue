@@ -126,7 +126,7 @@
     />
 
     <div class="comments">
-      <vue-disqus shortname="students-assistant" :identifier="disqusIdentifier" url="https://students-assistant.com/krok2" />
+      <vue-disqus shortname="students-assistant" identifier="krok2Collection" url="https://students-assistant.com/krok2" />
     </div>
 
     <TheLabValues />
