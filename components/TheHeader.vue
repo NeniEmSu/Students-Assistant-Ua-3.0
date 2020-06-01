@@ -93,6 +93,12 @@
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
+                      to="/quiz"
+                    >
+                      Quiz test
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
                       to="/krok2Pediatrics"
                     >
                       krok 2 Pediatrics
