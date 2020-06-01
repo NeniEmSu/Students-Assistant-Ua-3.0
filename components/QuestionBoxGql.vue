@@ -1,52 +1,55 @@
 <template>
   <div class="question-box-container mt-5 pt-5">
     <!-- eslint-disable vue/no-v-html -->
-    <div class="mb-3"> 
-      <h3 class="mt-4">
-        Krok 2 Questions
-      </h3>
+    <div class="mb-3">
+      <h1 class="mt-4">
+        {{ title }}
+      </h1>
       <div>
         Score: {{ numCorrect }}/{{ numTotal }}
       </div>
-      <b-tabs content-class="mt-3">
+      <b-tabs v-model="tabIndex" content-class="mt-3">
         <b-tab
-          :title="(questionNumber+1).toString()"
+          :title="(currentQuestion.number).toString()"
           active
         >
           <div
             class="normal"
-            v-html="currentQuestion.question"
+            v-html="currentQuestion.q_Highlighted"
           />
         </b-tab>
 
         <b-tab title="Highlight Keys">
           <div
             class="detailed"
-            v-html="currentQuestion.question"
+            v-html="currentQuestion.q_Highlighted"
           />
         </b-tab>
-        <!-- <b-badge
-              pill
-              variant="dark"
-            >
-              {{ question.subject }}
-            </b-badge>
-            <b-badge
-              v-for="(year, i) in question.years"
-              :key="i"
-              pill
-              variant="info"
-            >
-              {{ year }}
-            </b-badge> -->
+        <b-badge
+          v-if="currentQuestion.subject"
+          pill
+          variant="dark"
+        >
+          {{ currentQuestion.subject }}
+        </b-badge>
+        <b-badge
+          v-for="(year, i) in currentQuestion.years"
+          :key="i"
+          pill
+          variant="info"
+        >
+          {{ year }}
+        </b-badge>
       </b-tabs>
     </div>
 
-    <div
+    <button
       v-for="(answer, index) in shuffledAnswers"
+      :id="index"
       :key="index"
       :class="answerClass(index)"
-      class="choice-container"
+      class="choice-container p-0"
+      :disabled="selectedIndex !== null || answered"
       @click.prevent="selectAnswer(index)"
     >
       <p class="choice-prefix text-uppercase mb-0">
@@ -55,7 +58,7 @@
       <p class="choice-text mb-0">
         {{ answer }}
       </p>
-    </div>
+    </button>
 
     <div class="mb-2">
       <b-button
@@ -67,11 +70,12 @@
         Submit
       </b-button>
       <b-button
-        v-else-if="answered && questionNumber +1 !== numTotal"
+        v-else-if="answered && currentQuestion.number !== numTotal"
         variant="success"
-        @click="next"
+        :disabled="autoNext"
+        @click="callNext"
       >
-        Next
+        Next <span v-if="answered && autoNext && currentQuestion.number !== numTotal">in {{ countDown }}</span>
       </b-button>
       <p v-else>
         You've successully finished the quiz.
@@ -109,20 +113,28 @@
       </div>
     </div>
 
-    <b-progress
-      v-if="answered && autoNext && questionNumber +1 !== numTotal"
-      :value="countDown"
-      :max="max"
-      show-progress
-      animated
-    />
+    <div class="mb-2">
+      <b-button
+        v-b-toggle="`accordion-${currentQuestion._id}-inner`"
+        size="sm"
+      >
+        Reason/Explanation
+      </b-button>
+      <b-collapse
+        :id="`accordion-${currentQuestion._id}-inner`"
+        class="mt-2"
+      >
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <b-card>
+          <div v-html="currentQuestion.reason" />
+        </b-card>
+      </b-collapse>
+    </div>
   </div>
 </template>
 
 <script>
 /* eslint-disable vue/require-default-prop */
-// import _ from 'lodash'
-
 export default {
   filters: {
     charIndex (i) {
@@ -131,11 +143,11 @@ export default {
   },
   props: {
     currentQuestion: Object,
-    questionNumber: Number,
     numTotal: Number,
     next: Function,
     increment: Function,
-    numCorrect: Number
+    numCorrect: Number,
+    title: String
   },
   data: function () {
     return {
@@ -146,18 +158,11 @@ export default {
       autoCheck: true,
       autoNext: true,
       max: 5,
-      countDown: 5
+      countDown: 5,
+      tabIndex: 0,
     }
   },
   computed: {
-    answers () {
-      // this function is no longer used in finished code
-      // it is replaced by the watch function below and the
-      // shuffleAnswers method
-      let answers = [...this.currentQuestion.incorrect_answers]
-      answers.push(this.currentQuestion.correct_answer)
-      return answers
-    }
   },
   watch: {
     currentQuestion: {
@@ -193,13 +198,22 @@ export default {
       }, 1000)
     },
     autoCallNext () {
-      if (this.autoNext && this.questionNumber + 1 !== this.numTotal) {
+      if (this.autoNext && this.currentQuestion.number !== this.numTotal) {
         this.countDownTimer()
         const self = this
-        setTimeout(function () { self.next() }, 5000)
+        setTimeout(function () { self.tabIndex = 0, self.next() }, 5000)
       }
-
     },
+
+    callNext (autoCallNext) {
+      if (this.autoNext) {
+        clearTimeout(autoCallNext);
+      }
+        this.tabIndex = 0, 
+        this.next()
+      
+    },
+
     submitAnswer () {
       let isCorrect = false
 
@@ -218,9 +232,12 @@ export default {
       return answers
     },
     shuffleAnswers () {
-      let answers = [...this.currentQuestion.incorrect_answers, this.currentQuestion.correct_answer]
+      const incorrect_answers = this.currentQuestion.options.map((item) => {
+        return item.value
+      })
+      let answers = [...incorrect_answers, this.currentQuestion.correctAnswer]
       this.shuffledAnswers = this.shuffle(answers)
-      this.correctIndex = this.shuffledAnswers.indexOf(this.currentQuestion.correct_answer)
+      this.correctIndex = this.shuffledAnswers.indexOf(this.currentQuestion.correctAnswer)
     },
     answerClass (index) {
       let answerClass = ''
@@ -242,56 +259,48 @@ export default {
 }
 </script>
 
-<style scoped>
-/* .list-group {
-  margin-bottom: 15px;
-}
-
-.list-group-item:hover {
-  background: #eee;
-  cursor: pointer;
-}
-
-.btn {
-  margin: 0 5px;
-}
-
-
-
-.correct,
-.correct:hover {
-  background-color: lightgreen;
-}
-
-.incorrect,
-.incorrect:hover {
-  background-color: red;
-} */
-
+<style lang="scss" scoped>
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
   width: 100%;
   border: 0.1rem solid rgba(5, 13, 20, 0.25);
   background-color: white;
-}
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  &:disabled,
+  &:disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: translateY(0);
+  }
 
-.choice-container:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+  &.correct,
+  &.incorrect {
+
+    .choice-text{
+      color: white;
+    }
+    
+  }
 }
 
 .choice-prefix {
   padding: 0.5rem 2.5rem;
   background-color: #56a5eb;
   color: white;
+
+  
 }
 
 .choice-text {
   padding: 0.5rem;
   width: 100%;
+  text-align: left;
 }
 
 .selected,
@@ -299,12 +308,14 @@ export default {
   background-color: lightblue;
 }
 
-.correct {
-  background-color: #09631e;
+.correct,
+.correct:hover {
+  background-color: #28a745;
   color: white;
 }
 
-.incorrect {
+.incorrect,
+.incorrect:hover {
   background-color: #b91626;
   color: white;
 }
@@ -312,6 +323,12 @@ export default {
 .detailed {
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
+  font-size: 1.05rem;
+  font-style: normal;
+  margin-bottom: 0px;
+  color: #888888;
+  background-color: transparent;
+  font-weight: 400;
 }
 
 .normal,

@@ -340,36 +340,36 @@ export default {
   proxy: {
     '/api': 'http://localhost:3000'
   },
-  auth: {
-    redirect: {
-      login: '/authentication',
-      logout: '/',
-      callback: '/callback',
-      home: `false`
-    },
-    strategies: {
-      local: {
-        endpoints: {
-          login: { propertyName: 'token.accessToken' }
-        }
-      },
-      auth0: {
-        domain: 'nuxt-auth.auth0.com',
-        client_id: 'q8lDHfBLJ-Fsziu7bf351OcYQAIe3UJv'
-      },
-      facebook: {
-        client_id: '1671464192946675',
-        userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
-        scope: ['public_profile', 'email', 'user_birthday']
-      },
-      google: {
-        client_id:
-           '282562353167-dg9hfr4e8m264k83cum7v6qdkd63nt85.apps.googleusercontent.com'
-        // '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
-      },
-      twitter: {
-        client_id: 'FAJNuxjMTicff6ciDKLiZ4t0D'
-      }
-    }
-  }
+  // auth: {
+  //   redirect: {
+  //     login: '/authentication',
+  //     logout: '/',
+  //     callback: '/callback',
+  //     home: `false`
+  //   },
+  //   strategies: {
+  //     local: {
+  //       endpoints: {
+  //         login: { propertyName: 'token.accessToken' }
+  //       }
+  //     },
+  //     auth0: {
+  //       domain: 'nuxt-auth.auth0.com',
+  //       client_id: 'q8lDHfBLJ-Fsziu7bf351OcYQAIe3UJv'
+  //     },
+  //     facebook: {
+  //       client_id: '1671464192946675',
+  //       userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
+  //       scope: ['public_profile', 'email', 'user_birthday']
+  //     },
+  //     google: {
+  //       client_id:
+  //          '282562353167-dg9hfr4e8m264k83cum7v6qdkd63nt85.apps.googleusercontent.com'
+  //       // '956748748298-kr2t08kdbjq3ke18m3vkl6k843mra1cg.apps.googleusercontent.com'
+  //     },
+  //     twitter: {
+  //       client_id: 'FAJNuxjMTicff6ciDKLiZ4t0D'
+  //     }
+  //   }
+  // }
 }

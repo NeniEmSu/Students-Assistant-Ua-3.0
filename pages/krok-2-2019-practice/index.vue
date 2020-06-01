@@ -7,8 +7,8 @@
       <b-row v-else>
         <b-col>
           <QuestionBox
-            :current-question="krok2HygieneCollection[index]"
-            :next="next"            
+            :current-question="krok2019Collection[index]"
+            :next="next"
             :increment="increment"
             :num-total="numTotal"
             :num-correct="numCorrect"
@@ -18,7 +18,7 @@
       </b-row>
 
       <div class="comments">
-        <vue-disqus shortname="students-assistant" identifier="krok2HygieneCollection" url="https://students-assistant.com/krok2" />
+        <vue-disqus shortname="students-assistant" identifier="krok2_2019Collection" url="https://students-assistant.com/krok2" />
       </div>
 
       <TheLabValues />
@@ -29,45 +29,44 @@
 <script>
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
+import krok2019Collection from '~/gql/krok2-2019'
 import TheLoading from '~/components/TheLoading'
-import krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
 
 export default {
-  // middleware: ['auth'],
- apollo: {
-    krok2HygieneCollection: {
-      prefetch: true,
-      query: krok2HygieneCollection
-    }
-  },
+  name: 'Krok2',
   head: {
-    title: 'Krok 2 Hygiene Bases'
+    title: 'Krok 2 2019 Practice'
   },
 
   components: {
-    TheLabValues,
     QuestionBox,
-    TheLoading
+    TheLoading,
+    TheLabValues
   },
-
-  data () {
+   apollo: {
+    krok2019Collection: {
+      prefetch: true,
+      query: krok2019Collection
+    }
+  },
+  data() {
     return {
-      title: 'Krok 2 Hygiene Bases',
-      disqusIdentifier: 'Krok2',
+      title: 'Krok 2 2019 Practice',
       index: 0,
       numCorrect: 0,
     }
   },
-
   computed: {
     numTotal() {
-       return this.krok2HygieneCollection.length      
+       return this.krok2019Collection.length      
     },
   },
-
   methods: {
     next() {
       this.index++
+    },
+    previous() {
+      this.index--
     },
     increment(isCorrect) {
       if (isCorrect) {

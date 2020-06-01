@@ -44,6 +44,11 @@ html {
 
 // Questions section global
 
+.detailed {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.929;
+}
+
 .normal,
 .normal mark,
 .normal em,
@@ -52,19 +57,13 @@ html {
 .normal p {
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
-  font-size: 14px;
+  font-size: 1.05rem;
   font-style: normal;
   margin-bottom: 0px;
   color: #888888;
   background-color: transparent;
   font-weight: 400;
 }
-
-.detailed {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.929;
-}
-
 mark {
   // background-color: rgba(0, 255, 0, 0.5);
   background-color: rgba(255, 255, 0, 0.4);

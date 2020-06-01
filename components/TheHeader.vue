@@ -79,12 +79,12 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <nuxt-link
+                    <!-- <nuxt-link
                       class="dropdown-item"
                       to="/krok1"
                     >
                       Krok 1 general practice
-                    </nuxt-link>
+                    </nuxt-link> -->
                     <nuxt-link
                       class="dropdown-item"
                       to="/krok2"
@@ -93,9 +93,9 @@
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
-                      to="/quiz"
+                      to="/krok-2-2019-practice"
                     >
-                      Quiz test
+                      Krok 2 2019
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
@@ -109,11 +109,6 @@
                       to="/krok-2-hygiene"
                     >
                       krok 2 Hygine
-                    </nuxt-link>                    <nuxt-link
-                      class="dropdown-item"
-                      to="/semesterExam"
-                    >
-                      Semester Exam
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"

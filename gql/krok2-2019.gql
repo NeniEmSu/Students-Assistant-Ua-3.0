@@ -1,0 +1,14 @@
+query Krok_2_2019 {
+  krok2019Collection(limit: 200, skip: 0) {
+    number
+    _id
+    question
+    q_Highlighted
+    reason
+    correctAnswer
+    options {
+      value
+    }
+    years
+  }
+}
