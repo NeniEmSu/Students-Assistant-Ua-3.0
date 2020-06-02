@@ -1,20 +1,21 @@
 <template>
   <div class="overlay">
-    <img src="~/assets/img/loading.svg" alt="Loading...">
+    <div class="text-center m-auto">
+      <img src="~/assets/img/loading.svg" alt="Loading...">
+      <h3>Loading...</h3>
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .overlay {
-  position: absolute;
+  position: relative;;
   background-color: rgba(255, 255, 255, 0.5);
   color: grey;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  min-height: 50px;
+  margin: 120px auto 0 auto;
 }
 </style>
