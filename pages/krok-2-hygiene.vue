@@ -13,6 +13,7 @@
             :num-total="numTotal"
             :num-correct="numCorrect"
             :title="title"
+            :question-number="index"
             :reset-index="resetIndex"
           />
         </b-col>

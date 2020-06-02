@@ -5,9 +5,9 @@
       <h1 class="mt-4">
         {{ title }}
       </h1>
-      <div>
-        Score: {{ numCorrect }}/{{ numTotal }}
-      </div>
+      <p>
+        Number of questions answered: {{ questionNumber }}/{{ numTotal }}
+      </p>
       <b-tabs v-model="tabIndex" content-class="mt-3">
         <b-tab
           :title="(currentQuestion.number).toString()"
@@ -149,6 +149,7 @@ export default {
   props: {
     currentQuestion: Object,
     numTotal: Number,
+    questionNumber: Number,
     next: Function,
     resetIndex: Function,
     increment: Function,

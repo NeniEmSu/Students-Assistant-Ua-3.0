@@ -5,6 +5,7 @@ query Krok_2_2019 {
     question
     q_Highlighted
     reason
+    subject
     correctAnswer
     options {
       value
