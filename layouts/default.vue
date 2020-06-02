@@ -47,9 +47,20 @@ html {
 .detailed {
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
+  font-size: 1rem;
+  font-style: normal;
+  margin-bottom: 0px;
+  color: #888888;
+  background-color: transparent;
+  font-weight: 400;
+
+  // * {
+  //   font-size: 1rem;
+  // }
 }
 
 .normal,
+// .normal *,
 .normal mark,
 .normal em,
 .normal b,
@@ -57,7 +68,7 @@ html {
 .normal p {
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-style: normal;
   margin-bottom: 0px;
   color: #888888;

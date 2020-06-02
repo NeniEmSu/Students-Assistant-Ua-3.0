@@ -13,6 +13,7 @@
             :num-total="numTotal"
             :num-correct="numCorrect"
             :title="title"
+            :reset-index="resetIndex"
           />
         </b-col>
       </b-row>
@@ -61,12 +62,25 @@ export default {
        return this.krok2019Collection.length      
     },
   },
+  watch: {
+    index (newIndex) {
+      localStorage.index = newIndex
+    },
+  },
+  mounted () {
+    if (localStorage.index) {
+      this.index = JSON.parse(localStorage.index)  
+    }
+  },
   methods: {
     next() {
       this.index++
     },
     previous() {
       this.index--
+    },
+    resetIndex() {
+      this.index = 0
     },
     increment(isCorrect) {
       if (isCorrect) {

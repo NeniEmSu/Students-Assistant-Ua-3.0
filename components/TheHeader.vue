@@ -87,7 +87,7 @@
                     </nuxt-link> -->
                     <nuxt-link
                       class="dropdown-item"
-                      to="/krok2"
+                      to="/krok-2-combined-practice"
                     >
                       Krok 2 general practice
                     </nuxt-link>
@@ -99,7 +99,7 @@
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
-                      to="/krok2Pediatrics"
+                      to="/krok-2-pediatrics"
                     >
                       krok 2 Pediatrics
                     </nuxt-link>

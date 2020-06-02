@@ -52,10 +52,10 @@
       :disabled="selectedIndex !== null || answered"
       @click.prevent="selectAnswer(index)"
     >
-      <p class="choice-prefix text-uppercase mb-0">
-        {{ index | charIndex }}
+      <p class="choice-prefix text-uppercase">
+        {{ index | charIndex }}.
       </p>
-      <p class="choice-text mb-0">
+      <p class="choice-text">
         {{ answer }}
       </p>
     </button>
@@ -83,7 +83,7 @@
     </div>
 
     <div class="mb-2 d-flex">
-      <div class="form-check mr-2">
+      <div class="form-check my-auto mr-3">
         <label class="form-check-label">
           <input
             id="autoCheck"
@@ -91,13 +91,12 @@
             type="checkbox"
             class="form-check-input"
             name="autoCheck"
-            value="autoCheck"
             checked
           >
           Auto Check
         </label>
       </div>
-      <div class="form-check">
+      <div class="form-check my-auto mr-3">
         <label class="form-check-label">
           <input
             id="autoNext"
@@ -105,12 +104,18 @@
             type="checkbox"
             class="form-check-input"
             name="autoNext"
-            value="autoNext"
             checked
           >
           Auto Next
         </label>
       </div>
+      <b-button
+        class="ml-auto"
+        variant="danger"
+        @click="resetIndex"
+      >
+        Reset
+      </b-button>
     </div>
 
     <div class="mb-2">
@@ -145,6 +150,7 @@ export default {
     currentQuestion: Object,
     numTotal: Number,
     next: Function,
+    resetIndex: Function,
     increment: Function,
     numCorrect: Number,
     title: String
@@ -173,6 +179,21 @@ export default {
         this.shuffleAnswers()
       }
     },
+    autoCheck (newAutoCheck) {
+      localStorage.autoCheck = newAutoCheck
+    },
+    autoNext (newAutoNext) {
+      localStorage.autoNext = newAutoNext
+    },
+  },
+
+   mounted () {
+    if (localStorage.autoCheck) {
+      this.autoCheck = JSON.parse(localStorage.autoCheck)  
+    }
+     if (localStorage.autoNext) {
+      this.autoNext = JSON.parse(localStorage.autoNext)
+    }
   },
   methods: {
     selectAnswer (index) {
@@ -281,8 +302,8 @@ export default {
 
   &.correct,
   &.incorrect {
-
-    .choice-text{
+    .choice-text,
+    .choice-prefix {
       color: white;
     }
     
@@ -290,11 +311,10 @@ export default {
 }
 
 .choice-prefix {
-  padding: 0.5rem 2.5rem;
-  background-color: #56a5eb;
-  color: white;
-
-  
+  padding: 0.25rem 1.25rem;
+  // background-color: #56a5eb;
+  // color: white;
+  margin: auto 0px;
 }
 
 .choice-text {
@@ -320,30 +340,4 @@ export default {
   color: white;
 }
 
-.detailed {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.929;
-  font-size: 1.05rem;
-  font-style: normal;
-  margin-bottom: 0px;
-  color: #888888;
-  background-color: transparent;
-  font-weight: 400;
-}
-
-.normal,
-.normal mark,
-.normal em,
-.normal b,
-.normal strong,
-.normal p {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.929;
-  font-size: 1.05rem;
-  font-style: normal;
-  margin-bottom: 0px;
-  color: #888888;
-  background-color: transparent;
-  font-weight: 400;
-}
 </style>

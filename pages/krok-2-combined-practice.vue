@@ -7,18 +7,19 @@
       <b-row v-else>
         <b-col>
           <QuestionBox
-            :current-question="krok2PediatricsCollection[index]"
-            :next="next"            
+            :current-question="krok2Collection[index]"
+            :next="next"
             :increment="increment"
             :num-total="numTotal"
             :num-correct="numCorrect"
             :title="title"
+            :reset-index="resetIndex"
           />
         </b-col>
       </b-row>
 
       <div class="comments">
-        <vue-disqus shortname="students-assistant" identifier="krok2PediatricsCollection" url="https://students-assistant.com/krok2" />
+        <vue-disqus shortname="students-assistant" identifier="Krok2BookletsCombined" url="https://students-assistant.com/krok2" />
       </div>
 
       <TheLabValues />
@@ -29,45 +30,57 @@
 <script>
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
+import krok2Collection from '~/gql/krok2'
 import TheLoading from '~/components/TheLoading'
-import krok2PediatricsCollection from '~/gql/krok2Hygiene.gql'
 
 export default {
-  // middleware: ['auth'],
- apollo: {
-    krok2PediatricsCollection: {
-      prefetch: true,
-      query: krok2PediatricsCollection
-    }
-  },
+  name: 'Krok2BookletsCombined',
   head: {
-    title: 'Krok 2 Pediatrics Bases'
+    title: 'Krok 2 Practice Combined Booklets Practice'
   },
 
   components: {
-    TheLabValues,
     QuestionBox,
-    TheLoading
+    TheLoading,
+    TheLabValues
   },
-
-  data () {
+   apollo: {
+    krok2Collection: {
+      prefetch: true,
+      query: krok2Collection
+    }
+  },
+  data() {
     return {
-      title: 'Krok 2 Pediatrics Bases',
-      disqusIdentifier: 'Krok2',
+      title: 'Krok 2 Practice Combined Booklets Practice',
       index: 0,
       numCorrect: 0,
     }
   },
-
   computed: {
     numTotal() {
-       return this.krok2PediatricsCollection.length      
+       return this.krok2Collection.length      
     },
   },
-
+  watch: {
+    index (newIndex) {
+      localStorage.Kro2CombIndex = newIndex
+    },
+  },
+  mounted () {
+    if (localStorage.Kro2CombIndex) {
+      this.index = JSON.parse(localStorage.Kro2CombIndex)  
+    }
+  },
   methods: {
     next() {
       this.index++
+    },
+    previous() {
+      this.index--
+    },
+    resetIndex() {
+      this.index = 0
     },
     increment(isCorrect) {
       if (isCorrect) {

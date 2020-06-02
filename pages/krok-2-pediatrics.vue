@@ -7,18 +7,19 @@
       <b-row v-else>
         <b-col>
           <QuestionBox
-            :current-question="krok2Collection[index]"
-            :next="next"            
+            :current-question="krok2PediatricsCollection[index]"
+            :next="next"
             :increment="increment"
             :num-total="numTotal"
             :num-correct="numCorrect"
             :title="title"
+            :reset-index="resetIndex"
           />
         </b-col>
       </b-row>
 
       <div class="comments">
-        <vue-disqus shortname="students-assistant" identifier="krok2Collection" url="https://students-assistant.com/krok2" />
+        <vue-disqus shortname="students-assistant" identifier="Krok2PediatricsBases" url="https://students-assistant.com/krok2" />
       </div>
 
       <TheLabValues />
@@ -29,45 +30,57 @@
 <script>
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
+import krok2PediatricsCollection from '~/gql/krok2Pediatrics'
 import TheLoading from '~/components/TheLoading'
-import krok2Collection from '~/gql/krok2'
 
 export default {
-  // middleware: ['auth'],
-  apollo: {
-    krok2Collection: {
-      prefetch: true,
-      query: krok2Collection
-    }
-  },
+  name: 'Krok2PediatricsBases',
   head: {
-    title: 'Krok 2 Practice'
+    title: 'Krok 2 Pediatrics Bases'
   },
 
   components: {
-    TheLabValues,
     QuestionBox,
-    TheLoading
+    TheLoading,
+    TheLabValues
   },
-
-  data () {
+   apollo: {
+    krok2PediatricsCollection: {
+      prefetch: true,
+      query: krok2PediatricsCollection
+    }
+  },
+  data() {
     return {
-      title: 'Krok 2 Practice',
-      disqusIdentifier: 'Krok2',
+      title: 'Krok 2 Pediatrics Bases',
       index: 0,
       numCorrect: 0,
     }
   },
-
   computed: {
     numTotal() {
-       return this.krok2Collection.length      
+       return this.krok2PediatricsCollection.length      
     },
   },
-
+  watch: {
+    index (newIndex) {
+      localStorage.pedIndex = newIndex
+    },
+  },
+  mounted () {
+    if (localStorage.pedIndex) {
+      this.index = JSON.parse(localStorage.pedIndex)  
+    }
+  },
   methods: {
     next() {
       this.index++
+    },
+    previous() {
+      this.index--
+    },
+    resetIndex() {
+      this.index = 0
     },
     increment(isCorrect) {
       if (isCorrect) {

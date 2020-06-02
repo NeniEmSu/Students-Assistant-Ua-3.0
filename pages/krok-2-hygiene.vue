@@ -8,17 +8,18 @@
         <b-col>
           <QuestionBox
             :current-question="krok2HygieneCollection[index]"
-            :next="next"            
+            :next="next"
             :increment="increment"
             :num-total="numTotal"
             :num-correct="numCorrect"
             :title="title"
+            :reset-index="resetIndex"
           />
         </b-col>
       </b-row>
 
       <div class="comments">
-        <vue-disqus shortname="students-assistant" identifier="krok2HygieneCollection" url="https://students-assistant.com/krok2" />
+        <vue-disqus shortname="students-assistant" identifier="Krok2HygieneBases" url="https://students-assistant.com/krok2" />
       </div>
 
       <TheLabValues />
@@ -29,45 +30,57 @@
 <script>
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
+import krok2HygieneCollection from '~/gql/krok2Hygiene'
 import TheLoading from '~/components/TheLoading'
-import krok2HygieneCollection from '~/gql/krok2Hygiene.gql'
 
 export default {
-  // middleware: ['auth'],
- apollo: {
-    krok2HygieneCollection: {
-      prefetch: true,
-      query: krok2HygieneCollection
-    }
-  },
+  name: 'Krok2HygieneBases',
   head: {
     title: 'Krok 2 Hygiene Bases'
   },
 
   components: {
-    TheLabValues,
     QuestionBox,
-    TheLoading
+    TheLoading,
+    TheLabValues
   },
-
-  data () {
+   apollo: {
+    krok2HygieneCollection: {
+      prefetch: true,
+      query: krok2HygieneCollection
+    }
+  },
+  data() {
     return {
       title: 'Krok 2 Hygiene Bases',
-      disqusIdentifier: 'Krok2',
       index: 0,
       numCorrect: 0,
     }
   },
-
   computed: {
     numTotal() {
        return this.krok2HygieneCollection.length      
     },
   },
-
+  watch: {
+    index (newIndex) {
+      localStorage.hygIndex = newIndex
+    },
+  },
+  mounted () {
+    if (localStorage.hygIndex) {
+      this.index = JSON.parse(localStorage.hygIndex)  
+    }
+  },
   methods: {
     next() {
       this.index++
+    },
+    previous() {
+      this.index--
+    },
+    resetIndex() {
+      this.index = 0
     },
     increment(isCorrect) {
       if (isCorrect) {
