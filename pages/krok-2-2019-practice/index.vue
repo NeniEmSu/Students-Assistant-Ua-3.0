@@ -9,6 +9,7 @@
           <QuestionBox
             :current-question="krok2019Collection[index]"
             :next="next"
+            :previous="previous"
             :increment="increment"
             :num-total="numTotal"
             :num-correct="numCorrect"

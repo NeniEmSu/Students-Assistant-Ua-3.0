@@ -32,14 +32,17 @@
         >
           {{ currentQuestion.subject }}
         </b-badge>
-        <b-badge
-          v-for="(year, i) in currentQuestion.years"
-          :key="i"
-          pill
-          variant="info"
-        >
-          {{ year }}
-        </b-badge>
+        <div v-if="currentQuestion.years" class="d-inline">
+          <b-badge
+            v-for="(year, i) in currentQuestion.years"
+            :key="i"
+            class="ml-1"
+            pill
+            variant="info"
+          >
+            {{ year }}
+          </b-badge>
+        </div>
       </b-tabs>
     </div>
 
@@ -61,6 +64,13 @@
     </button>
 
     <div class="mb-2">
+      <b-button
+        v-if="questionNumber > 0"
+        variant="primary"
+        @click="callPrevious()"
+      >
+        Previous
+      </b-button>
       <b-button
         v-if="!answered"
         variant="primary"
@@ -110,15 +120,16 @@
         </label>
       </div>
       <b-button
+        v-if="questionNumber > 0"
         class="ml-auto"
         variant="danger"
         @click="resetIndex"
       >
-        Reset
+        Reset Quiz
       </b-button>
     </div>
 
-    <div class="mb-2">
+    <div v-if="currentQuestion.reason" class="mb-2">
       <b-button
         v-b-toggle="`accordion-${currentQuestion._id}-inner`"
         size="sm"
@@ -129,7 +140,6 @@
         :id="`accordion-${currentQuestion._id}-inner`"
         class="mt-2"
       >
-        <!-- eslint-disable-next-line vue/no-v-html -->
         <b-card>
           <div v-html="currentQuestion.reason" />
         </b-card>
@@ -151,6 +161,7 @@ export default {
     numTotal: Number,
     questionNumber: Number,
     next: Function,
+    previous: Function,
     resetIndex: Function,
     increment: Function,
     numCorrect: Number,
@@ -200,6 +211,7 @@ export default {
     selectAnswer (index) {
       this.selectedIndex = index
       if (this.autoCheck) {
+        this.tabIndex = 1
         let isCorrect = false
 
         if (this.selectedIndex === this.correctIndex) {
@@ -236,11 +248,19 @@ export default {
       
     },
 
+    callPrevious () {
+        this.tabIndex = 0, 
+        this.previous()
+    },
+
     submitAnswer () {
       let isCorrect = false
 
       if (this.selectedIndex === this.correctIndex) {
         isCorrect = true
+      }
+      if (!isCorrect) {
+        this.tabIndex = 1
       }
       this.answered = true
 

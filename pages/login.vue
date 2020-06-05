@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="mt-5 pt-5">
     <h1 class="text-center">
-      Login
+      Login functionality coming soon!
     </h1>
     <hr>
     <b-alert v-if="error" show variant="danger">

@@ -149,13 +149,13 @@
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
-                      to="elements.html"
+                      to="/exam-center"
                     >
                       Exam Center
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
-                      to="/exam-center"
+                      to="/calculators"
                     >
                       Calculators
                     </nuxt-link>
