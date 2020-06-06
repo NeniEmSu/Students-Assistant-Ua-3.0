@@ -640,11 +640,12 @@ export default {
   data () {
     return {
       currentPage: 1,
+      perPage: 20,
       posts: []
     }
   },
   async fetch () {
-    const articles = await fetch(`https://students-assistant.com/wp-json/wp/v2/posts?page=${this.currentPage}`).then((res) => res.json())
+    const articles = await fetch(`https://students-assistant.com/wp-json/wp/v2/posts?page=${this.currentPage}&per_page=${this.perPage}`).then((res) => res.json())
 
     this.posts = this.posts.concat(articles)
   },
@@ -653,9 +654,8 @@ export default {
 
   methods: {
     lazyLoadArticles (isVisible) {
-      alert('Hello')
       if (isVisible) {
-        if (this.currentPage < 5) {
+        if (this.currentPage < 2) {
           this.currentPage++
           this.$fetch()
         }
