@@ -112,3 +112,30 @@
   </section>
   <!--::blog_part end::-->
 </template>
+
+<script>
+export default {
+
+  data() {
+    return {
+      posts: []
+    }
+  },
+  async fetch () {
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    }
+
+    const response = await fetch('https://students-assistant.com/wp-json/wp/v2/posts', requestOptions,
+      {
+        headers: { 'Content-Type': 'application/json' }
+      })
+    const data = await response.json()
+    this.posts = data
+  },
+
+  fetchOnServer: false,
+  
+}
+</script>

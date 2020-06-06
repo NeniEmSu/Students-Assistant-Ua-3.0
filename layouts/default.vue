@@ -3,7 +3,7 @@
     <TheHeader />
     <div class="body-content">
       <vue-page-transition :name="$store.state.animation">
-        <nuxt />
+        <nuxt keep-alive />
       </vue-page-transition>
     </div>
     <div class="container">

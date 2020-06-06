@@ -1,5 +1,7 @@
+
 <template>
   <div>
+    <!-- eslint-disable vue/no-v-html -->
     <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg">
       <div class="container">
@@ -8,7 +10,15 @@
             <div class="breadcrumb_iner text-center">
               <div class="breadcrumb_iner_item">
                 <h2>Our Blog</h2>
-                <p>Home<span>/</span>Blog</p>
+                <p>
+                  <nuxt-link to="/">
+                    Home
+                  </nuxt-link>
+                  <span>
+                    /
+                  </span>
+                  Blog
+                </p>
               </div>
             </div>
           </div>
@@ -23,49 +33,107 @@
         <div class="row">
           <div class="col-lg-8 mb-5 mb-lg-0">
             <div class="blog_left_sidebar">
-              <article class="blog_item">
-                <div class="blog_item_img">
-                  <img
-                    class="card-img rounded-0"
-                    src="~/assets/img/blog/single_blog_1.png"
-                    alt=""
+              <template v-if="$fetchState.pending">
+                <article class="article-cards-wrapper">
+                  <content-placeholders
+                    v-for="p in 10"
+                    :key="p"
+                    rounded
+                    class="blog_item"
                   >
-                  <nuxt-link
-                    to="#"
-                    class="blog_item_date"
-                  >
-                    <h3>15</h3>
-                    <p>Jan</p>
-                  </nuxt-link>
-                </div>
+                    <content-placeholders-img />
+                    <content-placeholders-heading />
+                    <content-placeholders-text :lines="4" />
+                  </content-placeholders>
+                </article>
+              </template>
 
-                <div class="blog_details">
-                  <nuxt-link
-                    class="d-inline-block"
-                    to="/single-blog"
-                  >
-                    <h2>Google inks pact for new 35-storey office</h2>
-                  </nuxt-link>
-                  <p>
-                    That dominion stars lights dominion divide years for fourth have don't stars is that
-                    he earth it first without heaven in place seed it second morning saying.
-                  </p>
-                  <ul class="blog-info-link">
-                    <li>
-                      <nuxt-link to="#">
-                        <i class="far fa-user" /> Travel, Lifestyle
-                      </nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="#">
-                        <i class="far fa-comments" /> 03 Comments
-                      </nuxt-link>
-                    </li>
-                  </ul>
-                </div>
-              </article>
+              <template v-else-if="$fetchState.error">
+                <p>{{ $fetchState.error.message }}</p>
+              </template>
 
-              <article class="blog_item">
+              <template v-else>
+                <article
+                  v-for="(post, index) in posts"
+                  :key="post.id"
+                  class="blog_item"
+                >
+                  <div class="blog_item_img">
+                    <img
+                      v-if="post.jetpack_featured_media_url"
+                      v-observe-visibility="
+                        index === posts.length - 1 ? lazyLoadArticles : false
+                      "
+                      class="card-img rounded-0"
+                      :src="post.jetpack_featured_media_url"
+                      :alt="post.title.rendered"
+                    >
+                    <nuxt-link
+                      :to="
+                        localePath(
+                          {
+                            name: 'blog-id',
+                            params: { id: post.id },
+                          },
+                          $i18n.locale
+                        )
+                      "
+                      class="blog_item_date"
+                    >
+                      <h3>{{ $moment(post.date).format('DD') }}</h3>
+                      <p>{{ $moment(post.date).format('MMM/YY') }}</p>
+                    </nuxt-link>
+                  </div>
+
+                  <div class="blog_details">
+                    <nuxt-link
+                      class="d-inline-block"
+                      :to="
+                        localePath(
+                          {
+                            name: 'blog-id',
+                            params: { id: post.id },
+                          },
+                          $i18n.locale
+                        )
+                      "
+                    >
+                      <h2> <span v-html="post.title.rendered" /></h2>
+                    </nuxt-link>
+                    <div v-html="post.excerpt.rendered" />
+                    <ul class="blog-info-link">
+                      <li>
+                        <nuxt-link to="">
+                          <i class="far fa-user" /> Neni
+                        </nuxt-link>
+                      </li>
+                      <li>
+                        <nuxt-link to="">
+                          <i class="far fa-comments" /> 0 Comments
+                        </nuxt-link>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </template>
+
+              <template v-if="$fetchState.pending && posts.length">
+                <article class="article-cards-wrapper">
+                  <content-placeholders
+                    v-for="p in 10"
+                    :key="p"
+                    rounded
+                    class="blog_item"
+                  >
+                    <content-placeholders-img />
+                    <content-placeholders-heading />
+                    <content-placeholders-text :lines="4" />
+                  </content-placeholders>
+                </article>
+              </template>
+
+
+              <!-- <article class="blog_item">
                 <div class="blog_item_img">
                   <img
                     class="card-img rounded-0"
@@ -231,7 +299,7 @@
                     </li>
                   </ul>
                 </div>
-              </article>
+              </article> -->
 
               <nav class="blog-pagination justify-content-center d-flex">
                 <ul class="pagination">
@@ -567,7 +635,34 @@
 export default {
   meta: {
     animation: 'fade-in-down'
-  }
+  },
+
+  data () {
+    return {
+      currentPage: 1,
+      posts: []
+    }
+  },
+  async fetch () {
+    const articles = await fetch(`https://students-assistant.com/wp-json/wp/v2/posts?page=${this.currentPage}`).then((res) => res.json())
+
+    this.posts = this.posts.concat(articles)
+  },
+
+  fetchOnServer: false,
+
+  methods: {
+    lazyLoadArticles (isVisible) {
+      alert('Hello')
+      if (isVisible) {
+        if (this.currentPage < 5) {
+          this.currentPage++
+          this.$fetch()
+        }
+      }
+    }
+  },
+
 }
 </script>
 

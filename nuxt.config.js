@@ -150,6 +150,8 @@ export default {
   plugins: [
     '~/plugins/pagination',
     '~/plugins/disqus',
+    '~/plugins/vue-placeholders.js',
+    '~/plugins/vue-observe-visibility.client.js',
     {
       src: '~/plugins/aos.js',
       mode: 'client'
@@ -173,8 +175,14 @@ export default {
   buildModules: ['@nuxtjs/eslint-module',
   ['@nuxtjs/google-analytics', {
     id: 'UA-153274070-1'
-  }]
-],
+  }],
+  '@nuxtjs/moment',
+  ],
+
+  moment: {
+    defaultLocale: 'en',
+    locales: ['uk', 'ru'],
+  },
 
   modules: [
     '@nuxtjs/apollo',

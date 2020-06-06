@@ -1,9 +1,15 @@
 <template>
   <div id="krok">
     <b-container class="bv-example-row">
-      <div v-if="$apolloData.loading">
-        <TheLoading />
-      </div>
+      <template v-if="$apolloData.loading">
+        <content-placeholders
+          rounded
+        >
+          <content-placeholders-heading />
+          <content-placeholders-img />
+          <content-placeholders-text :lines="5" />
+        </content-placeholders>
+      </template>
       <b-row v-else>
         <b-col>
           <QuestionBox
@@ -33,7 +39,7 @@
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
 import krok2019Collection from '~/gql/krok2-2019'
-import TheLoading from '~/components/TheLoading'
+
 
 export default {
   name: 'Krok2',
@@ -43,7 +49,7 @@ export default {
 
   components: {
     QuestionBox,
-    TheLoading,
+    
     TheLabValues
   },
    apollo: {
