@@ -4,8 +4,9 @@
       <template v-if="$apolloData.loading">
         <content-placeholders
           rounded
+          class="mt-5 pt-5"
         >
-          <content-placeholders-heading />
+          <content-placeholders-heading class="mb-3" />
           <content-placeholders-img />
           <content-placeholders-text :lines="5" />
         </content-placeholders>
