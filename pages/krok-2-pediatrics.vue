@@ -23,6 +23,7 @@
             :title="title"
             :question-number="index"
             :reset-index="resetIndex"
+            @changedView="updateView($event)"
           />
         </b-col>
       </b-row>
@@ -82,6 +83,9 @@ export default {
     }
   },
   methods: {
+    updateView (updatedView) {
+      this.index = updatedView
+    },
     next() {
       this.index++
     },

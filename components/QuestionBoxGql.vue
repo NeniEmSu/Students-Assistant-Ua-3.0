@@ -6,7 +6,7 @@
         {{ title }}
       </h1>
       <p>
-        Number of questions answered: {{ questionNumber }}/{{ numTotal }}
+        Question: {{ questionNumber+1 }}/{{ numTotal }}
       </p>
       <b-tabs v-model="tabIndex" content-class="mt-3">
         <b-tab
@@ -15,7 +15,7 @@
         >
           <div
             class="normal"
-            v-html="currentQuestion.q_Highlighted"
+            v-html="currentQuestion.question"
           />
         </b-tab>
 
@@ -80,7 +80,7 @@
         Submit
       </b-button>
       <b-button
-        v-else-if="answered && currentQuestion.number !== numTotal"
+        v-else-if="answered && questionNumber+1 !== numTotal"
         variant="success"
         :disabled="autoNext"
         @click="callNext"
@@ -128,6 +128,35 @@
         Reset Quiz
       </b-button>
     </div>
+
+    <div class="form-group">
+      <label for="goTo">Go to a question:</label>
+      <input
+        id="goTo"
+        v-model.number="questionToGoTo"
+        step="1"
+        min="1"
+        :max="numTotal"
+        type="number"
+        class="form-control"
+        name="goTo"
+        aria-describedby="goTo_helpId"
+        :placeholder="`Question you want between 1 and ${numTotal}`"
+      >
+      <small id="goTo_helpId" class="form-text text-muted">1 - {{ numTotal }}.</small>
+    </div>
+    <div class="form-group">
+      <b-button
+        v-if="questionToGoTo"
+        class="my-auto"
+        variant="primary"
+        :disabled="!questionToGoTo || questionToGoTo > numTotal"
+        @click="goToQuestion"
+      >
+        Find Question
+      </b-button>
+    </div>
+      
 
     <div v-if="currentQuestion.reason" class="mb-2">
       <b-button
@@ -178,6 +207,7 @@ export default {
       max: 5,
       countDown: 5,
       tabIndex: 0,
+      questionToGoTo: null
     }
   },
   computed: {
@@ -208,6 +238,10 @@ export default {
     }
   },
   methods: {
+    goToQuestion () {
+      this.$emit('changedView', this.questionToGoTo-1)
+      this.questionToGoTo = null
+    },
     selectAnswer (index) {
       this.selectedIndex = index
       if (this.autoCheck) {
@@ -232,7 +266,7 @@ export default {
       }, 1000)
     },
     autoCallNext () {
-      if (this.autoNext && this.currentQuestion.number !== this.numTotal) {
+      if (this.autoNext && this.questionNumber+1 !== this.numTotal) {
         this.countDownTimer()
         const self = this
         setTimeout(function () { self.tabIndex = 0, self.next() }, 5000)
@@ -240,12 +274,10 @@ export default {
     },
 
     callNext (autoCallNext) {
-      if (this.autoNext) {
-        clearTimeout(autoCallNext);
-      }
+      if (this.questionNumber+1 !== this.numTotal) {
         this.tabIndex = 0, 
         this.next()
-      
+      }
     },
 
     callPrevious () {

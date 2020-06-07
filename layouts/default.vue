@@ -118,4 +118,9 @@ tr:nth-child(odd) td { background: #FEFEFE; }
 tr td:hover,
 tr td p:hover,
 tr td:hover p { background: #666; color: #FFF; }  
+
+button.btn:disabled,
+.b-button:disabled {
+  cursor: not-allowed;
+}
 </style>
