@@ -5,9 +5,9 @@
       <h1 class="mt-4">
         {{ title }}
       </h1>
-      <b-alert show variant="danger">
+      <!-- <b-alert show variant="danger">
         <p>In case of any errors in the answers or incomplete question, eg: question 177 in 2019 Krok close the all tabs for this site and go to https://students-assistant.netlify.com on a new tab to get updated version.</p>
-      </b-alert>
+      </b-alert> -->
       <p>
         Question: {{ questionNumber+1 }}/{{ numTotal }}
       </p>
