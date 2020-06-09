@@ -255,12 +255,14 @@ export default {
     goToQuestion () {
       this.$emit('changedView', this.questionToGoTo-1)
       this.questionToGoTo = null
-     window.scrollTo(0,100)
+      this.tabIndex = 0,
+      window.scrollTo(0,100)
     },
 
     goToReviewQuestion (number) {
       this.$emit('changedView', number)
       this.questionToGoTo = null
+      this.tabIndex = 0,
       window.scrollTo(0,100)
     },
 
@@ -319,6 +321,7 @@ export default {
 
     callResetIndex () {
       this.resetIndex()
+      this.tabIndex = 0,
       window.scrollTo(0,100)
     },
 
