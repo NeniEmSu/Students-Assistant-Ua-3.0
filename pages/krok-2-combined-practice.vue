@@ -23,7 +23,9 @@
             :title="title"
             :question-number="index"
             :reset-index="resetIndex"
+            :review-numbers="reviewNumbersComb"
             @changedView="updateView($event)"
+            @updateReviews="pushToReviewQuestions($event)"
           />
         </b-col>
       </b-row>
@@ -65,6 +67,7 @@ export default {
       title: 'Krok 2 Practice Combined Booklets Practice',
       index: 0,
       numCorrect: 0,
+      reviewNumbersComb: []
     }
   },
   computed: {
@@ -76,15 +79,26 @@ export default {
     index (newIndex) {
       localStorage.Kro2CombIndex = newIndex
     },
+    reviewNumbersComb (newReviewNumbersComb) {
+      localStorage.reviewNumbersComb = JSON.stringify(newReviewNumbersComb)
+    }
   },
   mounted () {
     if (localStorage.Kro2CombIndex) {
       this.index = JSON.parse(localStorage.Kro2CombIndex)  
     }
+    if (localStorage.reviewNumbersComb) {
+      this.reviewNumbersComb = JSON.parse(localStorage.reviewNumbersComb)
+    }
   },
   methods: {
     updateView (updatedView) {
       this.index = updatedView
+    },
+    pushToReviewQuestions(updateReview) {
+      if (!this.reviewNumbersComb.includes(updateReview)) {
+        this.reviewNumbersComb.push(updateReview)
+      }
     },
     next() {
       this.index++
@@ -94,6 +108,7 @@ export default {
     },
     resetIndex() {
       this.index = 0
+      this.reviewNumbersComb = []
     },
     increment(isCorrect) {
       if (isCorrect) {

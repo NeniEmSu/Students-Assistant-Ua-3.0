@@ -23,7 +23,9 @@
             :title="title"
             :question-number="index"
             :reset-index="resetIndex"
+            :review-numbers="reviewNumbers"
             @changedView="updateView($event)"
+            @updateReviews="pushToReviewQuestions($event)"
           />
         </b-col>
       </b-row>
@@ -65,6 +67,7 @@ export default {
       title: 'Krok 2 2019 Practice',
       index: 0,
       numCorrect: 0,
+      reviewNumbers: []
     }
   },
   computed: {
@@ -76,15 +79,26 @@ export default {
     index (newIndex) {
       localStorage.index = newIndex
     },
+    reviewNumbers (newReviewNumbers) {
+      localStorage.reviewNumbers = JSON.stringify(newReviewNumbers)
+    }
   },
   mounted () {
     if (localStorage.index) {
       this.index = JSON.parse(localStorage.index)  
     }
+    if (localStorage.reviewNumbers) {
+      this.reviewNumbers = JSON.parse(localStorage.reviewNumbers)
+    }
   },
   methods: {
     updateView (updatedView) {
       this.index = updatedView
+    },
+    pushToReviewQuestions(updateReview) {
+      if (!this.reviewNumbers.includes(updateReview)) {
+        this.reviewNumbers.push(updateReview)
+      }
     },
     next() {
       this.index++
@@ -94,6 +108,7 @@ export default {
     },
     resetIndex() {
       this.index = 0
+      this.reviewNumbers = []
     },
     increment(isCorrect) {
       if (isCorrect) {

@@ -23,7 +23,9 @@
             :title="title"
             :question-number="index"
             :reset-index="resetIndex"
+            :review-numbers="reviewNumbersHyg"
             @changedView="updateView($event)"
+            @updateReviews="pushToReviewQuestions($event)"
           />
         </b-col>
       </b-row>
@@ -65,6 +67,7 @@ export default {
       title: 'Krok 2 Hygiene Bases',
       index: 0,
       numCorrect: 0,
+      reviewNumbersHyg: []
     }
   },
   computed: {
@@ -76,15 +79,26 @@ export default {
     index (newIndex) {
       localStorage.hygIndex = newIndex
     },
+    reviewNumbersHyg (newReviewNumbersHyg) {
+      localStorage.reviewNumbersHyg = JSON.stringify(newReviewNumbersHyg)
+    }
   },
   mounted () {
     if (localStorage.hygIndex) {
       this.index = JSON.parse(localStorage.hygIndex)  
     }
+    if (localStorage.reviewNumbersHyg) {
+      this.reviewNumbersHyg = JSON.parse(localStorage.reviewNumbersHyg)
+    }
   },
   methods: {
     updateView (updatedView) {
       this.index = updatedView
+    },
+    pushToReviewQuestions(updateReview) {
+      if (!this.reviewNumbersHyg.includes(updateReview)) {
+        this.reviewNumbersHyg.push(updateReview)
+      }
     },
     next() {
       this.index++
@@ -94,6 +108,7 @@ export default {
     },
     resetIndex() {
       this.index = 0
+      this.reviewNumbersHyg = []
     },
     increment(isCorrect) {
       if (isCorrect) {

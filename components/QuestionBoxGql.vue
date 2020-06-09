@@ -123,7 +123,7 @@
         v-if="questionNumber > 0"
         class="ml-auto"
         variant="danger"
-        @click="resetIndex"
+        @click="callResetIndex"
       >
         Reset Quiz
       </b-button>
@@ -156,7 +156,20 @@
         Find Question
       </b-button>
     </div>
-      
+
+    <div v-if="reviewNumbers.length > 0" class="form-group">
+      <p>Questions you failed that you might want to review:</p>
+      <b-button
+        v-for="(reviewNumber, index) in reviewNumbers"
+        :key="index"
+        class="mr-1"
+        variant="danger"
+        @click="goToReviewQuestion(reviewNumber)"
+      >
+        {{ reviewNumber+1 }}
+      </b-button>
+    </div>
+
 
     <div v-if="currentQuestion.reason" class="mb-2">
       <b-button
@@ -194,7 +207,8 @@ export default {
     resetIndex: Function,
     increment: Function,
     numCorrect: Number,
-    title: String
+    title: String,
+    reviewNumbers: Array
   },
   data: function () {
     return {
@@ -207,7 +221,7 @@ export default {
       max: 5,
       countDown: 5,
       tabIndex: 0,
-      questionToGoTo: null
+      questionToGoTo: null,
     }
   },
   computed: {
@@ -226,14 +240,14 @@ export default {
     },
     autoNext (newAutoNext) {
       localStorage.autoNext = newAutoNext
-    },
+    }
   },
 
    mounted () {
     if (localStorage.autoCheck) {
       this.autoCheck = JSON.parse(localStorage.autoCheck)  
     }
-     if (localStorage.autoNext) {
+    if (localStorage.autoNext) {
       this.autoNext = JSON.parse(localStorage.autoNext)
     }
   },
@@ -241,7 +255,19 @@ export default {
     goToQuestion () {
       this.$emit('changedView', this.questionToGoTo-1)
       this.questionToGoTo = null
+     window.scrollTo(0,100)
     },
+
+    goToReviewQuestion (number) {
+      this.$emit('changedView', number)
+      this.questionToGoTo = null
+      window.scrollTo(0,100)
+    },
+
+    updateReviewQuestions() {
+      this.$emit('updateReviews', this.questionNumber)
+    },
+
     selectAnswer (index) {
       this.selectedIndex = index
       if (this.autoCheck) {
@@ -251,13 +277,16 @@ export default {
         if (this.selectedIndex === this.correctIndex) {
           isCorrect = true
         }
+        if (!isCorrect) {
+          this.updateReviewQuestions()
+        }
         this.answered = true
 
         this.increment(isCorrect)
         this.autoCallNext()
       }
-
     },
+
     countDownTimer () {
       if (this.countDown === 0) return this.countDown = 5;
       setTimeout(() => {
@@ -265,11 +294,12 @@ export default {
         this.countDownTimer()
       }, 1000)
     },
+
     autoCallNext () {
       if (this.autoNext && this.questionNumber+1 !== this.numTotal) {
         this.countDownTimer()
         const self = this
-        setTimeout(function () { self.tabIndex = 0, self.next() }, 5000)
+        setTimeout(function () { self.tabIndex = 0, self.callNext() }, 5000)
       }
     },
 
@@ -277,12 +307,19 @@ export default {
       if (this.questionNumber+1 !== this.numTotal) {
         this.tabIndex = 0, 
         this.next()
+        window.scrollTo(0,100)
       }
     },
 
     callPrevious () {
         this.tabIndex = 0, 
         this.previous()
+        window.scrollTo(0,100)
+    },
+
+    callResetIndex () {
+      this.resetIndex()
+      window.scrollTo(0,100)
     },
 
     submitAnswer () {
@@ -292,6 +329,7 @@ export default {
         isCorrect = true
       }
       if (!isCorrect) {
+        this.updateReviewQuestions()
         this.tabIndex = 1
       }
       this.answered = true

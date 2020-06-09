@@ -23,7 +23,9 @@
             :title="title"
             :question-number="index"
             :reset-index="resetIndex"
+            :review-numbers="reviewNumbersPed"
             @changedView="updateView($event)"
+            @updateReviews="pushToReviewQuestions($event)"
           />
         </b-col>
       </b-row>
@@ -57,7 +59,8 @@ export default {
    apollo: {
     krok2PediatricsCollection: {
       prefetch: true,
-      query: krok2PediatricsCollection
+      query: krok2PediatricsCollection,
+      reviewNumbersPed: []
     }
   },
   data() {
@@ -76,15 +79,26 @@ export default {
     index (newIndex) {
       localStorage.pedIndex = newIndex
     },
+    reviewNumbersPed (newReviewNumbersPed) {
+      localStorage.reviewNumbersPed = JSON.stringify(newReviewNumbersPed)
+    }
   },
   mounted () {
     if (localStorage.pedIndex) {
       this.index = JSON.parse(localStorage.pedIndex)  
     }
+    if (localStorage.reviewNumbersPed) {
+      this.reviewNumbersPed = JSON.parse(localStorage.reviewNumbersPed)
+    }
   },
   methods: {
     updateView (updatedView) {
       this.index = updatedView
+    },
+    pushToReviewQuestions(updateReview) {
+      if (!this.reviewNumbersPed.includes(updateReview)) {
+        this.reviewNumbersPed.push(updateReview)
+      }
     },
     next() {
       this.index++
@@ -94,6 +108,7 @@ export default {
     },
     resetIndex() {
       this.index = 0
+      this.reviewNumbersPed = []
     },
     increment(isCorrect) {
       if (isCorrect) {

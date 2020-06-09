@@ -108,7 +108,7 @@
                       class="dropdown-item"
                       to="/krok-2-hygiene"
                     >
-                      krok 2 Hygine
+                      krok 2 Hygiene
                     </nuxt-link>
                     <nuxt-link
                       class="dropdown-item"
