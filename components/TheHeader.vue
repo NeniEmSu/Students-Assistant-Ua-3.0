@@ -18,6 +18,9 @@
                 alt="Students assistant logo"
                 class="img-fluid"
               >
+              <sup>
+                Beta
+              </sup>
             </nuxt-link>
             <template v-if="$auth.$state.loggedIn">
               <b-img
