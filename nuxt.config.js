@@ -239,23 +239,31 @@ export default {
   ],
 
   // Give apollo module options
-  apollo: {
-    includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
-    authenticationType: 'Basic', // optional, default: 'Bearer'
-    errorHandler: '~/apollo/customErrorHandler',
-    clientConfigs: {
-      default:
-        '~/apollo/clientConfig.js'
-      // otherClient: {
-      //   httpEndpoint:
-      //     // 'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
-      //     'https://students-assistant-gql.herokuapp.com/v1/graphql',
-      //   httpLinkOptions: {
-      //     credentials: 'same-origin'
-      //   }
-      // }
+  apollo:{
+    clientConfigs:{
+     default:{
+       httpEndpoint: 'https://neniemsu.xyz/api/graphql/query?token=d5eea19d08a160cbdfa78c2efe0720',
+       wsEndpoint: null
+     }
     }
-  },
+   },
+  // apollo: {
+  //   includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
+  //   authenticationType: 'Basic', // optional, default: 'Bearer'
+  //   errorHandler: '~/apollo/customErrorHandler',
+  //   clientConfigs: {
+  //     default:
+  //       '~/apollo/clientConfig.js'
+  //     // otherClient: {
+  //     //   httpEndpoint:
+  //     //     // 'https://cms.studentsassistantua.com/api/graphql/query?token=dbb9ed69aae53ff12694cd66c5e834',
+  //     //     'https://students-assistant-gql.herokuapp.com/v1/graphql',
+  //     //   httpLinkOptions: {
+  //     //     credentials: 'same-origin'
+  //     //   }
+  //     // }
+  //   }
+  // },
 
   i18n: {
     defaultLocale: 'en',

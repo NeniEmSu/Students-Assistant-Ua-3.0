@@ -59,8 +59,7 @@ export default {
    apollo: {
     krok2PediatricsCollection: {
       prefetch: true,
-      query: krok2PediatricsCollection,
-      reviewNumbersPed: []
+      query: krok2PediatricsCollection
     }
   },
   data() {
@@ -68,6 +67,7 @@ export default {
       title: 'Krok 2 Pediatrics Bases',
       index: 0,
       numCorrect: 0,
+      reviewNumbersPed: []
     }
   },
   computed: {
