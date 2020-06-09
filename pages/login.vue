@@ -4,6 +4,7 @@
       Login functionality coming soon!
     </h1>
     <hr>
+    <img src="https://www.cpcurling.ca/wp-content/uploads/2017/09/under-construction-gif-15.gif" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Page under Construction.">
     <b-alert v-if="error" show variant="danger">
       {{ error + '' }}
     </b-alert>
