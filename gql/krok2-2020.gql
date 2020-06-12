@@ -1,0 +1,15 @@
+query Krok_2_2020 {
+  krok2020Collection(limit: 130, skip: 0) {
+    number
+    _id
+    question
+    q_Highlighted
+    reason
+    subject
+    correctAnswer
+    options {
+      value
+    }
+    years
+  }
+}

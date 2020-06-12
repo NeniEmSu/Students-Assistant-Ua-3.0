@@ -22,7 +22,7 @@
           />
         </b-tab>
 
-        <b-tab title="Highlight Keys">
+        <b-tab v-if="currentQuestion.q_Highlighted" title="Highlight Keys">
           <div
             class="detailed"
             v-html="currentQuestion.q_Highlighted"

@@ -1,5 +1,5 @@
 <template>
-  <div id="krok2019">
+  <div id="krok2020">
     <b-container class="bv-example-row">
       <template v-if="$apolloData.loading">
         <content-placeholders
@@ -14,7 +14,7 @@
       <b-row v-else>
         <b-col>
           <QuestionBox
-            :current-question="krok2019Collection[index]"
+            :current-question="krok2020Collection[index]"
             :next="next"
             :previous="previous"
             :increment="increment"
@@ -31,7 +31,7 @@
       </b-row>
 
       <div class="comments">
-        <vue-disqus shortname="students-assistant" identifier="krok2_2019Collection" url="https://students-assistant.com/krok2" />
+        <vue-disqus shortname="students-assistant" identifier="krok2_2020Collection" url="https://students-assistant.com/krok2" />
       </div>
 
       <TheLabValues />
@@ -42,13 +42,13 @@
 <script>
 import QuestionBox from '~/components/QuestionBoxGql.vue'
 import TheLabValues from '~/components/TheLabValues'
-import krok2019Collection from '~/gql/krok2-2019'
+import krok2020Collection from '~/gql/krok2-2020'
 
 
 export default {
   name: 'Krok2',
   head: {
-    title: 'Krok 2 2019 Practice'
+    title: 'Krok 2 2020 Practice'
   },
 
   components: {
@@ -57,14 +57,14 @@ export default {
     TheLabValues
   },
    apollo: {
-    krok2019Collection: {
+    krok2020Collection: {
       prefetch: true,
-      query: krok2019Collection
+      query: krok2020Collection
     }
   },
   data() {
     return {
-      title: 'Krok 2 2019 Practice',
+      title: 'Krok 2 2020 Practice',
       index: 0,
       numCorrect: 0,
       reviewNumbers: []
@@ -72,23 +72,23 @@ export default {
   },
   computed: {
     numTotal() {
-       return this.krok2019Collection.length      
+       return this.krok2020Collection.length      
     },
   },
   watch: {
     index (newIndex) {
-      localStorage.index = newIndex
+      localStorage.index2020 = newIndex
     },
     reviewNumbers (newReviewNumbers) {
-      localStorage.reviewNumbers = JSON.stringify(newReviewNumbers)
+      localStorage.reviewNumbers2020 = JSON.stringify(newReviewNumbers)
     }
   },
   mounted () {
-    if (localStorage.index) {
-      this.index = JSON.parse(localStorage.index)  
+    if (localStorage.index2020) {
+      this.index = JSON.parse(localStorage.index2020)  
     }
-    if (localStorage.reviewNumbers) {
-      this.reviewNumbers = JSON.parse(localStorage.reviewNumbers)
+    if (localStorage.reviewNumbers2020) {
+      this.reviewNumbers = JSON.parse(localStorage.reviewNumbers2020)
     }
   },
   methods: {

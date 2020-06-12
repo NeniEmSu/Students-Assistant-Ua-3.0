@@ -24,10 +24,9 @@
           <div class="country">
             Erythrocyte count
           </div>
-          <div class="visit">
-            Male: 4.3 − 5.9 · 10<sup>12</sup>/L
-
-            Female: 3.5 − 5.5 · 10<sup>12</sup>/L
+          <div class="visit d-block">
+            <div>Male: 4.3 − 5.9 · 10<sup>12</sup>/L</div>
+            <div>Female: 3.5 − 5.5 · 10<sup>12</sup>/L</div>
           </div>
         </div>
         <div class="table-row">

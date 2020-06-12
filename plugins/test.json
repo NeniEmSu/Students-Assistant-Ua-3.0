@@ -1,0 +1,3123 @@
+[
+  {
+    "number": "1",
+    "_id": "9704",
+
+    "question": "During examination of a patient, the doctor detected in him disorders of the eyes (hemeralopia, Bitot's spots), skin and skin appendages, mucosa, and gastrointestinal tract. He was provisionally diagnosed with Prasad's syndrome. at causes the development of this pathology?",
+    "correctAnswer": "Zinc deficiency",
+    "options": [
+      {
+        "value": "Copper deficiency"
+      },
+      {
+        "value": "Iron deficiency"
+      },
+      {
+        "value": "Manganese deficiency"
+      },
+      {
+        "value": "Vanadium deficiency"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "2",
+    "_id": "9705",
+
+    "question": "A 45-year-old man with thrombophlebitis of the deep veins in his legs suddenly after physical exertion developcd sharp pain in his thorax on the right, dyspnea, and hemoptysis. Objectively his condition is severe; he presents with acrocyanosis, shortening of pulmonary percussion sound on the right, and weakened respiration. Respiration is 30/min., blood pressure is 110/80 mm Hg. ECG shows sinus tachycardia, his heart rate is 120/min., the electrical axis of the heart deviates to the right, S-Q111 What is the most likely diagnosis? ",
+    "correctAnswer": "Pulmonary embolism",
+    "options": [
+      {
+        "value": "Cancer of the right lung"
+      },
+      {
+        "value": "Spontancous pneumothorax"
+      },
+      {
+        "value": "Right-sided exudative pleurisy"
+      },
+      {
+        "value": "Community-acquired right-sided pneumonia"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "3",
+    "_id": "9706",
+
+    "question": " A 37-year-old woman received an occupational trauma that resulted in a severe vision impairment. Now she needs to be trained for another occupation. What type of rehabilitation should the doctor choose for the patient in this case?",
+    "correctAnswer": "Occupational rehabilitation",
+    "options": [
+      {
+        "value": "Target rehabilitation"
+      },
+      {
+        "value": "Psychological rehabilitation"
+      },
+      {
+        "value": "Social rehabilitation"
+      },
+      {
+        "value": "Medical rehabilitation"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "4",
+    "_id": "9707",
+
+    "question": "A 22-year-old postparturient woman on the 12th day after the normal childbirth informs of fever up to 39°C for the last3 days and pain in her right mammary gland. The right mammary gland is enlarged, hot to touch, tense, hyperemic, and painful. Palpation reveals there a dense infiltration 8x8 cm with a fluctuation in its center. What is the most likely diagnosis?",
+    "correctAnswer": "Postpartum period, day 12. Right-sided infiltrative-purulent mastitis",
+    "options": [
+      {
+        "value": "Postpartum period, day 12. Right-sided lactostasis"
+      },
+      {
+        "value": "Postpartum period, day 12. Right-sided phlegmonous mastitis"
+      },
+      {
+        "value": "Postpartum period, day 12. Right-sided serous mastitis"
+      },
+      {
+        "value": "Postpartum period, day 12. Right-sided gangrenous mastitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "5",
+    "_id": "9708",
+
+    "question": "5. A 38-year-old woman has been suffering For approximatcly. 16 years she has from glomerulonephritis for 20 years. been presenting with progressing renal parenchymal arterial hypertension that became refractory and accompanied by leg edemas. She receives a combination of 100 mg losartan and 20 mg lercanidipine with insufficient antihypertensivee effect. What medicine can she be recommended for intensification of the antihypertensive effect of her therapy?",
+    "correctAnswer": "Lisinopril",
+    "options": [
+      {
+        "value": "Doxazosin"
+      },
+      {
+        "value": "Torasemide"
+      },
+      {
+        "value": "Urapidil"
+      },
+      {
+        "value": "Bisoprolol"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "6",
+    "_id": "9709",
+
+    "question": "6. A 45-ycar-old man has bcen suffering from ankylosing spondylitis for 15 years. For the last 3 years he has been noticing facial swelling and edemas of the limbs. Objectively, he assumes a \"beggar's\" spine\"position. X-ray shows \"bamboo spine\" changes in the thoracic and lumbar segments. Heart ultrasound shows aortic regurgitation. Complete blood count: Hb- 106 g/L; leukocytes 8.9 10/IL; ESR- 40 mm/hour. Daily proteinuria 9.6 grams per 24 hours. Blood creatinine 230 mcmol/L. What is the cause of kidney failure in this case?",
+    "correctAnswer": "Renal amyloidosis",
+    "options": [
+      {
+        "value": "Pyelonephritis"
+      },
+      {
+        "value": "Concomitant heart disease"
+      },
+      {
+        "value": "Urolithiasis"
+      },
+      {
+        "value": "Medicine side effects"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "7",
+    "_id": "9710",
+
+    "question": "A patient was brought into the the pulmonology department with complaints of inspiratory dyspnea and dry cough on at the highest point of inhalation. On examination the following is observed: pale skin, cyanotic lips, \"Hippocratic fingers\" Auscultation detects Velcro-type crackles (like opening a Velcro fastener). X-ray shows a \"ground glass opacity\" pattern. What is the most likely diagnosis?",
+    "correctAnswer": "Idiopathic pulmonary fibrosis",
+    "options": [
+      {
+        "value": "Pulmonary histiocytosis X"
+      },
+      {
+        "value": "Idiopathic pulmonary  hemosiderosis"
+      },
+      {
+        "value": "Exogenous allergic alveolitis"
+      },
+      {
+        "value": "Hand-Schuller-Christian discase"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "8",
+    "_id": "9711",
+
+    "question": "A 45-year-old man came to the hematologist with complaints of general weakness, clevated body temperature, excessive sweating, enlarged cervical lymph nodes. Objectively, his body temperature is 375°C, the skin is pale and dry, the posterior cervical lymph nodes are dense and elastic, up to 2 cm in diameter, mobile. There are no peculiarities in the patient's heart and lungs. Hepatosplenomegaly was detected. What examination is necessary to determine the scope of the pathologic process?",
+    "correctAnswer": "Computed tomography",
+    "options": [
+      {
+        "value": "Complete blood count"
+      },
+      {
+        "value": "Bone scintigraphy"
+      },
+      {
+        "value": "Abdominal X-ray"
+      },
+      {
+        "value": "Ultrasound of the cervical lymph  nodes"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "8",
+    "_id": "9712",
+
+    "question": "A 65-year-old man underwent a left hemicolectomy due to a malignant tumor in the descending colon. On the 4th day after the surgery he developed pain and edema in his left shin. The Homans sign is positive on the left. What postoperative complication developed in thís patient?",
+    "correctAnswer": "Acute postoperative thrombosis of the deep veins in the left shin",
+    "options": [
+      {
+        "value": "Acute postoperative  thrombosis of the popliteal artery on the left"
+      },
+      {
+        "value": "Postoperative allergic reaction"
+      },
+      {
+        "value": "Acute postoperative  lymphangitis of the left shin"
+      },
+      {
+        "value": "Acute disturbance of the cerebral  blood flow"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "10",
+    "_id": "9713",
+
+    "question": "A 35-ycar-old forestry officer was delivered to the hospital on the 7th day after the onset of the disease. He complains of chills, elevated body temperature up to 40.0C, sharp headache, and myalgias. On examination his face is puffy and hyperemic, the tongue is dry, chalk dusted\". In the left inguinal area, a sharply painful conglomeration of enlarged lymph nodes can be palpated. The skin over the conglomeration is hyperemic and tense. What etiotropic therapy should be prescribed to this patient?",
+    "correctAnswer": "Administration of heterologous  serum",
+    "options": [
+      {
+        "value": "Streptomycin"
+      },
+      {
+        "value": "Ketoconazole"
+      },
+      {
+        "value": "Human immunoglobulin  intravenously"
+      },
+      {
+        "value": "Ribavirin"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "11",
+    "_id": "9714",
+
+    "question": "Examination detected vesicles. with with seropurulent content on the neck, back of the head, and buttocks of an infant on the  4th day of life. The patient's condition is satisfactory, the child is active, all newborn reflexes can be fully induced, the umbilical cord is at the stage of mummification, the umbilical area is without any peculiarities. What disease can be suspected?",
+    "correctAnswer": "Vesiculopustulosis",
+    "options": [
+      {
+        "value": "Phlegmon"
+      },
+      {
+        "value": "Neonatal pemphigus"
+      },
+      {
+        "value": "Epidermolysis bullosa"
+      },
+      {
+        "value": "Miliaria"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "12",
+    "_id": "9715",
+
+    "question": "12. A 65-year-old man with acute anterior myocardial infarction developed an asphyxia attack. Examination detected diffuse cyanosis. In the lungs there are numerous heterogeneous wet crackles Heart rate is 100/min. Blood pressure is 120/100 mm Hg What complication occurred in this patient?",
+    "correctAnswer": "Pulmonary edema",
+    "options": [
+      {
+        "value": "Pulmonary embolism"
+      },
+      {
+        "value": "Cardiogenic shock"
+      },
+      {
+        "value": "Ventricular septal npture"
+      },
+      {
+        "value": "Hypertensive crisis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "13",
+    "_id": "9716",
+
+    "question": "A 13-year-old girl for a month has been complaining of fatigability, dull pain in her right subcostal area, abdominal distension, and constipations. Abdominal palpation reveals positive Kehr, Murphy, and Ortner signs, while Desjardins and Mayo-Robson points are painless. Total bilirubin is 14.7 mcmol/L, predominantly indirect, ALT- 20 U/L, AST- 40 U/L, amylase 6.3 mmol/L Echocholecystography shows practically no contraction of the gallbladder. Make the provisional diagnosis:",
+    "correctAnswer": "Hypokinetic biliary dyskinesia",
+    "options": [
+      {
+        "value": "Chronic pancreatitis"
+      },
+      {
+        "value": "Acute pancreatitis"
+      },
+      {
+        "value": "Chronic hepatitis"
+      },
+      {
+        "value": "Hyperkinetic biliary dyskinesia"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "14",
+    "_id": "9717",
+
+    "question": " A 48-year-old woman has been hospitalized due to development of tachysystolic atrial fibrillation. She has lost 5 kg of body weight within 2 months. On palpation there is a node in the left lobe of the thyroid gland. What pathology resulted in the development of this condition?",
+    "correctAnswer": "Toxic nodular goiter",
+    "options": [
+      {
+        "value": "Nontoxic nodular goiter"
+      },
+      {
+        "value": "Chronic thyroiditis"
+      },
+      {
+        "value": "Autoimmune thyroiditis"
+      },
+      {
+        "value": "Aterosclerotic cardiosclerosis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "15",
+    "_id": "9718",
+
+    "question": "weakness 58-year-old and tumor-like formations complains that of appeared on the anterior surface of his neck and in the inguinal region. Palpation detects soft painless mobile cervical and inguinal  lymph nodes up to 2 cm in diameter. The liver protrudes by 2 cm from the edge of the costal margin, the lower splenic pole is at the umbilical level. n blood: erythrocytes 3.5 10, Hb- 88 g/, leukocytes 86 10/L band neutrophils 19%, segmented neutrophils 10%, lymphocytes 85%, cosinophils 2%, basophils 0%, monocytes -2%, erythrocyte sedimentation rate 15 mm/hour, Gumprecht shadows. What is the most likely diagnosis?",
+    "correctAnswer": "Chronic lymphocytic leukemia",
+    "options": [
+      {
+        "value": "Lymphogranulomatosis"
+      },
+      {
+        "value": "Acute leukemia"
+      },
+      {
+        "value": "Lymphocytic leukemoid  reaction"
+      },
+      {
+        "value": "Chronic myeloid leukemia"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "16",
+    "_id": "9719",
+
+    "question": "A newborn has a round red formation in the suprapubic region. Examination shows that urine is being discharged in pulses from the two orifices located in the lower part of this formation. Name this developmental anomaly:",
+    "correctAnswer": "Vesico-umbilical fistula",
+    "options": [
+      {
+        "value": "Bladder diverticulum"
+      },
+      {
+        "value": "Urachal cyst"
+      },
+      {
+        "value": "Bladder exstrophy"
+      },
+      {
+        "value": "Bladder agenesis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "17",
+    "_id": "9720",
+
+    "question": "A 28-year-old man, a teacher, after an emotional stress developed painful muscle spasms in his right hand that occur during writing; now he has to hold the pen between the second and third fingers. He has no problems with typing or writing on the blackboard; no other motor disturbances or neurological pathologies are detected. What is the most likely diagnosis?",
+    "correctAnswer": "Writers cramp",
+    "options": [
+      {
+        "value": "Neuropathy of the right  ulnar nerve"
+      },
+      {
+        "value": "Neuropathy of the right  radial nerve"
+      },
+      {
+        "value": "Cortical agraphia"
+      },
+      {
+        "value": "Parkinsonism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "18",
+    "_id": "9721",
+
+    "question": "A 45-year-old woman was hospitalized with complaints of periodical severe headaches against the background of elevated blood preşsure up to 180/90 mm Hg, muscle weakness, and frequent urination (at night as well). Her anamnesis states that despite combining variouus antihypertensive drugs and adjusting their dosage her arterial hypertension cannot be corrected with drugs. The patient's blood serum potassium levels are 2.0 mmol/L blood serum sodium levels are 160.0 mmol/L. Ultrasound imaging detects three dimensional formations approximately 1.0 cm in diameter in the both adrenal glands Selective endovascular blood sampling from the suprarenal veins was performed, which revealed significant increase of cortisol and  aldosterone levels. Make the diagnosis:",
+    "correctAnswer": "Pheochromocytoma",
+    "options": [
+      {
+        "value": "Aldosteroma"
+      },
+      {
+        "value": "Cushing's syndrome"
+      },
+      {
+        "value": "Androsteroma"
+      },
+      {
+        "value": "Androsteroma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "19",
+    "_id": "9722",
+
+    "question": "A pregnant woman at 32 veeks of gestation with the risk of preterm labor undergoes a treatment to prevent fetal respiratory distress syndrome. What medicine was she prescribed?",
+    "correctAnswer": "Dexamethasone",
+    "options": [
+      {
+        "value": "Misoprostol"
+      },
+      {
+        "value": "Gynipral (hexoprenaline)"
+      },
+      {
+        "value": "Oxytocin"
+      },
+      {
+        "value": "Progesterone"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "20",
+    "_id": "9723",
+
+    "question": "A 45-ycar-old man underwent a cardiac surgery one week ago. His general state has been deteriorating since then: dyspneca at rest, retrosternal pain that irradiates to the neck, marked weakness. Objectively his body temperature is hectic. His cardiac borders are expanded, apical beat is weakened. Auscultation detects pericardial friction rub.' What is the most likely diagnosis?",
+    "correctAnswer": "Acute pericarditis",
+    "options": [
+      {
+        "value": "Acute myogenic dilatation  of the heart"
+      },
+      {
+        "value": "Myocardial infarction"
+      },
+      {
+        "value": "Acute cardiac aneurysm "
+      },
+      {
+        "value": "Pulmonary embolism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "21",
+    "_id": "9724",
+
+    "question": "The director of a medical facility draws up a financial plan for the next year. To improve the economic well-being of his establishment, he decided to increase the amount of medical services provided. How will it change the fixed cost per unit of service?",
+    "correctAnswer": "No changes",
+    "options": [
+      {
+        "value": "Fluctuate"
+      },
+      {
+        "value": "Increase"
+      },
+      {
+        "value": "Decrease"
+      },
+      {
+        "value": "There is no corrclation  between these variables"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "22",
+    "_id": "9725",
+
+    "question": "A woman with the pregnancy term of 8 weeks complains of clevated temperature up to 376°C, skin rash that can be characterized as macular exanthema, enlargement of posterior cervical and occipital lymph nodes, small amount of bloody discharge from the genital tracts. She was cxamined by the infectious diseases specialist and diagnosed with rubella. What tactics should the obstetrician-gynecologist choose?",
+    "correctAnswer": "Abortion",
+    "options": [
+      {
+        "value": "Prescription of hemostatic  therapy"
+      },
+      {
+        "value": "Prescription of antiviral  therapy"
+      },
+      {
+        "value": "Treatment of incipient  abortion"
+      },
+      {
+        "value": "Prescription of antibacterial  therapy"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "23",
+    "_id": "9726",
+
+    "question": "A surgery unit received a person with an inciscd stab wound on he upper third of the right thigh. Examination detects an incised stab wound 3.0x0.5x2.0 cnm in size on the inner surface of the upper third of the right thigh. Bright-red blood flows from deep within the wound in a pulsing stream. Characterize this type of bleeding:",
+    "correctAnswer": "Arterial",
+    "options": [
+      {
+        "value": "Venous"
+      },
+      {
+        "value": "Parenchimatous"
+      },
+      {
+        "value": "Mixed"
+      },
+      {
+        "value": "Capillary"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "24",
+    "_id": "9727",
+
+    "question": "A 23-year-old woman without visible cause developed a conflicting behavior at her workplace. She accused the management of underestimating her, claimed that she can be a deputy director, because she speaks four languages, is very attractive, and can make useful connections for the company. She has been dressing extravagantly, flirting with her colleagues, and singing loudly in her office. In fact, she has only the training of a computer operator and speaks no foreign languages. What is the likely clinical diagnosis?",
+    "correctAnswer": "Manic episode",
+    "options": [
+      {
+        "value": "Schizophrenia"
+      },
+      {
+        "value": "Epilepsy"
+      },
+      {
+        "value": "Depressive disorder"
+      },
+      {
+        "value": "Mild mental retardation"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "25",
+    "_id": "9728",
+
+    "question": " A 45-year-old woman undergoes an inpatient treatment. She complains of elevated body temperature up to 39.0°C, pain in her right lumbar area, turbid urine with blood. CT scan shows an area of low density within the parenchyma, no difference between the cortical and medullary layers, and increased density of the perinephric fat due to edema. What is the diagnosis?",
+    "correctAnswer": "renal abscess",
+    "options": [
+      {
+        "value": "paranephritis"
+      },
+      {
+        "value": "Pyelonephritis"
+      },
+      {
+        "value": "Glomerulonephritis"
+      },
+      {
+        "value": "Renal carcinoma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "26",
+    "_id": "9729",
+
+    "question": "A 25-year-old man was hospitalized with complaints of pain in his lower abdomen and right lumbar area that appeared one hour ago. The patient's general state is moderately severe. Body temperature 38.2°C, heart rate 102/min. The tangue is dry. The abdomen is painful on deep palpation in the right iliac area and in the  Petit triangle. Aure-Rozanov and Gabay igns are positive. Make the provisional diagnosis:",
+    "correctAnswer": "acute appendicitis",
+    "options": [
+      {
+        "value": "Acute cholecystitis"
+      },
+      {
+        "value": "Cecal tumor"
+      },
+      {
+        "value": "inestinal obstruction"
+      },
+      {
+        "value": "Rieht-sided renal colic"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "27",
+    "_id": "9730",
+
+    "question": "A S6-year-old woman was diagnosed with stage 2 hypertenson ot the 2nd degree. and has bronchial asthma. What group of drugs is CONIRAINDICATED to this patient",
+    "correctAnswer": "beta-blockers",
+    "options": [
+      {
+        "value": "Angiotensin-converting enzyme inhibitors"
+      },
+      {
+        "value": "Diuretics"
+      },
+      {
+        "value": "Imidazoline receptor  antagonist"
+      },
+      {
+        "value": "calcium antagonists"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "28",
+    "_id": "9731",
+
+    "question": "A 68-year-old woman with congestive heart failure and left ventricular ejection fraction of <40% receives the folowing pharmacotherapy scheme: ramipril, iorasemide, bisoprolol, clopidogrel, and digoxin. During one of her regular examinations, frequent polymorphic ventricular extrasystoles we detected in the patient. What medicine should be removed from her therapy scheme?",
+    "correctAnswer": "Digoxin",
+    "options": [
+      {
+        "value": "Bisoprolol"
+      },
+      {
+        "value": "Torasemide"
+      },
+      {
+        "value": "Ramipril"
+      },
+      {
+        "value": "Clopidogrel"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "29",
+    "_id": "9732",
+
+    "question": "A 35-yecar-old woman had acute onset of the disease that started with fever up to 39.0°C and cough. 3 days later her dyspnea at rest increased up to 35/min. Downward from her right shoulder-blade angle, percussion detects a dull sound No vocal fremitus, respiratory sounds cannot be auscultated. What is the treatment tactics?",
+    "correctAnswer": "Pleural tap",
+    "options": [
+      {
+        "value": "Physiotherapy"
+      },
+      {
+        "value": "Oxygen therapy"
+      },
+      {
+        "value": "Artificial lung ventilation"
+      },
+      {
+        "value": "Antibiotic therapy"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "30",
+    "_id": "9733",
+
+    "question": "After playing with \"mosaics a 2 year-old chíld suddenly developed cough, stridorous respirations, urges to vomit, and cyanosis against the background of relative somatic health. What should the doctor suspect first when cxamining this child?",
+    "correctAnswer": "Foreign body aspiration",
+    "options": [
+      {
+        "value": "Pneumonia"
+      },
+      {
+        "value": "Acute obstructive bronchitis"
+      },
+      {
+        "value": "Acute laryngotracheitis"
+      },
+      {
+        "value": "Pertussis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "31",
+    "_id": "9734",
+
+    "question": "40% of the workers, who polish the art glass, using an abrásive disk, and have a long record of employment, are diagnosed with ulnar neuritis, 21% with vegetative polyneuritis, and 12% with vegetomyofascitis of the upper limbs. These pathologies are associated with the following harmful factor:",
+    "correctAnswer": "Vibration",
+    "options": [
+      {
+        "value": "Noise"
+      },
+      {
+        "value": "Electromagnetic field"
+      },
+      {
+        "value": "Dust"
+      },
+      {
+        "value": "Microclimate"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "32",
+    "_id": "9735",
+
+    "question": "After a long drive with the window open a man developed a facial asymmetry; he cannot close his right eye, his right nasolabial fold is smoothed out, movements of expression are absent on the right, there is a disturbance of taste sensation in the tongue on the right. No other neurological abnormalities were detected. What disease can be provisionally diagnosed in this case?",
+    "correctAnswer": "Neuropathy of the facial nerve",
+    "options": [
+      {
+        "value": "Trigeminal ganglionitis"
+      },
+      {
+        "value": "Ischemic stroke"
+      },
+      {
+        "value": "Neuropathy of the oculomotor  nerve"
+      },
+      {
+        "value": "Neuropathy of the trigeminal nerve"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "33",
+    "_id": "9736",
+
+    "question": "A 6-year-old girl complains of body temperature up to 39°C, rhinitis, dry cough, dyspnea. She has been presenting with these signs for 5 days already. On examination her condition is of moderate severity. Her dyspnea is of mixed genesis. Respirations are 28/min., pulse is 120/min. Percussion produces a dull sound in the right lower segments; in the same area auscultation detects weakened respiration and fine vesicular wet crackles; coarse respiration can be detected on the left. Make the provisional diagnosis:",
+    "correctAnswer": "Right-sided community-acquired pneumonia",
+    "options": [
+      {
+        "value": "Stenosing laryngotracheitis"
+      },
+      {
+        "value": "Acute bronchiolitis"
+      },
+      {
+        "value": "Acute simple bronchitis"
+      },
+      {
+        "value": "Acute obstructive bronchitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "34",
+    "_id": "9737",
+
+    "question": "A full-term newborn (born with the body weight of 3900 g at gestational age of 39 weeks) on the first day of his life developed respiratory disturbances: dyspnea, arrhythmic respiration, cyanosis attacks. On examination there is paradoxical respiration observed and left  side of the chest lags behind in the act of breathing. On auscultation the respiration is weakened in the lungs on the left. Neurologist diagnosed the patient with left sided Erb-Duchenne palsy. Complete blood count shows no changcs. What is the most likely diagnosis?",
+    "correctAnswer": "Left-sided diaphragm paresis",
+    "options": [
+      {
+        "value": "Left-sided pneumothorax"
+      },
+      {
+        "value": "Congenital pneumonia"
+      },
+      {
+        "value": "Respiratory distress  syndrome"
+      },
+      {
+        "value": "Respiratory distress syndrome"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "35",
+    "_id": "9738",
+
+    "question": "A 30-year-old woman made an appointment with the family doctor for scheduled vaccination of her 2-year-old child. What type of healthcare provides such medical services?",
+    "correctAnswer": " Primary healthcare",
+    "options": [
+      {
+        "value": "Palliative care"
+      },
+      {
+        "value": "Tertiary healthcare"
+      },
+      {
+        "value": "Emergency aid"
+      },
+      {
+        "value": "Secondary healthcare"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "36",
+    "_id": "9739",
+
+    "question": "A 3-year-old child has bcen brought to a hospital with complaints of pain in the legs, fever, and loss of appetite. Öbjectively pale skin and mucosa, hemorrhagic rash. Lymph nodes are enlarged, painless, dense and elastic, not matted together. Bones, joints, and abdomen are painful. The liver and spleen arc enlarged. Hemogram: Hb-88 g/L, color index 1.3, platelets - 80 10°/L, leukocytes 25.8 10/L, lymphoblasts -70%, ESR- 52 mm/hour. Make the provisional diagnosis:",
+    "correctAnswer": "Acute leukemia",
+    "options": [
+      {
+        "value": "Infectious mononucleosis"
+      },
+      {
+        "value": "Thrombocytopenic purpura"
+      },
+      {
+        "value": "Acute rheumatic fever"
+      },
+      {
+        "value": "Hemorrhagic vasculitis (Henoch-Schonlein purpura) "
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "37",
+    "_id": "9740",
+
+    "question": "After semolina was introduced into the diet, a 1-year-old child for 2 months has been presenting with loss of appetite, irritability, loss of body mass, and loss of previously learned skills. The feces are copious and foul-smelling. The skin is pale and dry, the hair is brittle. The abdomen is distended, while the limbs are thin. Stool test shows high levels of fatty acids. What is the most likely diagnosis?",
+    "correctAnswer": "Celiac disease",
+    "options": [
+      {
+        "value": "Irritable bowel syndrome "
+      },
+      {
+        "value": "Functional diarrhea"
+      },
+      {
+        "value": "Mucoviscidosis"
+      },
+      {
+        "value": "Lactase deficiency"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "38",
+    "_id": "9741",
+
+    "question": "A 73-year-old woman came to the family physician for one of her regular follow-up  examinations. Three months ago she was found to have type 2 diabetes mellitus. She was kceping to her diet and exercise plan and taking phytopreparations. On examination her fasting glucose was within the range of 78-8.6 mmol/lL, HbAlc 79%. Height 164 cm, weight 83 kg. What blood glucose-controlling medicine should she be prescribed first in the coursc of her pharmacological therapy?",
+    "correctAnswer": "Metformin",
+    "options": [
+      {
+        "value": "Insulin"
+      },
+      {
+        "value": "Gliclazide"
+      },
+      {
+        "value": "Glimepiride"
+      },
+      {
+        "value": "Glibenclamide"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "39",
+    "_id": "9742",
+
+    "question": "A patient. has gradually lost his consciousness. Thc skin is pale and dry. There is smell of ammonia from the mouth. Respirations are deep and noisy. Heart sounds are mufiled, pericardial friction rub is present. Blood pressure is 180/130 mm Hg. Blood test: Hb- 80 g/L, leukocytes 12.10/L, blood glucose 6.4 mmol/L, urca 50 mmol/L, creatinine 1200 mcmol/L, blood osmolarity 350 mOsmol/kg HaO. No urinary excretion. Make the diagnosis:",
+    "correctAnswer": "Uremic coma",
+    "options": [
+      {
+        "value": "Acute disturbance of  cerebral circulation"
+      },
+      {
+        "value": "Hyperglycemic coma"
+      },
+      {
+        "value": "Hyperosmolar coma"
+      },
+      {
+        "value": "Acute renal failure"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "40",
+    "_id": "9743",
+
+    "question": "A 10-year-old boy came to the polyclinic with complaints of stuffy nosc. It is known that these signs occur in the child periodically (in spring and autumn). He has a history of atopic dermatitis. The father of the child has bronchial asthma. Objectively, the boy's face is pale and slightly swollen. Respirations are 22/min. Auscultation detects vesicular respiration over the lungs. Rhinoscopy shows swollen and pale nasal mucosa. What disease can be suspccted?",
+    "correctAnswer": "Allergic rhinitis",
+    "options": [
+      {
+        "value": "Acute maxillary sinusitis"
+      },
+      {
+        "value": "Recurrent respiratory disease"
+      },
+      {
+        "value": "Acute rhinitis"
+      },
+      {
+        "value": "Acute adenoiditis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "41",
+    "_id": "9744",
+
+    "question": "Discase onset was acute. A child developed general weakness, pain in the joints, and fever. Later these signs became accompanied by itching skin rash manifested as erythematous spots 2-5 mm in size. The rash gradually turned hemorrhagic. Large joints are painful and swollen; pain attacks periodically occur in the paraumbilical arca; there are signs of intestinal hemorrhage. What is the most likely diagnosis?",
+    "correctAnswer": "Hemorrhagic vasculitis (Henoch-Schonlein purpura)",
+    "options": [
+      {
+        "value": "Hemorrhagic  meningoencephalitis"
+      },
+      {
+        "value": "Streptococcal impetigo"
+      },
+      {
+        "value": "Scarlet fever"
+      },
+      {
+        "value": "Rheumatism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "42",
+    "_id": "9745",
+
+    "question": "A 34-ycar-old multipara was brought to the labor ward with regular labor activity Her pelvic size is 26-29-32-22 cm. Vaginal examination shows 6 cm cervical dilation, the amniotic sac is unbroken. The fetus is in the breech presentation, with buttocks pressed to the entrance into the lesser pelvis. The promontory cannot be reached, no exostoses. Fetal heart rate is 140/min., expected fetal weight is 2800g. What labor tactics should be chosen?",
+    "correctAnswer": "Urgent cesarean section",
+    "options": [
+      {
+        "value": "Delivery through the natural  birth canal"
+      },
+      {
+        "value": "Classic combined external-internal version of the fetus"
+      },
+      {
+        "value": "Fetal extraction from the  pelvic end"
+      },
+      {
+        "value": "External obstetric version of the  fetus"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "43",
+    "_id": "9746",
+
+    "question": "A 54-year-old woman complains of a fogged vision in her right eye, rainbow circles in her vision, headache, and nausea. Within the last month she twice experienced a similar condition, but back then all the signs eventually disappeared and her sight was restored. Čurrently, all the signs have beed persisting for over 2 days. Objectively, the patient has eyelid edema, congestive injection of the eyeball, corneal opacity shallow anterior chamber of the eye, and dilated pupil that is unresponsive to the light. Her intraocular pressure is 48 mm Hg. Make the diagnosis:",
+    "correctAnswer": "Glaucoma",
+    "options": [
+      {
+        "value": "Iritis"
+      },
+      {
+        "value": "Keratitis"
+      },
+      {
+        "value": "Irídocyclitis"
+      },
+      {
+        "value": "Cyclitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "44",
+    "_id": "9747",
+
+    "question": "A 3-month-old child with signs of rickets presents with positive Chvostek, Trousseau, and Maslov signs. One day ago the parents witnessed a cyanotic attack in their child- the child broke into a cold sweat, the eyes bulged, and rcspiratory arrest occurred. One minute later the child drew in a loud breath and the child's condition normalized again. What is the cause of the described signs of the disease?",
+    "correctAnswer": "Decrease of blood calcium levels",
+    "options": [
+      {
+        "value": "Increase of blood calcium  levels"
+      },
+      {
+        "value": "Increase of blood phosphorus  levels"
+      },
+      {
+        "value": "Metabolic acidosis"
+      },
+      {
+        "value": "Decrease of blood phosphorus  levels"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "45",
+    "_id": "9748",
+
+    "question": "After eating shrimps, a 25-year-old man suddenly developed skin itching, some areas of his skin became hyperemic or eruptecd into vesicles. Make the diagnosis:",
+    "correctAnswer": "Acute urticaria",
+    "options": [
+      {
+        "value": "Hemorrhagic vasculitis (Henoch-Schonlein purpura"
+      },
+      {
+        "value": "Scabies"
+      },
+      {
+        "value": "Psoriasis"
+      },
+      {
+        "value": "Urticaria pigmentosa"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "46",
+    "_id": "9749",
+
+    "question": "A 35-year-old woman came to the family doctor with complaints of profuse menstruations that last up to 10 days. Gynecological examination shows that the uterine cervix is without changes, the uterus is in anterflexio, has normal size, is mobile and painless. The uterine appendages on the both sides are without peculiarities. The family doctor made the provisional diagnosis of abnormal ut rine bleeding. What instrumental method of examination needs to be performed first to diagnose this pathology?",
+    "correctAnswer": "Transvaginal ultrasound",
+    "options": [
+      {
+        "value": "Transabdominal ultrasound"
+      },
+      {
+        "value": "Colposcopy"
+      },
+      {
+        "value": "Culdoscopy"
+      },
+      {
+        "value": "Laparoscopy"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "47",
+    "_id": "9750",
+
+    "question": "A 19-year-old young man was diving and hit his hcad on the bottom of the pool He complains of pain in the nock. his head movements are limited and painful During examination his head is bowed forward and to the right and the patient supports it with his hands. Palpation dctects tense neck muscles and protruding spinous process of the IV cervical vertebra (CA). When pressure is applicd to this process and to the head (axial load), the pain intensifies Make the provisional diagnosis",
+    "correctAnswer": "Uncomplicated corvical fracture",
+    "options": [
+      {
+        "value": "Neck muscle injury"
+      },
+      {
+        "value": "Spinal root injury"
+      },
+      {
+        "value": "Complicated cervical fracture"
+      },
+      {
+        "value": "Cervical contusion"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "48",
+    "_id": "9751",
+
+    "question": "A patient is 45 years old. He referred for a consultation with psychiatrist due to Complaints of abdominal pain and discomfort that ocur in emotionally straining situations. Objectively, no changes of the gastrointestinal tract were detected. The complaints emerged over 10 years ago against the background of severc alcobol poisoning The patient has been repeatedly visiting gastrocnterologists, who were unable to find any significant cbanges in the patient. The prescribed therapy was incffective. What is the likely concusfon?",
+    "correctAnswer": "Somatoform autonomic dysfunction",
+    "options": [
+      {
+        "value": "Functional dyspepsia"
+      },
+      {
+        "value": "No disorders"
+      },
+      {
+        "value": "Organic brain disorder"
+      },
+      {
+        "value": "Chronic alcoholism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "49",
+    "_id": "9752",
+
+    "question": "A 21-year-old man was hospitalized on the 2nd day of the disease. His general condition is severe, body temperatureis 39°C. On his skin there are numerous irregular-shaped hemorrhagic elements. The diagnosis of meningococcemia was made. The next day his body temperature suddenly decreascd, blood pressure was 80/40 mm Hg. pulse was 120/min. Acrocyanosis was detected. What complication did the patient develop?",
+    "correctAnswer": "Acute adrenal insufficiency",
+    "options": [
+      {
+        "value": "Acute heart failure"
+      },
+      {
+        "value": "Acute liver failure"
+      },
+      {
+        "value": "Cerebral coma"
+      },
+      {
+        "value": "Acute hemorrhage"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "50",
+    "_id": "9753",
+
+    "question": "Forensic autopsy of the body of a 59-year-old man, who died suddenly at home without signs of violent death, shows pink skin and mucosa, liquid bright-red blood, and bright-red plethoric internal organs. Forensic toxicology testing detected 1.44°/ of ethanol in the blood and carboxyhemoglobin levels of 55%. What is the cause of dcath?",
+    "correctAnswer": "Carbon monoxide poisoning",
+    "options": [
+      {
+        "value": "Arsenic poisoning"
+      },
+      {
+        "value": "Potassium cyanide poisoning"
+      },
+      {
+        "value": "Aniline poisoning"
+      },
+      {
+        "value": "Alcohol poisoning"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "51",
+    "_id": "9754",
+
+    "question": "A 45-ycar-old man with a history of myocardial infarction developed a brief attack of palpitations, accompanied by the sensations of lack of air, fear, and vertigo. His blood pressure is 90/60 mm Hg. ECG during the attack shows cxtended QRS complex (0.13 seconds) with heart rate of 160/min., discordant shift of ST segment and T wave, dissociation of atrial ánd ventricular rhythm. What disturbance of cardiac rhythm is it?",
+    "correctAnswer": "atrial fibrillation",
+    "options": [
+      {
+        "value": "Paroxysmal supraventricula r tachycardia"
+      },
+      {
+        "value": "Ventricular fibrillation"
+      },
+      {
+        "value": "Paroxysmal ventricular  tachycardia"
+      },
+      {
+        "value": "Frequent ventricular extrasystoles"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "52",
+    "_id": "9755",
+
+    "question": " For 20 years the role of excessive weight in ischemic heart disease development among the working age male population over 40 was studied. It was determined that overweight men developed ischemic heart disease more often. What type of  epidemiological study is it?",
+    "correctAnswer": "Case-control study",
+    "options": [
+      {
+        "value": "Case report"
+      },
+      {
+        "value": "Experimental study"
+      },
+      {
+        "value": "Cohort study"
+      },
+      {
+        "value": "Case series report"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "53",
+    "_id": "9756",
+
+    "question": "A 20-year-old woman complains of headaches, vertigo, tearfulness, vomiting pain in the area of the heart, and tachycardia. The signs appear 6-7 days before menstruation and disappcar in the first days of menstruation. Make the diagnosis:",
+    "correctAnswer": "Premenstrual syndrome",
+    "options": [
+      {
+        "value": "Stein-Leventhal syndrome"
+      },
+      {
+        "value": "Metabolic craniopathy"
+      },
+      {
+        "value": "Algomenorrhea"
+      },
+      {
+        "value": "Diencephalic syndrome"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "54",
+    "_id": "9757",
+
+    "question": "A woman came to the gynecologist to plan her pregnancy. She was advised to increase her intake of the products rich in folic acid, particularly soy beans, bread made of coarsely ground flour, fruits, leafy green vegetables. Such changes in her diet will work toward the prevention of:",
+    "correctAnswer": "Non-closure of the ncural tube in the fetus",
+    "options": [
+      {
+        "value": "Polyhydramnios"
+      },
+      {
+        "value": "Non-closure of the fontanel"
+      },
+      {
+        "value": "Iron-deficiency anemia in the pregnant Woman"
+      },
+      {
+        "value": "Rickcts"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "55",
+    "_id": "9758",
+
+    "question": "A 48-year-old woman complains of disturbed menstrual cycle: hcr periods last for 7-9 days and are excessively profuse throughout the last half-year. She notes occasional hot flashes in her head, insomnia, irritability, and headaches. Her skin is of normal color. Blood pressure 150/90 mm Hg. pulse 90/min., rhythmic. The abdomen is soft and painless. Bimanual examination shows no uterine enlargement, the appendages cannot be detected. The vaginal fornices are free. What is the most likely diagnosis?",
+    "correctAnswer": "Climacteric syndrome",
+    "options": [
+      {
+        "value": "Stein-Leventhal syndrome (polycystic ovary syndrome)"
+      },
+      {
+        "value": "Adrenogenital syndrome"
+      },
+      {
+        "value": "Premenstrual syndrome"
+      },
+      {
+        "value": "Uterine myoma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "56",
+    "_id": "9759",
+
+    "question": "A pregnant woman at 34 weeks of gestation underwent dopplerometry of umbilical circulation, which revealed a reverse diastolic component. Objectively the height of the uterus is 27 cm above the pubic bone, the head of the fetus is mobileand located above the entrance to the lesser pelvis. Fetal heartbeat is 136/min. Vaginal examination shows that the uterine cervix is closed, its length is 3 cm. What tactics should the obstetrician choose?",
+    "correctAnswer": "Fetal biophysical profile",
+    "options": [
+      {
+        "value": "Urgent cesarean section"
+      },
+      {
+        "value": "Repeated dopplerometry  next day"
+      },
+      {
+        "value": "Labor induction with oxytocin"
+      },
+      {
+        "value": "Ultrasound photometry of the fetus"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "57",
+    "_id": "9760",
+
+    "question": "A 26-year-old woman was hospitalized into the gynecological department with complaints of body temperature up to 38.2°C, fever, general weakness, and dirty- red blood discharge from her genital tracts She is hemodynamically stable. Two days ago she underwent a medical abortion on the 8th week of pregnancy. Ultrasound detects the remains of the fertilized egg in her uterine cavity. What are the tactics of the patient management in this case?",
+    "correctAnswer": "Revision of the uterine cavity with vacuum aspirator. Antibiotic therapy",
+    "options": [
+      {
+        "value": "Pipelle biopsy"
+      },
+      {
+        "value": "Uterine cavity treatment with  antibiotic solutions"
+      },
+      {
+        "value": "Laparotomy. Supravaginal  uterine ampuiation. Abdominal drainage"
+      },
+      {
+        "value": "Laparotomy. Extirpation of the  uterus and tubes. Abdominal drainage"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "58",
+    "_id": "9761",
+
+    "question": "A 23-year-old woman with type 1 diabetes mellitus during the 2nd week of community-acquired pneumonia developed nausea and vomiting. In the evening she has lost her consciousness and was hospitalized. Objectively, the patient's skin is pale and dry. Her respiration is loud, the tongue is dry with brown deposit. Her heart rate is 129/min., blood pressure is 85/50 mm Hg. Palpation of the patient's abdomen provokes no response. The liver is +3 cm. Acetone test is markedly positive, blood glucose is 26 mmol/L. Make the provisional diagnosis:",
+    "correctAnswer": "Ketoacidotic coma",
+    "options": [
+      {
+        "value": "Lactacidemic coma"
+      },
+      {
+        "value": "Hepatic coma"
+      },
+      {
+        "value": "Infectious toxic shock"
+      },
+      {
+        "value": "Hyperosmolar coma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "59",
+    "_id": "9762",
+
+    "question": "On the 5th day after giving birth postparturient woman complains of a pain in her left mammary gland and body temperature up to 38.1°C. Examination shows that her mammary gland is enlarged and painful on palpation, the nipple is edematous and has fissures, the upper external quadrant of the gland is hyperemic. Name the measures that would have prevented the development of this complication in the patient:",
+    "correctAnswer": "Feeding on demand, expression  of breast milk, prevention of nipple fissures",
+    "options": [
+      {
+        "value": "Constant expression of  breast milk"
+      },
+      {
+        "value": "Feeding no longer that 10  minutes through an overlay"
+      },
+      {
+        "value": "Stop breastfeeding when  fissures appear"
+      },
+      {
+        "value": "Feeding on schedule"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "60",
+    "_id": "9763",
+
+    "question": "On ultrasound of the thyroid gland, a 47-year-old woman presents with a hypoechoic node 16 cm in diameter with blurred margins and intranodular hypervascularization. The doctor suspects thyroid carcinoma. What method should be used to verify the diagnosis?",
+    "correctAnswer": "Fine-needle aspiration biopsy",
+    "options": [
+      {
+        "value": "Thyroid scintigraphy"
+      },
+      {
+        "value": "Determine TSH level in the  blood"
+      },
+      {
+        "value": "Positron emission  tomography (PET)"
+      },
+      {
+        "value": "Case monitoring"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "61",
+    "_id": "9764",
+
+    "question": "In a pediatric clinic, located in a rural area, there are 9 children, who simultancously fell ill The following signs were detected: low physical activity, acrocyanosis of the nasolabial triangle and fingertips, mucosal cyanosis, tachycardia, dyspnea. It was determined that all the sick children were fed with a formula that was dissolved in the water taken from a dug well. Laboratory analysis revealed high levels of methemoglobin in the blood of the children. These signs can be caused by increased content of a certain element in the water. Name this element",
+    "correctAnswer": "Nitrates",
+    "options": [
+      {
+        "value": "Selenium"
+      },
+      {
+        "value": "Methylmercury"
+      },
+      {
+        "value": "Lead"
+      },
+      {
+        "value": "Sulfates"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "62",
+    "_id": "9765",
+
+    "question": "A 20-year-old man suffers from headache,, general weakness, and face cdema that appears in the morning 18 days carlier he had a case of tonsillitis. Objectively, his skin is pale, there are edema under his eyes. Heart rate is 60/min., blood pressure is 185/100 nim Hg. The sign of costovertebral angle tenderness (punch sign in the lumbar region) is negative. Urinalysis: color of \"mcat slops; protein 4.5 g/L, altered erythrocytes- 40-45 in the vision ficld, leukocytes- 5-6 in the vision field. 24- hour diurcsis is 400 mL. What is the most likcly diagnosis?",
+    "correctAnswer": "Acute glomerulonephritis",
+    "options": [
+      {
+        "value": "Systemic lupus erythematosus"
+      },
+      {
+        "value": "Urolithiasis"
+      },
+      {
+        "value": "Acute pyelonephritis"
+      },
+      {
+        "value": "Renal amyloidosis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "63",
+    "_id": "9766",
+
+    "question": "An 18-year-old patient always obeys others and adapts his needs to the demands of the people on whom he depends. He excessively defers to their wishes and makes them responsible for his wellbeing, cannot defend his interests and necds support from other people. Such psychic profile has been formed in the childhood, remains unchanged, and hinders adaptation. What psychic disorder is observed in this patient?",
+    "correctAnswer": "Dependent personality disorder",
+    "options": [
+      {
+        "value": "Markedly accentuated  personality"
+      },
+      {
+        "value": "Anxiety (avoidant) personality  disorder"
+      },
+      {
+        "value": "Markedly accentuated  personality"
+      },
+      {
+        "value": "Dependent personality disorder"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "64",
+    "_id": "9767",
+
+    "question": "A 35-year-old woman complains of a pain in her right axillary region. She has been suffering from this condition for a week. Her body temperature is 38°C. In the right axillary region there re 2 formations, 2, cm in size each. The skin over the formations is dark red and thin. Palpation produces a yellow-white discharge from the fistular openings. What is the most likcly diagnosis?",
+    "correctAnswer": "Hydradenitis",
+    "options": [
+      {
+        "value": "Lymphadenitis"
+      },
+      {
+        "value": "Carbuncle"
+      },
+      {
+        "value": "Folliculitis"
+      },
+      {
+        "value": "Furuncle"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "65",
+    "_id": "9768",
+
+    "question": "During a regular examination, an 8- year-old girl with type I diabetes mellitus presents with a swelling on the anterior surface of her hip. The swelling is 3 cm in diameter, dense, painless on palpation The skin over this formation has normal color and temperature. Localization of the swelling matches the place where the girl usually receives her insulin injections. What is the most likely causc of this dinical presentation?",
+    "correctAnswer": "Devclopment of atrophic  lipodystrophy",
+    "options": [
+      {
+        "value": "Development of hypertrophic lipodystrophy"
+      },
+      {
+        "value": "Formation of a post-injection  abscess"
+      },
+      {
+        "value": "Allergic response"
+      },
+      {
+        "value": "Formation of a post-injection  infiltration"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "66",
+    "_id": "9769",
+
+    "question": " A 52-year-old woman has been suffering for 2 years from dull occasionally exacerbating pain in her right subcostal area, occurring after cating high-fat foods, bitter taste in her mouth in the morning constipation, and flatulence. Objectively she is obese, her body temperature is36.9°C, there is a coating on the root of her tongue, the abdomen is moderately distended and painful in the area of gallbladder projection. What examination would be the most helpful for diagnosis making.",
+    "correctAnswer": "ultrasound",
+    "options": [
+      {
+        "value": "Liver scanning"
+      },
+      {
+        "value": "Cholecystography"
+      },
+      {
+        "value": "duodenoscopy"
+      },
+      {
+        "value": "Duodenal probe"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "67",
+    "_id": "9770",
+
+    "question": " A family doctor performed an external obstetrical examination of a pregnant woman and determined that her uterine fundus is located at the level of the navel. What is the most likely term of pregnancy in this woman?",
+    "correctAnswer": "16 weeks",
+    "options": [
+      {
+        "value": "24 weeks"
+      },
+      {
+        "value": "40 weeks"
+      },
+      {
+        "value": "32 weeks"
+      },
+      {
+        "value": "8 weeks"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "68",
+    "_id": "9771",
+
+    "question": "What should be prescribed as secondary prevention  drugs for a patient with atrial fibrillation after an ischemic stroke caused by cardiac embolism?",
+    "correctAnswer": "Oral anticoagulants",
+    "options": [
+      {
+        "value": "Calcium antagonists"
+      },
+      {
+        "value": "Nootropics"
+      },
+      {
+        "value": "B-blockers"
+      },
+      {
+        "value": "Aspirin or clopidogrel"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "69",
+    "_id": "9772",
+
+    "question": "A 55-year-old woman complains of thyroid gland  enlargement that can be observed throughout the last 2 years and a discomfort during swallowing. Objectively, she has signs of hypothyroidism. The thyroid gland on palpation is dense, non fused with the surrounding tissues and mobile on swallowing. The regional lymph nodes are not enlarged. In the serum there are antithyroid antibodies detected. What is the most likely diagnosis?",
+    "correctAnswer": "Hashimoto's thyroiditis",
+    "options": [
+      {
+        "value": "Acute thyroiditis"
+      },
+      {
+        "value": "Thyroid cancer"
+      },
+      {
+        "value": "Endemic goiter"
+      },
+      {
+        "value": "Midline cervical cyst"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "70",
+    "_id": "9773",
+
+    "question": " A 12-year-old girl after a case of respiratory infection developed dyspnea at rest, paleness of skin. Heart rate is 110/min.BP is 90/55 mm Hg Heart sounds are muffled. Borders of relative heart dullness:right-the parasternal line, upper - the Il rib, left- 1,0 cm outwards from the midclavicular line. Make the provisional diagnosis:",
+    "correctAnswer": "Infectious myocarditis",
+    "options": [
+      {
+        "value": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "value": "Exudative pericarditis"
+      },
+      {
+        "value": "Somatoform autonomic  dysfunction"
+      },
+      {
+        "value": "Functional cardiopathy"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "71",
+    "_id": "9774",
+
+    "question": "A 19-year-old young man complains of cough with expectoration of purulent sputum in amount of 100 mL per day, hemoptysis, dyspnea, increased body temperature up to 378°C, general weakness, weight loss. The patient's condition lasts for 4 years. Exacerbations occur 2-3 times a year. The patient presents with malnutrition, pale skin, cyanosis of the lips, drumstick (clubbed) fingers. Tympanic percussion sound in the lungs, weakened respiration, and various numerous moist crackles in the lower pulmonary segments on the left can be observed in this patient. In blood: erythrocytes 3.2- 10L, leukocytes- 8.4 • 10L, ESR 56 mm/hour. On X ray: lung fields are emphysematous, the left pulmonary root is deformed and dilated. What is the most likely diagnosis?",
+    "correctAnswer": "Multiple bronchiectasis of the  left lung",
+    "options": [
+      {
+        "value": "Left-sided pulmonary cystic  dysplasia"
+      },
+      {
+        "value": "Chronic abscess of the left lung"
+      },
+      {
+        "value": "Chronic left-sided pneumonia"
+      },
+      {
+        "value": "Suppuration of the cyst in the  left lung"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "72",
+    "_id": "9775",
+
+    "question": "A patient 1 year ago had a wave myocardial infarction  of the posterior wall of the left ventricle. For the last 2 weeks he has been suffering from daily attacks of atrial fibrillation and bradycardia episodes, accompanied by bouts of vertigo. What tactics is the most advisable in this case?",
+    "correctAnswer": "Pacemaker implantation",
+    "options": [
+      {
+        "value": "Prescription of digoxin"
+      },
+      {
+        "value": "Prescription of amiodarone"
+      },
+      {
+        "value": "Prescription of bisoprolol"
+      },
+      {
+        "value": "Prescription of procainamide"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "73",
+    "_id": "9776",
+
+    "question": "A 58-year-old woman has type 2 diabetes mellitus that is compensated with diet and metformin. She prepares for cholecystectomy. Objectively, her height is 164 cm, weight is 90 kg. heart rate is 72/min., blood pressure is 130/80 mm Hg.Her abdomen is soft, painful in the right subcostal region. The liver is not enlarged.Fasting glucose - 6.2 mmol/L. Glycated hemoglobin - 6.5%. What further tactics of sugar-lowering therapy should be chosen in this case?",
+    "correctAnswer": "Prescription of a short-acting insulin",
+    "options": [
+      {
+        "value": "Prescription of glurenorm  (gliquidone)"
+      },
+      {
+        "value": "Prescription of a long-acting insulin"
+      },
+      {
+        "value": "Prescription of an  insulin mixture"
+      },
+      {
+        "value": "Continue the present scheme  of therapy"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "74",
+    "_id": "9777",
+
+    "question": "A 23-year-old woman came to the gynecological clinic  She complains of pain, itching, and burning in her vulva, general weakness, indisposition, clevated body temperature up to 37.2°C, and headache, On examination in the vulva there are multiple vesicles up to 2-3 mm in diameter with clear contents against the background of hyperemia and mucosal edema. Make the provisional diagnosis:",
+    "correctAnswer": "Genital herpes infection",
+    "options": [
+      {
+        "value": "Papillomavirus infection"
+      },
+      {
+        "value": "Vulvar cancer"
+      },
+      {
+        "value": "Cytomegalovirus infection"
+      },
+      {
+        "value": "Primary syphilis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "75",
+    "_id": "9778",
+
+    "question": "A 5-year-old child had acute onset of the disease that  manifested in body temperature up to 39.5°C, marked chills, weakness, inertness, skin pallor, and headache. 8 hours later a hemorrhagic rash developed on the skin of the buttocks and legs. The child is sluggish, the body temperature has dropped, blood pressure is 80/40 mm Hg, respirations are 28-30/min., diuresis is decreased. Make the provisional diagnosis:",
+    "correctAnswer": "Meningococcemia",
+    "options": [
+      {
+        "value": "Thrombocytopenic purpura"
+      },
+      {
+        "value": "Неmorrhagic vasculitis  (Непoch-Schonlein purpura)"
+      },
+      {
+        "value": "Мeasles"
+      },
+      {
+        "value": "Reye syndrome"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "76",
+    "_id": "9779",
+
+    "question": "A 43 year old man complains of facial edema,dyspnea, and difficult swallowing that appeared 3hours after he was stung by an insect. Objectively,the skin of his eyelids,cheeks and lipsid acutely hyperemic and edematous. What medicines should he be prescribed for emergency aid?",
+    "correctAnswer": "Glucocorticoidsteroids",
+    "options": [
+      {
+        "value": "Nonsteroidal  anti-inflammatory drugs"
+      },
+      {
+        "value": "Diuretics"
+      },
+      {
+        "value": "Muscle relaxents"
+      },
+      {
+        "value": "Antihistamines"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "77",
+    "_id": "9780",
+
+    "question": "When planning treatment of a patient,it was decided to  use a medicine with evidence level A. What trials produce the evidence that allows to classify the medicine as level A?",
+    "correctAnswer": "Data obtained from many  non-randomized trials",
+    "options": [
+      {
+        "value": "Expert consensus"
+      },
+      {
+        "value": "Data obtained from one randomized clinical trial"
+      },
+      {
+        "value": "Data obtained from several randomized clinical trial"
+      },
+      {
+        "value": "case-control studies"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "78",
+    "_id": "9781",
+
+    "question": "After the pregnant womens water broke,it was noted  that they are significantly contaminated with meconium.Upon birth the baby is not breathing remains inert,the skin is cyanotic and covered in meconium heart rate is 98/min.what resuscitation measures should be taken after the baby is born?",
+    "correctAnswer": "Sanation of the upper respiratory tracts with a rubber balloon",
+    "options": [
+      {
+        "value": "Direct laryngoscopy,intubation ,sanation of the trachea"
+      },
+      {
+        "value": "Tactile stimulation of the newborn"
+      },
+      {
+        "value": "Give adrenaline intravenously"
+      },
+      {
+        "value": "Artificial pulmonary ventilation  with a mask and Ambu bag"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "79",
+    "_id": "9782",
+
+    "question": "The 5-year-old child has been ill for 2weeks.  Cough attacks developed first and were then followed by reprises.During coughing the child’s face turns red and cervical veins bulge. The cough attacks induce vomitting. X-ray shows intensified bronchial pattern.Blood test: leukocytes-16.10power 9/L, lymphocytes-72%,erythrocyte sedimentation rate-4mm/hour. What is the most likely diagnosis?",
+    "correctAnswer": "Pertussis",
+    "options": [
+      {
+        "value": "Pneumonia"
+      },
+      {
+        "value": "Foreign body"
+      },
+      {
+        "value": "Obstructive bronchitis"
+      },
+      {
+        "value": "Adenovirus infection"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "80",
+    "_id": "9783",
+
+    "question": "A 48-year old woman was delivered into the surgical  unit with wounds in her thigh. On the examination the wound surface has a dirty-gray coating with unpleasant sweet smell. The wound content resembles a raspberry jelly. Skin tissues around the wound are glossy and turgid. Palpation reveals moderate crepitation in the tissues. What bacteria is the most likely to cause such inflammation?",
+    "correctAnswer": "Anaerobic clostridial",
+    "options": [
+      {
+        "value": "Streptococci"
+      },
+      {
+        "value": "Anaerobic non-clostridial"
+      },
+      {
+        "value": "Blue pus bacillus"
+      },
+      {
+        "value": "staphylococci"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "81",
+    "_id": "9784",
+
+    "question": "A patient underwent suture plication of the perforated  duodenal ulcer. On the 3rd day afterbthe operation he started producing a large amount of discharge from the abdominal drain tube. The discharge contains bile and has high amylase levels. What complication occured in the patient?",
+    "correctAnswer": "Acute postoperative pancreatitis",
+    "options": [
+      {
+        "value": "Acute cholecystitis"
+      },
+      {
+        "value": "Early postoperative adhesive  obstruction "
+      },
+      {
+        "value": "Suture incompetence of the  ulcerative defect"
+      },
+      {
+        "value": "Hemorrhage from the ulcer "
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "82",
+    "_id": "9785",
+
+    "question": "A 40 year old victim of a traffic accident sustained the  following injuries : closed diaphyseal femur fracture , brain concussion , multiple rib fracture , hemopneumothorax , degloving shin injuries . What injuries requires the most urgent attention ?",
+    "correctAnswer": "Multiple rib fracture  hemopneumothorax",
+    "options": [
+      {
+        "value": "All the injuries are equivalent"
+      },
+      {
+        "value": "Degloving shin injuries"
+      },
+      {
+        "value": "Brain concussion"
+      },
+      {
+        "value": "Closed diaphyseal femur fracture"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "83",
+    "_id": "9786",
+
+    "question": " A 20 year old woman gravida 2 , para 1 has been in  labor for 4 hours. Her condition is satisfactory. Moderately painful contractions occur every 3 minutes and last for 35 - 40 seconds. The water have not burst yet. The fetus is in longitudinal position. Fetal heart beats are 136/min, clear and rhytmic. Major segment of the fetal head is engaged to the pelvic inlet. Vaginal examination shows smooth cervix of 6 cm , amniotic sac is intact , sagittal suture is in the left oblique diameter, occipital fontanel is on right near the symphysis pubis, what stage of the labor is it ?",
+    "correctAnswer": "Active phase of the first stage  of normal labor",
+    "options": [
+      {
+        "value": "Precursors of child birth"
+      },
+      {
+        "value": "Latent phase of the first stage  of normal labor "
+      },
+      {
+        "value": "Preliminary stage"
+      },
+      {
+        "value": "The second stage of normal labor"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "84",
+    "_id": "9787",
+
+    "question": "A 22 years old infant developed subcutaneous red  nodes from 1.0 to 1.5 cm in size on the scalp ; later the nodes suppurated. Temperature increased up to 37.7° C , intoxication symptoms appeared , regional lymph nodes enlarged. Complete blood count : anemia , leukocytosis , neutrocytosis , raised ESR. What diagnosis will you make ?",
+    "correctAnswer": "Pseudofurunculosis",
+    "options": [
+      {
+        "value": "Vesiculopustulosis"
+      },
+      {
+        "value": "Pemphigus"
+      },
+      {
+        "value": "Scalp phlegmon"
+      },
+      {
+        "value": "-"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "85",
+    "_id": "9788",
+
+    "question": "A 26 years old man complains of chills , rhinitis , dry cough , and fever up to 38°C. Examination shows him to be in a moderately severe condition ; there are small pale pink non - merging spots on the skin of his back, abdomen, and extremities. Palpation reveals enlarged occipital and axillary lymphnodes. No information about vaccination history could be obtained. What is the likely etiology of this disease ?",
+    "correctAnswer": "Rubella virus",
+    "options": [
+      {
+        "value": "Meningococcus"
+      },
+      {
+        "value": "Streptococcus"
+      },
+      {
+        "value": "Mumps virus"
+      },
+      {
+        "value": "Epstein barr virus"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "86",
+    "_id": "9789",
+
+    "question": "A 38 year old patient has been delivered by an  ambulance in a surgical department with complaints of general weakness, indisposition, black stool. On examination the patient is pale , there are dotted hemorrhage on the skin of his torso and extremities. On digital investigation there are black feces on the glove. Blood test : Hb - 108g/ L , thrombocytopenia , Anamnesis states that similar condition was observed 1 year ago. Make the diagnosis :",
+    "correctAnswer": "Thrombocytopenic purpura",
+    "options": [
+      {
+        "value": "Hemophillia"
+      },
+      {
+        "value": "Ulcerative bleeding"
+      },
+      {
+        "value": "Nonspecific ulcerative colitis"
+      },
+      {
+        "value": "Rectal tumour"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "87",
+    "_id": "9790",
+
+    "question": "The body of the citizen was found at the place of his  dwelling. On his face , neck , and hands there were detected irregular shaped wounds , varying from 2×3 cm to 4×5 cm in size. The skin and underlying tissues are absent in the wounds. The margins of the wounds are uneven , with the major and minor scalloping along the edges and no signs of bleeding. What is the initiating mechanism of these wounds ?",
+    "correctAnswer": "Local effect of cold",
+    "options": [
+      {
+        "value": "Pellet gunshot wound"
+      },
+      {
+        "value": "Animal bite wounds"
+      },
+      {
+        "value": "Blast injury"
+      },
+      {
+        "value": "Multiple stab and inched wounds"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "88",
+    "_id": "9791",
+
+    "question": "A multigravida , labor II , 36 - 37 weeks of gestation ,  has gone into labor. Her waters broke 8 hours ago , the labor activity continues for the last 4 hours, it is irregular, with concentration that last 35 seconds and occur every 3 - 4 minutes. The child is in the cephalic presentation, with the head pressed to the entrance into the lesser pelvis. The parturient women complains of sudden sharp abdominal pain. Her pulse is 100/min. Blood pressure is 110/70 - 100/70 mm Hg. The uterus is tensed and does not relax between the concentrations. Fetal heartbeat is muffled - 100/min. The amniotic fluid is blood colored and continues to leak. What is the most likely diagnosis ?",
+    "correctAnswer": "Premature detachment of the  normally positioned placenta",
+    "options": [
+      {
+        "value": "Uterine rupture"
+      },
+      {
+        "value": "Cervical rupture"
+      },
+      {
+        "value": "Rupture of the umbilical  vessels"
+      },
+      {
+        "value": "Partial placenta previa"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "89",
+    "_id": "9792",
+
+    "question": "A 45-year -old woman complains of increasing body  weight throughout the last year.Examination revealed moon face syndrome, brittle hair, hirustium strech marks on the abdomen, and disproportinally thin limbs. The patient's height is 162 cm , her body weight is 94 kg, her body mass index is 35.8 kg/m,what type of obesity is it ?",
+    "correctAnswer": "Cerebral",
+    "options": [
+      {
+        "value": "Gyniod"
+      },
+      {
+        "value": "Alimentary-constitutive"
+      },
+      {
+        "value": "Dysplastic"
+      },
+      {
+        "value": "Andriod"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "90",
+    "_id": "9793",
+
+    "question": "A 2.5 year old child is ill for the second day.  The onset of the disease was associated with the temperature up to 37,8°C a single bout of vomiting occured twice, body temperature is 38.0° C, the child has low appetite,watery diarrhea contiues. The treatment of the child sholud start with the following:",
+    "correctAnswer": "Prescribe oral rehydration",
+    "options": [
+      {
+        "value": "Prescribe ceftriaxone"
+      },
+      {
+        "value": "Prescribe polymyxin"
+      },
+      {
+        "value": "Prescribe loperamide"
+      },
+      {
+        "value": "Prescribe nifuroxazide"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "91",
+    "_id": "9794",
+
+    "question": "On the 3rd after the artificial abortion was the women was hospitalized into the gynecological department in severe condition with the signs of intoxication, abdominal pain and purulent discharge from the vagina. Objectively, the patient's condition is severe her body temperature is 38.8°C pulse is 100 /min, blood pressure is 110/70 mmHg, the utreus is soft, the uterine fundus is located at the level of the navel, there are positive signs of peritoneal irritation. What is the most likely diagnosis?",
+    "correctAnswer": "Pelviperitonitis",
+    "options": [
+      {
+        "value": "Acute suppurative  salpingo•oophoritis"
+      },
+      {
+        "value": "Acute metroendometritis"
+      },
+      {
+        "value": "Ecotopic pregnancy"
+      },
+      {
+        "value": "Uterine perforation"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "92",
+    "_id": "9795",
+
+    "question": "You witnessed a car accident. When examining the  place of the accident you noticed a man of about 30 years, who was hit by the car. He is unconscious, On his neck on the left there is a profuse hemorrhage with bright-red blood. How to stop this hemorrhage?",
+    "correctAnswer": "Digital occlusion, Mikulich method",
+    "options": [
+      {
+        "value": "Maximal hypertension  of the neck"
+      },
+      {
+        "value": "Apply a neck brace"
+      },
+      {
+        "value": "Put him in a Stable position"
+      },
+      {
+        "value": "Apply a plaster cast"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "93",
+    "_id": "9796",
+
+    "question": " A 27year-old man complains of pain in his leg joints  purulent discharge from the eyes and painful burning sensations during urination, disease onset Was acute. He has a history of influenza. The patient Smokes and drinks alcohol in excess, In his line of work he is often away on business trips- What is the most likely etiological factor Of this disease?",
+    "correctAnswer": "Chlamydia",
+    "options": [
+      {
+        "value": "Streptococci"
+      },
+      {
+        "value": "Adenovirus"
+      },
+      {
+        "value": "Staphylococci"
+      },
+      {
+        "value": "Candida"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "94",
+    "_id": "9797",
+
+    "question": " A 57-year-old man. a miner, complain a pain in his chest, dyspnea on physical exertion, excessive sweating, constant Subfebrile tempeature, and cough that produces blood-streaked sputum. He has been smoking for approximately 40 years (2 packs a day) and frequently has \"pneumonias\" shadow Survey In chest X-ray shows a triangular the middle lobe of the right lung. One of the apices the shadow points to the lung root, Cardiac and mediastinal shadows are displaced toward the affected area. Make the provisional diagnosis:",
+    "correctAnswer": "Cancer of the right lung",
+    "options": [
+      {
+        "value": "Chronic bronchitis"
+      },
+      {
+        "value": "Tuberculosis of the rigth lung"
+      },
+      {
+        "value": "Pneumonconiosis"
+      },
+      {
+        "value": "Right- sided pleuropneumonia"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "95",
+    "_id": "9798",
+
+    "question": "A district doctor has diagnosed one of patients with  dysentery. What accounting document reflects this type of morbidity?",
+    "correctAnswer": "Urgent report",
+    "options": [
+      {
+        "value": "Certificate of temporary  disability"
+      },
+      {
+        "value": "Statistical report"
+      },
+      {
+        "value": "Report on a major  non-epidemic disease"
+      },
+      {
+        "value": "Control card of a patient  registered for regular check-ups"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "96",
+    "_id": "9799",
+
+    "question": "A 31-year-old drug-addicted complains of a cough With bloodyexpectorations,dyspnea persistent fever and leg edemas.The jugular veins are distended.There is a coarse pansystolic murmur detected above the base Of the Xiphoid process and in the second intercostal space on the left, close to the edge of the sternum. Heart Sounds are clear arrhythmia is detected. heart rate is 128/min., pulse - 82/min.. blood pressure is 100/70 mm Hg, What is the most likely diagnosis?",
+    "correctAnswer": "Infective endocarditis",
+    "options": [
+      {
+        "value": "Community acquired  pneumonia"
+      },
+      {
+        "value": "Corarctation"
+      },
+      {
+        "value": "Lutembacher syndrome"
+      },
+      {
+        "value": "Pulmonary embolism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "97",
+    "_id": "9800",
+
+    "question": "A 7-year-old boy after a fall from a height presents  with rapid and shallow breathing and cyanotic face. The right half of his thorax is distended and takes no part in the respiration. Percussion detects tympanitis in the affected area, while auscultation detects no breathing there. What pathology is the most likely cause of this clinical presentation? What instrumental examination would be the most informative in this case?",
+    "correctAnswer": "Right- sided tension pneumothorax . Chest X-ray",
+    "options": [
+      {
+        "value": "Airway foreign body.  Diagnostic therapeutic bronchoscopy"
+      },
+      {
+        "value": "Mediastinitis.  Survey X-ray of the chest"
+      },
+      {
+        "value": "Tension cyst of the right lung.  Tracheobronchoscopy"
+      },
+      {
+        "value": "Right-sided hemothorax.  Survey X-ray of the chest"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "98",
+    "_id": "9801",
+
+    "question": "A 55-year-old woman came to a gynecologist with  complaints of leukorrhea and bloody discharge from the vagina after 5 years of menopause. Anamnesis states no pregnancies. Bimanual examination: the uterus and uterine appendages are without changes. During diagnostic curettage of the uterine cavity the physician scraped off a sample of enchephaloid matter. What is the most likely diagnosis in this case?",
+    "correctAnswer": "Endometrial carcinoma",
+    "options": [
+      {
+        "value": "Cervical carcinoma"
+      },
+      {
+        "value": "Adenomyosis"
+      },
+      {
+        "value": "Ovarian carcinoma"
+      },
+      {
+        "value": "Subserous uterine myoma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "99",
+    "_id": "9802",
+
+    "question": "What modern organizational method can provide  the patients in the remote settlements with timely access to quality medical aid and such medical services as consulting, diagnostics , and treatment, especially in the situations when time and distance are crucial?",
+    "correctAnswer": "Telemedicine",
+    "options": [
+      {
+        "value": "Ambulance services"
+      },
+      {
+        "value": "Field medical teams"
+      },
+      {
+        "value": "Air medical services"
+      },
+      {
+        "value": "Mobile communication"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "100",
+    "_id": "9803",
+
+    "question": "A 17-year-old girl has been suffering from hepatic  cirrhosis for 3 years. Lately her periods of excitation have been intermittent with depression, she does not sleep enough. Objectively, her condition is severe, the girl is sluggish , gives one- word responses, has tremor in her extremities, her skin is icteric, with single hemorrhagic rashes. Name the likely complication of her disease:",
+    "correctAnswer": "Hepatic encephalopathy",
+    "options": [
+      {
+        "value": "Sepsis"
+      },
+      {
+        "value": "Reye syndrome"
+      },
+      {
+        "value": "Kidney failure"
+      },
+      {
+        "value": "Bipolar affective disorder"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "101",
+    "_id": "9804",
+
+    "question": "A man works in casting of non-ferrous metals and  alloys for 12 years. In the air of working area there was registered high content of heavy metals, carbon monoxide, and nitrogen. During periodic health examination the patient presents with asthenovegetative syndrome, Sharp abdominal pains, constipations, pain in the hepatic area. In urine: aminolevulinic acid and coproporphyrin are detected. In blood: reticulocytosis , low hemoglobin level. Such intoxication is caused by:",
+    "correctAnswer": "Lead and lead salts",
+    "options": [
+      {
+        "value": "Zinc"
+      },
+      {
+        "value": "Nitric oxide"
+      },
+      {
+        "value": "Tin"
+      },
+      {
+        "value": "Carbon monoxide"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "102",
+    "_id": "9805",
+
+    "question": "During regular examination of a 2-year-old boy, he  presents with enlarged left kidney, painless on palpation. The right kidney was undetectable on palpation. Excretory urography shows no contrast on the right. Cytoscopy detected hemiatrophy of the urinary bladder trigone , the right ureteral orifice is not detected. What pathology is it?",
+    "correctAnswer": "Agenesis of the right kidney",
+    "options": [
+      {
+        "value": "Hypoplasia of the right kidney"
+      },
+      {
+        "value": "Dystopia of the right kidney"
+      },
+      {
+        "value": "Agenesis of the right ureter"
+      },
+      {
+        "value": "Ectopic right ureteral orifice"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "103",
+    "_id": "9806",
+
+    "question": "A 34-year-old woman after rapidly changing her  position from horizontal to vertical suddenly paled, fell down, her pupils are dilated. The pulse is rapid and thready , blood pressure is 50/25 mm Hg. What condition has likely developed in the patient?",
+    "correctAnswer": "Collapse",
+    "options": [
+      {
+        "value": "Morgagni-Adams- Stokes  syndrome"
+      },
+      {
+        "value": "Coma"
+      },
+      {
+        "value": "Shock"
+      },
+      {
+        "value": "Ventricular fibrillation"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "104",
+    "_id": "9807",
+
+    "question": " On laboratory investigation of a pork sample there is  1 dead trichinella detected in 24 sections. This meat should be :",
+    "correctAnswer": "Handed over for technical disposal",
+    "options": [
+      {
+        "value": "Processed and sold through  public catering network"
+      },
+      {
+        "value": "Allowed for sale with no  restrictions"
+      },
+      {
+        "value": "Processed for boiled sausage  production"
+      },
+      {
+        "value": "Frozen until the temperature  of -10℃ is reached in the deep layers with subsequent exposure to cold for 15 days."
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "105",
+    "_id": "9808",
+
+    "question": "Employees work in conditions of high dust  concentration. Certain chemical (silicon dioxide content ) and physical properties of dust aerosols contribute to the development of occupational dust - induced diseases. What is the main physical property of dust aerosls?",
+    "correctAnswer": "Dispersion",
+    "options": [
+      {
+        "value": "Electric charge"
+      },
+      {
+        "value": "Magnetization"
+      },
+      {
+        "value": "Ionization"
+      },
+      {
+        "value": "Solubility"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "106",
+    "_id": "9809",
+
+    "question": "A woman complains of a severe pain in her throat  on the left , difficult swallowing and mouth opening , elevated body temperature, and general malaise. The onset of the disease was 4 days ago after a case of tonsilities. Examination detects a trimus of the masticatory muscles, the left tonsil is displaced toward the midline , the anterior palatal arch is infiltrated and protruding . The regional lymph nodes on the right are enlarged and painful on palpation. Make the diagnosis:",
+    "correctAnswer": "Peritonsillar abscess",
+    "options": [
+      {
+        "value": "Lacunar tonsillitis"
+      },
+      {
+        "value": "Infectious mononucleosis"
+      },
+      {
+        "value": "Acute pharyngitis"
+      },
+      {
+        "value": "Tonsillar tumor"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "107",
+    "_id": "9810",
+
+    "question": " During winter epidemics of influenza caused  predominantly by virus A/California/04/2009 (H1N1) , on the 2nd day after the disease onset a 30-year-old hospitalized man presented with high fever, dry cough , myalgia , headache, and general weakness. What should be prescribed as an etiotropic treatment in this case ?",
+    "correctAnswer": "Neuraminidase inhibitors  (oseltamivir)",
+    "options": [
+      {
+        "value": "Antibiotics"
+      },
+      {
+        "value": "Acyclovir"
+      },
+      {
+        "value": "Interferon inducers"
+      },
+      {
+        "value": "Immunoglobulin"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "108",
+    "_id": "9811",
+
+    "question": "A 30 year old woman complains of itching skin ,  predominantly in the evening and at night. The condition lasts for 2 weeks already . On the skin of the interdigital folds, mammary glands, abdomen,buttocks and thighs there are numerous fine papular and papulovesicular located in pairs, excoriations. There is no rash on the face and neck . Similar rash is observed in the husband of the patient . What is the most likely diagnosis?",
+    "correctAnswer": "Scabies",
+    "options": [
+      {
+        "value": "Eczema"
+      },
+      {
+        "value": "Neurodermatitis"
+      },
+      {
+        "value": "Epidermophytosis"
+      },
+      {
+        "value": "Herpes"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "109",
+    "_id": "9812",
+
+    "question": "A 20-year-old patient complains of a severe headache ,  double vision , weakness , fever , irritability. Objectively : body temperature is 38.1℃ , the patient is reluctant to contact, sensitive to stimuli, There are ptosis of the left eyelid , extropia , anisocoria S > D , and pronounced meningeal syndrome. On lumbar puncture the cerebrospinal fluid flowed out under a pressure of 300mm Hg, the fluid is clear , slightly opalescent . 24 hours later there appeared a fibrin film . Protein - 1.4 g/L, lymphocytes - 600 per mm3, glucose -0.3 mmol/L . What is the provisional diagnosis?",
+    "correctAnswer": "Tuberculous meningitis",
+    "options": [
+      {
+        "value": "Lymphocytic (Armstrong's)  meningitis"
+      },
+
+      {
+        "value": "Mumps meningitis"
+      },
+      {
+        "value": "Meningococcal meningitis"
+      },
+      {
+        "value": "Syphilitic meningitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "110",
+    "_id": "9813",
+
+    "question": "3 hours after a trauma , a young man developed  bradycardia of 46/min., anisocoria D> S , hemihypesthesia on the left , and a convulsive disorder . The character of this process needs to be clarified . What method of examination will be the most accurate for this purpose?",
+    "correctAnswer": "Head CT",
+    "options": [
+      {
+        "value": "Lumbar puncture"
+      },
+      {
+        "value": "Skull X-ray"
+      },
+      {
+        "value": "Electroencephalography"
+      },
+      {
+        "value": "Echoencephalography"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "111",
+    "_id": "9814",
+
+    "question": "A 75-year-old man in a severe condition suffers  from dyspnea at rest, marked weakness, and arrhythmia. Abdominal aortic pulsation is observed , further on there is a systolic murmur detected. Palpation reveals a volumetric formation in the mesogastrium . Blood pressure is 70/40 mm Hg. There is no pulsation over the femoral arteries. Oliguria is detected. Which diagnosis is the correct one ?",
+    "correctAnswer": "Dissecting aortic aneurysm",
+    "options": [
+      {
+        "value": "Cardiosclerotic aneurysm"
+      },
+      {
+        "value": "Acute pericarditis"
+      },
+      {
+        "value": "Pancreatic cyst"
+      },
+      {
+        "value": "Acute cardiac aneurysm"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "112",
+    "_id": "9815",
+
+    "question": "A dweller of the northern Dnieper area , a fisherman  for the last several days has been complaining of a discomfort in his right subcostal region, periodical episodes of diarrhea , intermittent with constipations , frequent skin rashes . Abdominal ultrasound shows enlarged liver and pancreatic head make the provisional diagnosis:",
+    "correctAnswer": "Opisthorchiasis",
+    "options": [
+      {
+        "value": "Onchocerciasis"
+      },
+      {
+        "value": "Ornithosis"
+      },
+      {
+        "value": "Trichinellosis"
+      },
+      {
+        "value": "Taeniasis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "113",
+    "_id": "9816",
+
+    "question": "A 25-year-old woman bought into gynecological  department with profuse bloody discharge from her genital tracts.She is 12 weeks pregnant,the pregnancy is planned within last 3 days she was experiencing pains in her lower abdomen that eventually started resembling cramps, she developed bleeding. Her skin is pale, pulse-88/min, blood pressure-100/60 mm Hg, body temperature - 36.8 C. Vaginal examination: the uterus size corresponds to 11 weeks of gestation, the cervical canal allows inserting 1 finger and contains fragments of the fertilized ovum, the discharge is bloody and profuse. What is the most likely diagnosis?",
+    "correctAnswer": "12-weeks pregnancy, spontaneous  abortion in progress.",
+    "options": [
+      {
+        "value": "12 weeks pregnancy,  threatened spontaneous abortion."
+      },
+      {
+        "value": "Disturbed menstrual cycle,  amenorrhea."
+      },
+      {
+        "value": "Disturbed menstrual cycle,  hyperpolymenorrhea."
+      },
+      {
+        "value": "Full-term pregnancy, term labor."
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "114",
+    "_id": "9817",
+
+    "question": "A 39-year-old man, a battery attendent, suddenly  developed weakness, loss of appetite, nonlocalized colicky abdominal pain and nausea. Objectively, his skin is gray; there is a pink-grey strip on his gums; the abdomen is soft and sharply painful. Blood test detected erythrocytes with basophilic stippling and anaemia. The patient has a history of peptic ulcer disease of the stomach. Constipations occur each 3-4 days. What is the most likely provisional diagnosis?",
+    "correctAnswer": "Saturnism ( lead poisoning)",
+    "options": [
+      {
+        "value": "Chronic alcoholism"
+      },
+      {
+        "value": "Perforation of gastric ulcer"
+      },
+      {
+        "value": "Acute appendicitis"
+      },
+      {
+        "value": "Acute cholecystitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "115",
+    "_id": "9818",
+
+    "question": "An 18-year-old patient complaints of skin rash.  The patient has been suffering from this condition for 5 years. The first instant of this disease occurred after a car accident. Objectively: the patient presents with a papular rash covered in silvery scales,\"thimble\" sign (small pits on the nails), affected joints. What is the most likely diagnosis?",
+    "correctAnswer": "Psoriasis",
+    "options": [
+      {
+        "value": "Panaritium"
+      },
+      {
+        "value": "Onycomycosis"
+      },
+      {
+        "value": "Lupus erythematosus"
+      },
+      {
+        "value": "Rheumatism"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "116",
+    "_id": "9819",
+
+    "question": " During regular medical examination a lyceum student  presents with signs of cheilitis that manifests as epithelial maceration in the area of lip seal. The lips are bright-red, with single vertical cracks covered with brown-red scabs. These clinical signs are most likely caused by insufficient content of the following in the diet:",
+    "correctAnswer": "Riboflavin",
+    "options": [
+      {
+        "value": "Ascorbic acid"
+      },
+      {
+        "value": "Calciferol"
+      },
+      {
+        "value": "Retinol"
+      },
+      {
+        "value": "Thiamine"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "117",
+    "_id": "9820",
+
+    "question": "Children from a certain township present with brittle teeth, malocclusion dental enamel erosions, and dental pigmentation that looks like yellow brown spots. What is the likely cause of this presentation?",
+    "correctAnswer": "High levels of fluorine in water",
+    "options": [
+      {
+        "value": "High levels of sulfates in water"
+      },
+      {
+        "value": "High levels of nitrates"
+      },
+      {
+        "value": "Low levels of fluorine in water"
+      },
+      {
+        "value": "Low levels of sulfates in water"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "118",
+    "_id": "9821",
+
+    "question": "An 8-day-old boy was delivered to the hospital on the second day after the onset of the disease. His parents complain of his fusiness up to Ted skin with infiltration in the lumbar area. His medical history no peculiarities. The child is in the severe inert, In the lumbur area, on the sacrum and bullocks there is a tense infiltration with hyperemic cm in its center.The stool is 10 times in 24 hours, with green and mucous admixtures What is the most likely diagnosis?",
+    "correctAnswer": " Phlegmon of the newborn",
+    "options": [
+      {
+        "value": "Hemangioma"
+      },
+      {
+        "value": "Erysipelas"
+      },
+      {
+        "value": "Congenital soft tissue tumor"
+      },
+      {
+        "value": "Adiponecrosis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "119",
+    "_id": "9822",
+
+    "question": "A 72-year old man with pneumonia complains of market dispense,chest pain,severe cough eith expectoration,t• is 39.5-40degree C, no urination for the last 24 hours.Objectively the patient is conscious.Respiratory rate is 36/min. Percussion sound is dull ove rthe right lower  pulmonary lobe;, on auscultation there is bronchial respiration and numerous moist crackles. Blood pressure is 80/60mm Hg. Heart rate is 120/min.Heart sounds are muffled,there is tachycardia. What tactics should the family doctor choose for the management of this patient?",
+    "correctAnswer": "Hospitalization into the  intensive care unit",
+    "options": [
+      {
+        "value": "Outpatient treatment"
+      },
+      {
+        "value": "Hospitalization into the  pulmonology unit"
+      },
+      {
+        "value": "Hospitilization into the  neurology unit"
+      },
+      {
+        "value": "Treatment in the day patient  facility"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "120",
+    "_id": "9823",
+
+    "question": "A 48-year-old man came to a doctor with complaints  of vomiting thats brings no relief and a burning pain in his left subcostal region that irradiates to the left lumbar region.These signs appeared after a meal. The Ortner’s and Mayo-Robson’s signs are positive.In the blood:leukocytosis and increased ESR. In the urine: elevated diastase levels.Make the diagnosis:",
+    "correctAnswer": "Chronic pancreatitis in the  exacerbation stage",
+    "options": [
+      {
+        "value": "Chronic cholecystitis in the  exacerbation stage"
+      },
+      {
+        "value": "Gastric ulcer perforation"
+      },
+      {
+        "value": "chronic gastritis in the  exacerbation stage"
+      },
+      {
+        "value": "Renal colic"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "121",
+    "_id": "9824",
+
+    "question": "A 32 -year old woman complains of general weakness, low-grade fever persisting for 4months,lumbar pain,and dysuria,Anamnesis includes frequent acute respiratory diseases,overexposure to cold,low-calorie diet, a case of pulmonary tuberculosis in childhood. Clinical urine analysis:pH-4.8,leukocyturia,hematuria,Complete blood count: leukocytosis,lymphocytosis,raised ESR. Urography concludes:dilation of renal pelvis and calyceal system of both kidneys,foci of calcification in the projection of right kidney parenchyma. What is the most likely diagnosis?",
+    "correctAnswer": "Nephrotuberculosis",
+    "options": [
+      {
+        "value": "Chronic pyelonephritis"
+      },
+      {
+        "value": "Acute glomerulonephritis"
+      },
+      {
+        "value": "Right renal cyst"
+      },
+      {
+        "value": "Right renal carcinoma"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "122",
+    "_id": "9825",
+
+    "question": "An unconscious patient was delivered to a hospital by  an ambulance. Objectively his body temperature is 39degree celsius ,he presents with convulsions and red dry skin. It us known that the patient works as a stroker in the boiler room. What is the likely diagnosis?",
+    "correctAnswer": "Heat stroke",
+    "options": [
+      {
+        "value": "Hypertensive urgency"
+      },
+      {
+        "value": "Acute viral respiratory  infection"
+      },
+      {
+        "value": "CO poisoning"
+      },
+      {
+        "value": "Acute food poisoning"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "123",
+    "_id": "9826",
+
+    "question": "A child was born at 40 weeks of gestation with the  weight of 3700g. The child’s Apgar score is 7/9. The baby was put to breast immediately after birth and snuckled actively.On the 3rd day of life the childs weight decreased to 3600g. What transitory is observed in the child?",
+    "correctAnswer": "physiological weight loss",
+    "options": [
+      {
+        "value": "Uric acid infarction"
+      },
+      {
+        "value": "transient dysbiosis"
+      },
+      {
+        "value": "physiological jaundice"
+      },
+      {
+        "value": "Toxic erythema"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "124",
+    "_id": "9827",
+
+    "question": " 2 hours after eating unknown mushrooms,a 28 year  old man sensed a decrease in his mobility and deterioration of his ability to focus. This condition was then followed by a state of agitation and agression. On the examination he is disoriented and his speech is illegible. 4hours later and he developed fetor hepaticus and lost his consciousness. What syndrome can be observed in this patient?",
+    "correctAnswer": "Acute hepatic failure",
+    "options": [
+      {
+        "value": "Cutolytic syndrome"
+      },
+      {
+        "value": "Cholestatic syndrome"
+      },
+      {
+        "value": "Portal hypertension"
+      },
+      {
+        "value": "Hepatolienal syndrome"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "125",
+    "_id": "9828",
+
+    "question": "A 17 year old girl complains of a pain in her knee and  ankle joints and body temperature up to 39degree celsius, 2weeks ago she had a case of acute tonsillitis. Objectively,her joints are swollen,sharply painful and their mobility is reduced. On the skin of her trunk and limbs there are barely visible circle shaped pale pink spots. Heart rate is 95/min.,blood pressure is 90/60mm Hg,heart sounds are weakend,there is soft systolic noise over the apex.Make the provisional diagnosis:",
+    "correctAnswer": "Acute rheumatic fever",
+    "options": [
+      {
+        "value": "Reactive arthritis"
+      },
+      {
+        "value": "Systemic scleroderma"
+      },
+      {
+        "value": "Rheumatoid arthritis"
+      },
+      {
+        "value": "Erythema nodosum"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "126",
+    "_id": "9829",
+
+    "question": "A 19-years old girl complains of moderate itching and  hair loss on her head. Objectively, on the skin of her occipital region there is a single round erythematous focus 3 cm in diameter with clear margins. Asbestos - like scales can be observed on the surface of the lesion. The hair in the focus of the lesion is broken off at the length of 6-8mm. What is the most likely diagnosis?",
+    "correctAnswer": "Trichophytosis",
+    "options": [
+      {
+        "value": "Scabies"
+      },
+      {
+        "value": "Microsporia"
+      },
+      {
+        "value": "Seborrhea"
+      },
+      {
+        "value": "Psoriasis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "127",
+    "_id": "9830",
+
+    "question": "A woman complains of frequent watery stool  (up to 9-10 times per day ) with mucus and blood admixtures , dull pain in the hypogastrium ,weight loss of 4 kg within the last year. Objectively: malnutrition, dry skin, low turgor, aphthous stomatitis. The abdomen is soft, the sigmoid colon is spastic and painful on palpation. Occult blood test is positive. Fibrocolonoscopy: edema, hyperemia, mucosal granulation, pseudopolyps, small ulcers with irregular edges. Make the diagnosis:",
+    "correctAnswer": "Nonspecific ulcerative colitis",
+    "options": [
+      {
+        "value": "Colon Cancer"
+      },
+      {
+        "value": "Chronic enterocolitisis"
+      },
+      {
+        "value": "Irritable bowel syndrome"
+      },
+      {
+        "value": "Crohn's disease (regional enteritis)"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "128",
+    "_id": "9831",
+
+    "question": "A 9-years old boy fell off a tree and hit the back of his  head. A brief loss of consciousness was observed. The child’s condition is satisfactory, he has a headache and vertigo. Skull X-ray scans show a depressed fracture of the occipital bone in the area of the external occipital protuberance. What treatment tactics is indicated for this patient?",
+    "correctAnswer": "Surgical intervention",
+    "options": [
+      {
+        "value": "Hemostatic therapy"
+      },
+      {
+        "value": "Anti- inflammatory therapy"
+      },
+      {
+        "value": "Complex conservative  treatment"
+      },
+      {
+        "value": "Lumbar puncture to  relieve the pressure"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "129",
+    "_id": "9832",
+
+    "question": "A 16-year-old boy developed dizziness.  His heart rate is 35/min., blood pressure is 85/45 mm Hg. Heart borders are not enlarged. Heart sounds are loud and clear. ECG shows P waves disconnected from QRS complexes, dissociation and different rhythm of atria and ventricles is accompanied by varying location of P wave in relation to QRST complex. This presentation is the most characteristic of the following disease :",
+    "correctAnswer": "Atrioventricular dissociation",
+    "options": [
+      {
+        "value": "Atrioventricular block  (II degree)"
+      },
+      {
+        "value": "Extrasystole"
+      },
+      {
+        "value": "Complete atrioventricular   block (III degree"
+      },
+      {
+        "value": "Sinus bradycardia"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  },
+  {
+    "number": "130",
+    "_id": "9833",
+
+    "question": "A 56-year old women has been working as a  disinfector for 19 years. She complains of general weakness, nausea, bitter taste in her mouth, heavy sensation in her right subcostal area, and rapid fatigability. Objectively, her body temperature is 36.1°C, the sclerae are icteric,and the liver is enlarged. Tolat bilirubin is 40 mcmoI/L. What is the likely diagnosis",
+    "correctAnswer": "Occupational toxic hepatitis",
+    "options": [
+      {
+        "value": "Biliary dyskinesia"
+      },
+      {
+        "value": "Chronic cholecystitis"
+      },
+      {
+        "value": "Chronic pancreatitis"
+      },
+      {
+        "value": "Acute cholecystitis"
+      }
+    ],
+    "reason": null,
+    "subject": null,
+    "years": ["2020"]
+  }
+]

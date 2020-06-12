@@ -90,6 +90,12 @@
                     </nuxt-link> -->
                     <nuxt-link
                       class="dropdown-item"
+                      to="/krok-2-2020-practice"
+                    >
+                      Krok 2 2020
+                    </nuxt-link>
+                    <nuxt-link
+                      class="dropdown-item"
                       to="/krok-2-combined-practice"
                     >
                       Krok 2 general practice
