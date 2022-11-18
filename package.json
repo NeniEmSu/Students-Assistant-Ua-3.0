@@ -38,7 +38,7 @@
     "lodash": "^4.17.15",
     "nanoid": "^2.1.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.12.2",
+    "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.3.0",
     "nuxt-rfg-icon": "^0.6.4",
     "stripe": "^7.10.0",
